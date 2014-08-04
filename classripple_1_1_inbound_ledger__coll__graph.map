@@ -1,0 +1,5 @@
+<map id="ripple::InboundLedger" name="ripple::InboundLedger">
+<area shape="rect" id="node2" href="$classripple_1_1_peer_set.html" title="A set of peers used to acquire data. " alt="" coords="386,48,494,75"/>
+<area shape="rect" id="node4" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="64,70,189,111"/>
+<area shape="rect" id="node6" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InboundLedger \&gt;" alt="" coords="366,165,514,206"/>
+</map>

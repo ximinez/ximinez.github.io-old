@@ -1,0 +1,11 @@
+<map id="ripple::PeerFinder::ManagerImp" name="ripple::PeerFinder::ManagerImp">
+<area shape="rect" id="node2" href="$classripple_1_1_peer_finder_1_1_manager.html" title="Maintains a set of IP addresses used for getting into the network. " alt="" coords="303,91,427,133"/>
+<area shape="rect" id="node15" href="$classripple_1_1_site_files_1_1_manager.html" title="Fetches and maintains a collection of ripple.txt files from domains. " alt="" coords="305,26,425,67"/>
+<area shape="rect" id="node6" href="$classripple_1_1_site_files_1_1_listener.html" title="SiteFiles listeners receive notifications on new files and sections. " alt="" coords="305,209,425,250"/>
+<area shape="rect" id="node9" href="$classripple_1_1_peer_finder_1_1_logic.html" title="The Logic for maintaining the list of Slot addresses. " alt="" coords="303,457,427,498"/>
+<area shape="rect" id="node11" href="$classripple_1_1_peer_finder_1_1_checker.html" title="Tests remote listening sockets to make sure they are connectible. " alt="" coords="27,349,151,390"/>
+<area shape="rect" id="node14" href="$classripple_1_1_peer_finder_1_1_checker_adapter.html" title="Adapts a ServiceQueue to dispatch Checker handler completions. " alt="" coords="303,391,427,433"/>
+<area shape="rect" id="node12" href="$classripple_1_1_peer_finder_1_1_store.html" title="Abstract persistence for PeerFinder data. " alt="" coords="27,558,151,599"/>
+<area shape="rect" id="node17" href="$classripple_1_1_peer_finder_1_1_store_sqdb.html" title="Database persistence for PeerFinder using SQLite. " alt="" coords="303,573,427,614"/>
+<area shape="rect" id="node13" href="$structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. " alt="" coords="27,493,151,534"/>
+</map>

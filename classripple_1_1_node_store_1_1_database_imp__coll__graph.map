@@ -1,0 +1,10 @@
+<map id="ripple::NodeStore::DatabaseImp" name="ripple::NodeStore::DatabaseImp">
+<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_database.html" title="Persistency layer for NodeObject. " alt="" coords="263,5,393,46"/>
+<area shape="rect" id="node4" href="$classripple_1_1_key_cache.html" title="ripple::KeyCache\&lt; ripple\l::base_uint \&gt;" alt="" coords="245,135,411,177"/>
+<area shape="rect" id="node5" href="$classripple_1_1_tagged_cache.html" title="ripple::TaggedCache\l\&lt; ripple::base_uint,\l ripple::NodeObject \&gt;" alt="" coords="255,200,401,256"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="29,280,113,307"/>
+<area shape="rect" id="node8" href="$classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. " alt="" coords="263,331,393,373"/>
+<area shape="rect" id="node10" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l Bits, Tag \&gt;" alt="" coords="8,397,133,438"/>
+<area shape="rect" id="node11" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="265,462,391,503"/>
+<area shape="rect" id="node13" href="$classripple_1_1_node_store_1_1_backend.html" title="A backend used for the NodeStore. " alt="" coords="5,527,136,569"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ripple::WSConnection" name="ripple::WSConnection">
+<area shape="rect" id="node9" href="$classripple_1_1_w_s_connection_type.html" title="A Ripple WebSocket connection handler for a specific endpoint_type. " alt="" coords="989,93,1168,134"/>
+<area shape="rect" id="node3" href="$classripple_1_1_info_sub.html" title="Manages a client&#39;s subscription to data feeds. " alt="" coords="593,71,700,97"/>
+<area shape="rect" id="node4" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InfoSub \&gt;" alt="" coords="305,59,453,101"/>
+<area shape="rect" id="node6" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; WSConnection \&gt;" alt="" coords="573,122,721,163"/>
+</map>

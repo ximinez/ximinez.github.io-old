@@ -1,0 +1,5 @@
+<map id="ripple::PeerFinder::Logic" name="ripple::PeerFinder::Logic">
+<area shape="rect" id="node3" href="$classripple_1_1_peer_finder_1_1_checker.html" title="Tests remote listening sockets to make sure they are connectible. " alt="" coords="27,85,151,126"/>
+<area shape="rect" id="node4" href="$classripple_1_1_peer_finder_1_1_store.html" title="Abstract persistence for PeerFinder data. " alt="" coords="27,150,151,191"/>
+<area shape="rect" id="node5" href="$structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. " alt="" coords="27,215,151,257"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="ripple::Validators::ManagerImp" name="ripple::Validators::ManagerImp">
+<area shape="rect" id="node2" href="$classripple_1_1_validators_1_1_manager.html" title="Maintains the list of chosen validators. " alt="" coords="1789,5,1907,46"/>
+<area shape="rect" id="node8" href="$classripple_1_1_validators_1_1_store_sqdb.html" title="Database persistence for Validators using SQLite. " alt="" coords="1789,378,1907,419"/>
+<area shape="rect" id="node9" href="$classripple_1_1_validators_1_1_store.html" title="Abstract persistence for Validators data. " alt="" coords="1423,369,1542,410"/>
+<area shape="rect" id="node11" href="$classripple_1_1_validators_1_1_logic.html" title="ripple::Validators\l::Logic" alt="" coords="1789,289,1907,330"/>
+<area shape="rect" id="node13" href="$structripple_1_1_validators_1_1_source_desc.html" title="Additional state information associated with a Source. " alt="" coords="1147,121,1266,162"/>
+<area shape="rect" id="node14" href="$structripple_1_1_validators_1_1_source_1_1_results.html" title="Fetch results. " alt="" coords="929,121,1053,162"/>
+<area shape="rect" id="node16" href="$structripple_1_1_validators_1_1_source_1_1_item.html" title="A Source&#39;s descriptor for a Validator. " alt="" coords="494,121,613,162"/>
+<area shape="rect" id="node17" href="$classripple_1_1_identifier_type.html" title="ripple::IdentifierType\l\&lt; RipplePublicKeyTraits \&gt;" alt="" coords="209,121,383,162"/>
+<area shape="rect" id="node19" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l RippleLedgerHash, RippleLedger\lHash::hasher, RippleLedgerHash\l::key_equal \&gt;" alt="" coords="1374,179,1591,250"/>
+<area shape="rect" id="node20" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l ReceivedValidation,\l ReceivedValidationHash,\l ReceivedValidationKeyEqual \&gt;" alt="" coords="1379,274,1586,345"/>
+</map>

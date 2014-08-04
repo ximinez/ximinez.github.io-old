@@ -1,0 +1,19 @@
+<map id="ripple::PeerImp" name="ripple::PeerImp">
+<area shape="rect" id="node2" href="$classripple_1_1_peer.html" title="Represents a peer connection in the overlay. " alt="" coords="673,5,761,32"/>
+<area shape="rect" id="node5" href="$classripple_1_1abstract__protocol__handler.html" title="Handles protocol messages. " alt="" coords="637,187,798,229"/>
+<area shape="rect" id="node6" href="$classripple_1_1_ripple_address.html" title="ripple::RippleAddress" alt="" coords="644,253,791,280"/>
+<area shape="rect" id="node7" href="$classripple_1_1_c_base58_data.html" title="ripple::CBase58Data" alt="" coords="257,253,399,280"/>
+<area shape="rect" id="node9" href="$classripple_1_1_peer_finder_1_1_manager.html" title="Maintains a set of IP addresses used for getting into the network. " alt="" coords="266,338,390,379"/>
+<area shape="rect" id="node28" href="$classripple_1_1_overlay.html" title="Manages the set of connected peers. " alt="" coords="275,616,381,643"/>
+<area shape="rect" id="node12" href="$classripple_1_1_resource_1_1_manager.html" title="Tracks load and resource consumption. " alt="" coords="425,668,599,695"/>
+<area shape="rect" id="node15" href="$classripple_1_1_load_event.html" title="ripple::LoadEvent" alt="" coords="267,404,389,431"/>
+<area shape="rect" id="node18" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l Bits, Tag \&gt;" alt="" coords="265,485,391,526"/>
+<area shape="rect" id="node20" href="$classripple_1_1_multi_socket.html" title="An abstract_socket that can handshake with multiple protocols. " alt="" coords="263,957,393,984"/>
+<area shape="rect" id="node22" href="$classripple_1_1_resource_1_1_consumer.html" title="An endpoint that consumes resources. " alt="" coords="625,729,810,756"/>
+<area shape="rect" id="node23" href="$classripple_1_1message__stream.html" title="Turns a stream of bytes into protocol messages and invokes the handler. " alt="" coords="637,780,798,807"/>
+<area shape="rect" id="node24" title="STL class. " alt="" coords="677,831,757,857"/>
+<area shape="rect" id="node25" title="STL class. " alt="" coords="265,823,391,865"/>
+<area shape="rect" id="node26" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="655,885,780,926"/>
+<area shape="rect" id="node27" href="$classripple_1_1_overlay_impl.html" title="ripple::OverlayImpl" alt="" coords="652,616,783,643"/>
+<area shape="rect" id="node29" href="$structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. " alt="" coords="266,550,390,591"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="ripple::ApplicationImp" name="ripple::ApplicationImp">
+<area shape="rect" id="node2" href="$classripple_1_1_application_imp_base.html" title="ripple::ApplicationImpBase" alt="" coords="329,5,506,32"/>
+<area shape="rect" id="node3" href="$classripple_1_1_application.html" title="ripple::Application" alt="" coords="33,5,159,32"/>
+<area shape="rect" id="node8" href="$classripple_1_1_unique_node_list.html" title="ripple::UniqueNodeList" alt="" coords="19,231,173,257"/>
+<area shape="rect" id="node10" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="28,296,164,323"/>
+<area shape="rect" id="node13" href="$classripple_1_1_load_manager.html" title="Manages load sources. " alt="" coords="27,427,165,453"/>
+<area shape="rect" id="node15" href="$classripple_1_1_proof_of_work_factory.html" title="ripple::ProofOfWorkFactory" alt="" coords="5,492,187,519"/>
+<area shape="rect" id="node16" href="$classripple_1_1_r_p_c_server_handler.html" title="Handles RPC requests. " alt="" coords="331,551,504,577"/>
+<area shape="rect" id="node19" href="$classripple_1_1_order_book_d_b.html" title="ripple::OrderBookDB" alt="" coords="346,733,489,760"/>
+<area shape="rect" id="node20" href="$classripple_1_1_tagged_cache.html" title="ripple::TaggedCache\l\&lt; uint256, SerializedLedger\lEntry \&gt;" alt="" coords="327,784,507,840"/>
+<area shape="rect" id="node23" href="$classripple_1_1_io_service_pool.html" title="An io_service with an associated group of threads. " alt="" coords="346,995,489,1021"/>
+<area shape="rect" id="node24" href="$classripple_1_1_tagged_cache.html" title="ripple::TaggedCache\l\&lt; uint256, Blob \&gt;" alt="" coords="346,1046,489,1087"/>
+<area shape="rect" id="node36" href="$classripple_1_1_node_store_scheduler.html" title="A NodeStore::Scheduler which uses the JobQueue and implements the Stoppable API. " alt="" coords="327,1831,508,1857"/>
+<area shape="rect" id="node38" href="$classripple_1_1_transaction_master.html" title="ripple::TransactionMaster" alt="" coords="333,1948,502,1975"/>
+<area shape="rect" id="node40" href="$classripple_1_1_tagged_cache.html" title="ripple::TaggedCache\l\&lt; uint256, SHAMapTreeNode \&gt;" alt="" coords="314,2065,521,2106"/>
+<area shape="rect" id="node41" href="$classripple_1_1_logs.html" title="Manages partitions for logging. " alt="" coords="373,2131,462,2157"/>
+<area shape="rect" id="node48" href="$classripple_1_1_local_credentials.html" title="Holds the cryptographic credentials identifying this instance of the server. " alt="" coords="338,2575,497,2601"/>
+</map>

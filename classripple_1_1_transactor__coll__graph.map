@@ -1,0 +1,17 @@
+<map id="ripple::Transactor" name="ripple::Transactor">
+<area shape="rect" id="node2" href="$classripple_1_1_ripple_address.html" title="ripple::RippleAddress" alt="" coords="1436,76,1583,103"/>
+<area shape="rect" id="node3" href="$classripple_1_1_c_base58_data.html" title="ripple::CBase58Data" alt="" coords="1086,20,1229,47"/>
+<area shape="rect" id="node5" href="$classripple_1_1_s_t_amount.html" title="ripple::STAmount" alt="" coords="1269,212,1392,239"/>
+<area shape="rect" id="node6" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="793,215,940,241"/>
+<area shape="rect" id="node17" href="$classripple_1_1_s_t_object.html" title="ripple::STObject" alt="" coords="1099,148,1215,175"/>
+<area shape="rect" id="node7" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="516,215,615,241"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="212,212,292,239"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="6,205,133,246"/>
+<area shape="rect" id="node11" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="189,263,315,289"/>
+<area shape="rect" id="node12" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 160, detail::AccountTag \&gt;" alt="" coords="1069,271,1245,313"/>
+<area shape="rect" id="node13" href="$classripple_1_1_transaction_engine.html" title="ripple::TransactionEngine" alt="" coords="1425,333,1594,360"/>
+<area shape="rect" id="node14" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; TransactionEngine \&gt;" alt="" coords="1080,343,1235,385"/>
+<area shape="rect" id="node16" href="$classripple_1_1_serialized_transaction.html" title="ripple::SerializedTransaction" alt="" coords="1416,128,1603,155"/>
+<area shape="rect" id="node18" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STObject \&gt;" alt="" coords="793,149,941,190"/>
+<area shape="rect" id="node20" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; SerializedTransaction \&gt;" alt="" coords="1072,79,1243,121"/>
+</map>

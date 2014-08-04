@@ -1,0 +1,12 @@
+<map id="ripple::Transactor" name="ripple::Transactor">
+<area shape="rect" id="node2" href="$classripple_1_1_add_wallet.html" title="ripple::AddWallet" alt="" coords="190,5,311,32"/>
+<area shape="rect" id="node3" href="$classripple_1_1_cancel_offer.html" title="ripple::CancelOffer" alt="" coords="185,56,316,83"/>
+<area shape="rect" id="node4" href="$classripple_1_1_change.html" title="ripple::Change" alt="" coords="197,107,304,133"/>
+<area shape="rect" id="node5" href="$classripple_1_1_create_offer.html" title="ripple::CreateOffer" alt="" coords="186,157,315,184"/>
+<area shape="rect" id="node8" href="$classripple_1_1_payment.html" title="ripple::Payment" alt="" coords="194,208,307,235"/>
+<area shape="rect" id="node9" href="$classripple_1_1_set_account.html" title="ripple::SetAccount" alt="" coords="186,259,315,285"/>
+<area shape="rect" id="node10" href="$classripple_1_1_set_regular_key.html" title="ripple::SetRegularKey" alt="" coords="176,309,325,336"/>
+<area shape="rect" id="node11" href="$classripple_1_1_set_trust.html" title="ripple::SetTrust" alt="" coords="195,360,306,387"/>
+<area shape="rect" id="node6" href="$classripple_1_1_create_offer_bridged.html" title="ripple::CreateOfferBridged" alt="" coords="373,132,547,159"/>
+<area shape="rect" id="node7" href="$classripple_1_1_create_offer_direct.html" title="ripple::CreateOfferDirect" alt="" coords="378,183,542,209"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ripple::SerializedTransaction" name="ripple::SerializedTransaction">
+<area shape="rect" id="node2" href="$classripple_1_1_s_t_object.html" title="ripple::STObject" alt="" coords="534,64,650,91"/>
+<area shape="rect" id="node3" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="289,5,436,32"/>
+<area shape="rect" id="node4" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STObject \&gt;" alt="" coords="289,57,437,98"/>
+<area shape="rect" id="node6" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; SerializedTransaction \&gt;" alt="" coords="507,122,677,163"/>
+</map>

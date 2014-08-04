@@ -1,0 +1,9 @@
+<map id="ripple::Validators::Logic" name="ripple::Validators::Logic">
+<area shape="rect" id="node3" href="$structripple_1_1_validators_1_1_source_desc.html" title="Additional state information associated with a Source. " alt="" coords="1147,11,1266,53"/>
+<area shape="rect" id="node4" href="$structripple_1_1_validators_1_1_source_1_1_results.html" title="Fetch results. " alt="" coords="929,11,1053,53"/>
+<area shape="rect" id="node6" href="$structripple_1_1_validators_1_1_source_1_1_item.html" title="A Source&#39;s descriptor for a Validator. " alt="" coords="494,11,613,53"/>
+<area shape="rect" id="node7" href="$classripple_1_1_identifier_type.html" title="ripple::IdentifierType\l\&lt; RipplePublicKeyTraits \&gt;" alt="" coords="209,11,383,53"/>
+<area shape="rect" id="node9" href="$classripple_1_1_validators_1_1_store.html" title="Abstract persistence for Validators data. " alt="" coords="1423,70,1542,111"/>
+<area shape="rect" id="node10" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l RippleLedgerHash, RippleLedger\lHash::hasher, RippleLedgerHash\l::key_equal \&gt;" alt="" coords="1374,135,1591,206"/>
+<area shape="rect" id="node11" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l ReceivedValidation,\l ReceivedValidationHash,\l ReceivedValidationKeyEqual \&gt;" alt="" coords="1379,230,1586,301"/>
+</map>
