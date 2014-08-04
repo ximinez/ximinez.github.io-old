@@ -1,6 +1,6 @@
 <map id="ripple::WSConnectionType&lt; endpoint_type &gt;" name="ripple::WSConnectionType&lt; endpoint_type &gt;">
-<area shape="rect" id="node2" href="$classripple_1_1_w_s_connection.html" title="A Ripple WebSocket connection handler. " alt="" coords="792,100,941,127"/>
-<area shape="rect" id="node4" href="$classripple_1_1_info_sub.html" title="Manages a client&#39;s subscription to data feeds. " alt="" coords="593,71,700,97"/>
-<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InfoSub \&gt;" alt="" coords="305,59,453,101"/>
-<area shape="rect" id="node7" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; WSConnection \&gt;" alt="" coords="573,122,721,163"/>
+<area shape="rect" id="node2" href="$classripple_1_1_w_s_connection.html" title="A Ripple WebSocket connection handler. " alt="" coords="80,187,228,213"/>
+<area shape="rect" id="node3" href="$classripple_1_1_info_sub.html" title="Manages a client&#39;s subscription to data feeds. " alt="" coords="25,104,132,131"/>
+<area shape="rect" id="node4" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InfoSub \&gt;" alt="" coords="5,6,152,47"/>
+<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; WSConnection \&gt;" alt="" coords="157,97,304,138"/>
 </map>

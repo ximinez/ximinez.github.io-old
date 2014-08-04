@@ -1,4 +1,4 @@
 <map id="ripple::PeerSet" name="ripple::PeerSet">
-<area shape="rect" id="node3" href="$classripple_1_1_inbound_ledger.html" title="ripple::InboundLedger" alt="" coords="5,171,152,197"/>
-<area shape="rect" id="node4" href="$classripple_1_1_transaction_acquire.html" title="ripple::TransactionAcquire" alt="" coords="176,171,349,197"/>
+<area shape="rect" id="node2" href="$classripple_1_1_inbound_ledger.html" title="ripple::InboundLedger" alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node3" href="$classripple_1_1_transaction_acquire.html" title="ripple::TransactionAcquire" alt="" coords="176,80,349,107"/>
 </map>

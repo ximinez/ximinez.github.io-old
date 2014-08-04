@@ -1,8 +1,6 @@
 <map id="ripple::STArray" name="ripple::STArray">
-<area shape="rect" id="node2" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="133,317,280,344"/>
-<area shape="rect" id="node3" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="155,211,253,237"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="164,99,243,125"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="141,6,267,47"/>
-<area shape="rect" id="node7" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="269,99,395,125"/>
-<area shape="rect" id="node8" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STArray \&gt;" alt="" coords="306,310,453,351"/>
+<area shape="rect" id="node2" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="5,195,152,221"/>
+<area shape="rect" id="node3" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="29,96,128,123"/>
+<area shape="rect" id="node4" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="15,5,141,32"/>
+<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STArray \&gt;" alt="" coords="177,187,324,229"/>
 </map>

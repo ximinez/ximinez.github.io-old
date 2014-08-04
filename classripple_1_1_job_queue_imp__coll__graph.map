@@ -1,6 +1,5 @@
 <map id="ripple::JobQueueImp" name="ripple::JobQueueImp">
-<area shape="rect" id="node2" href="$classripple_1_1_job_queue.html" title="ripple::JobQueue" alt="" coords="484,5,604,32"/>
-<area shape="rect" id="node5" href="$structripple_1_1_job_type_data.html" title="ripple::JobTypeData" alt="" coords="213,133,352,160"/>
-<area shape="rect" id="node6" href="$classripple_1_1_job_type_info.html" title="Holds all the &#39;static&#39; information about a job, which does not change. " alt="" coords="5,133,139,160"/>
-<area shape="rect" id="node8" href="$classripple_1_1_job.html" title="ripple::Job" alt="" coords="241,236,324,263"/>
+<area shape="rect" id="node2" href="$classripple_1_1_job_queue.html" title="ripple::JobQueue" alt="" coords="5,96,125,123"/>
+<area shape="rect" id="node3" href="$structripple_1_1_job_type_data.html" title="ripple::JobTypeData" alt="" coords="149,96,288,123"/>
+<area shape="rect" id="node4" href="$classripple_1_1_job_type_info.html" title="Holds all the &#39;static&#39; information about a job, which does not change. " alt="" coords="152,5,285,32"/>
 </map>

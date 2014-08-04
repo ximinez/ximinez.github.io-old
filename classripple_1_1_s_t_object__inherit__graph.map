@@ -1,7 +1,7 @@
 <map id="ripple::STObject" name="ripple::STObject">
-<area shape="rect" id="node5" href="$classripple_1_1_serialized_ledger_entry.html" title="ripple::SerializedLedger\lEntry" alt="" coords="644,5,801,46"/>
-<area shape="rect" id="node6" href="$classripple_1_1_serialized_transaction.html" title="ripple::SerializedTransaction" alt="" coords="629,71,816,97"/>
-<area shape="rect" id="node7" href="$classripple_1_1_serialized_validation.html" title="ripple::SerializedValidation" alt="" coords="635,121,810,148"/>
-<area shape="rect" id="node2" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="268,41,415,68"/>
-<area shape="rect" id="node3" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STObject \&gt;" alt="" coords="267,93,415,134"/>
+<area shape="rect" id="node4" href="$classripple_1_1_serialized_ledger_entry.html" title="ripple::SerializedLedger\lEntry" alt="" coords="383,5,540,46"/>
+<area shape="rect" id="node5" href="$classripple_1_1_serialized_transaction.html" title="ripple::SerializedTransaction" alt="" coords="368,71,555,97"/>
+<area shape="rect" id="node6" href="$classripple_1_1_serialized_validation.html" title="ripple::SerializedValidation" alt="" coords="374,121,549,148"/>
+<area shape="rect" id="node2" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="7,41,153,68"/>
+<area shape="rect" id="node3" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STObject \&gt;" alt="" coords="6,93,154,134"/>
 </map>

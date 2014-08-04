@@ -1,12 +1,11 @@
 <map id="ripple::RPCHTTPServerImp" name="ripple::RPCHTTPServerImp">
-<area shape="rect" id="node2" href="$classripple_1_1_r_p_c_h_t_t_p_server.html" title="ripple::RPCHTTPServer" alt="" coords="416,5,579,32"/>
-<area shape="rect" id="node13" href="$classripple_1_1_job_queue.html" title="ripple::JobQueue" alt="" coords="437,56,557,83"/>
-<area shape="rect" id="node16" href="$classripple_1_1_info_sub_1_1_source.html" title="Abstracts the source of subscription data. " alt="" coords="229,109,384,136"/>
-<area shape="rect" id="node5" href="$structripple_1_1_h_t_t_p_1_1_handler.html" title="Processes all sessions. " alt="" coords="616,235,765,261"/>
-<area shape="rect" id="node6" href="$classripple_1_1_resource_1_1_manager.html" title="Tracks load and resource consumption. " alt="" coords="603,285,778,312"/>
-<area shape="rect" id="node8" href="$classripple_1_1_r_p_c_server_handler.html" title="Handles RPC requests. " alt="" coords="604,336,777,363"/>
-<area shape="rect" id="node9" href="$classripple_1_1_r_p_c_server_1_1_handler.html" title="Handles a RPC client request. " alt="" coords="239,329,375,370"/>
-<area shape="rect" id="node11" href="$classripple_1_1_ripple_s_s_l_context.html" title="The SSL contexts used by Ripple. " alt="" coords="222,395,391,421"/>
-<area shape="rect" id="node14" href="$classripple_1_1_h_t_t_p_1_1_server.html" title="Multi&#45;threaded, asynchronous HTTP server. " alt="" coords="619,453,762,480"/>
-<area shape="rect" id="node15" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="623,117,759,144"/>
+<area shape="rect" id="node2" href="$classripple_1_1_r_p_c_h_t_t_p_server.html" title="ripple::RPCHTTPServer" alt="" coords="217,5,380,32"/>
+<area shape="rect" id="node3" href="$structripple_1_1_h_t_t_p_1_1_handler.html" title="Processes all sessions. " alt="" coords="224,56,373,83"/>
+<area shape="rect" id="node4" href="$classripple_1_1_resource_1_1_manager.html" title="Tracks load and resource consumption. " alt="" coords="211,107,386,133"/>
+<area shape="rect" id="node5" href="$classripple_1_1_r_p_c_server_handler.html" title="Handles RPC requests. " alt="" coords="212,157,385,184"/>
+<area shape="rect" id="node6" href="$classripple_1_1_r_p_c_server_1_1_handler.html" title="Handles a RPC client request. " alt="" coords="15,150,151,191"/>
+<area shape="rect" id="node7" href="$classripple_1_1_job_queue.html" title="ripple::JobQueue" alt="" coords="239,208,359,235"/>
+<area shape="rect" id="node8" href="$classripple_1_1_h_t_t_p_1_1_server.html" title="Multi&#45;threaded, asynchronous HTTP server. " alt="" coords="227,259,370,285"/>
+<area shape="rect" id="node9" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="231,309,367,336"/>
+<area shape="rect" id="node10" href="$classripple_1_1_info_sub_1_1_source.html" title="Abstracts the source of subscription data. " alt="" coords="5,309,160,336"/>
 </map>

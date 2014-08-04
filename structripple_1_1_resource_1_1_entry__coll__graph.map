@@ -1,6 +1,4 @@
 <map id="ripple::Resource::Entry" name="ripple::Resource::Entry">
-<area shape="rect" id="node3" href="$structripple_1_1_resource_1_1_key.html" title="ripple::Resource::Key" alt="" coords="361,71,509,97"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="184,71,264,97"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="6,63,133,105"/>
-<area shape="rect" id="node6" href="$classripple_1_1_decaying_sample.html" title="ripple::DecayingSample\l\&lt; decayWindowSeconds,\l clock_type \&gt;" alt="" coords="349,121,520,177"/>
+<area shape="rect" id="node2" href="$structripple_1_1_resource_1_1_key.html" title="ripple::Resource::Key" alt="" coords="5,20,152,47"/>
+<area shape="rect" id="node3" href="$classripple_1_1_decaying_sample.html" title="ripple::DecayingSample\l\&lt; decayWindowSeconds,\l clock_type \&gt;" alt="" coords="177,5,348,61"/>
 </map>

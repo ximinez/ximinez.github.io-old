@@ -1,5 +1,5 @@
 <map id="ripple::TransactionAcquire" name="ripple::TransactionAcquire">
-<area shape="rect" id="node2" href="$classripple_1_1_peer_set.html" title="A set of peers used to acquire data. " alt="" coords="359,51,467,77"/>
-<area shape="rect" id="node4" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="44,70,169,111"/>
-<area shape="rect" id="node6" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; TransactionAcquire \&gt;" alt="" coords="334,167,493,209"/>
+<area shape="rect" id="node2" href="$classripple_1_1_peer_set.html" title="A set of peers used to acquire data. " alt="" coords="14,120,121,147"/>
+<area shape="rect" id="node3" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="5,6,131,47"/>
+<area shape="rect" id="node4" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; TransactionAcquire \&gt;" alt="" coords="146,113,304,154"/>
 </map>

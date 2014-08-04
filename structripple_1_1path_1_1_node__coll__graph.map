@@ -1,12 +1,10 @@
 <map id="ripple::path::Node" name="ripple::path::Node">
-<area shape="rect" id="node2" href="$classripple_1_1_s_t_amount.html" title="ripple::STAmount" alt="" coords="915,152,1037,179"/>
-<area shape="rect" id="node3" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="651,152,797,179"/>
-<area shape="rect" id="node4" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="459,152,557,179"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="212,149,292,176"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="6,142,133,183"/>
-<area shape="rect" id="node8" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="189,200,315,227"/>
-<area shape="rect" id="node9" href="$classripple_1_1_node_directory.html" title="ripple::NodeDirectory" alt="" coords="903,265,1049,292"/>
-<area shape="rect" id="node10" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="661,227,787,269"/>
-<area shape="rect" id="node11" href="$classripple_1_1_issue_type.html" title="ripple::IssueType\&lt;\l true \&gt;" alt="" coords="911,317,1041,358"/>
-<area shape="rect" id="node12" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 160, detail::AccountTag \&gt;" alt="" coords="888,382,1064,423"/>
+<area shape="rect" id="node2" href="$classripple_1_1_s_t_amount.html" title="ripple::STAmount" alt="" coords="701,151,824,177"/>
+<area shape="rect" id="node3" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="437,151,584,177"/>
+<area shape="rect" id="node4" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="245,151,344,177"/>
+<area shape="rect" id="node5" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="6,151,133,177"/>
+<area shape="rect" id="node6" href="$classripple_1_1_node_directory.html" title="ripple::NodeDirectory" alt="" coords="690,264,835,291"/>
+<area shape="rect" id="node7" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="448,226,573,267"/>
+<area shape="rect" id="node8" href="$classripple_1_1_issue_type.html" title="ripple::IssueType\&lt;\l true \&gt;" alt="" coords="697,315,828,357"/>
+<area shape="rect" id="node9" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 160, detail::AccountTag \&gt;" alt="" coords="675,381,851,422"/>
 </map>

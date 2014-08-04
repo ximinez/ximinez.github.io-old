@@ -1,10 +1,10 @@
 <map id="ripple::WSConnectionType&lt; endpoint_type &gt;" name="ripple::WSConnectionType&lt; endpoint_type &gt;">
-<area shape="rect" id="node2" href="$classripple_1_1_w_s_connection.html" title="A Ripple WebSocket connection handler. " alt="" coords="920,209,1069,236"/>
-<area shape="rect" id="node4" href="$classripple_1_1_info_sub.html" title="Manages a client&#39;s subscription to data feeds. " alt="" coords="599,71,705,97"/>
-<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InfoSub \&gt;" alt="" coords="307,59,455,101"/>
-<area shape="rect" id="node7" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; WSConnection \&gt;" alt="" coords="578,122,726,163"/>
-<area shape="rect" id="node10" href="$classripple_1_1_resource_1_1_manager.html" title="Tracks load and resource consumption. " alt="" coords="565,239,739,265"/>
-<area shape="rect" id="node13" href="$classripple_1_1_resource_1_1_consumer.html" title="An endpoint that consumes resources. " alt="" coords="559,356,745,383"/>
-<area shape="rect" id="node14" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="584,407,720,433"/>
-<area shape="rect" id="node15" href="$classripple_1_1_info_sub_1_1_source.html" title="Abstracts the source of subscription data. " alt="" coords="304,407,459,433"/>
+<area shape="rect" id="node2" href="$classripple_1_1_w_s_connection.html" title="A Ripple WebSocket connection handler. " alt="" coords="568,129,717,156"/>
+<area shape="rect" id="node3" href="$classripple_1_1_info_sub.html" title="Manages a client&#39;s subscription to data feeds. " alt="" coords="251,12,357,39"/>
+<area shape="rect" id="node4" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InfoSub \&gt;" alt="" coords="9,5,157,46"/>
+<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; WSConnection \&gt;" alt="" coords="230,63,378,105"/>
+<area shape="rect" id="node6" href="$classripple_1_1_resource_1_1_manager.html" title="Tracks load and resource consumption. " alt="" coords="217,129,391,156"/>
+<area shape="rect" id="node7" href="$classripple_1_1_resource_1_1_consumer.html" title="An endpoint that consumes resources. " alt="" coords="211,180,397,207"/>
+<area shape="rect" id="node8" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="236,231,372,257"/>
+<area shape="rect" id="node9" href="$classripple_1_1_info_sub_1_1_source.html" title="Abstracts the source of subscription data. " alt="" coords="5,231,160,257"/>
 </map>

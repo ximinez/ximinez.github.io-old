@@ -1,8 +1,6 @@
 <map id="ripple::core::Amounts" name="ripple::core::Amounts">
-<area shape="rect" id="node2" href="$classripple_1_1_s_t_amount.html" title="ripple::STAmount" alt="" coords="143,371,265,397"/>
-<area shape="rect" id="node3" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="131,293,277,320"/>
-<area shape="rect" id="node4" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="155,203,253,229"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="164,99,243,125"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="141,6,267,47"/>
-<area shape="rect" id="node8" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="269,99,395,125"/>
+<area shape="rect" id="node2" href="$classripple_1_1_s_t_amount.html" title="ripple::STAmount" alt="" coords="17,264,140,291"/>
+<area shape="rect" id="node3" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="5,187,152,213"/>
+<area shape="rect" id="node4" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="29,96,128,123"/>
+<area shape="rect" id="node5" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="15,5,141,32"/>
 </map>

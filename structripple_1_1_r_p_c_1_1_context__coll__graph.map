@@ -1,6 +1,6 @@
 <map id="ripple::RPC::Context" name="ripple::RPC::Context">
-<area shape="rect" id="node2" href="$class_json_1_1_value.html" title="Represents a JSON value. " alt="" coords="5,160,96,187"/>
-<area shape="rect" id="node3" href="$classripple_1_1_resource_1_1_charge.html" title="A consumption charge. " alt="" coords="170,160,336,187"/>
-<area shape="rect" id="node4" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="361,160,496,187"/>
-<area shape="rect" id="node5" href="$classripple_1_1_info_sub_1_1_source.html" title="Abstracts the source of subscription data. " alt="" coords="352,83,505,109"/>
+<area shape="rect" id="node2" href="$class_json_1_1_value.html" title="Represents a JSON value. " alt="" coords="5,83,96,109"/>
+<area shape="rect" id="node3" href="$classripple_1_1_resource_1_1_charge.html" title="A consumption charge. " alt="" coords="170,83,336,109"/>
+<area shape="rect" id="node4" href="$classripple_1_1_network_o_ps.html" title="Provides server functionality for clients. " alt="" coords="361,83,496,109"/>
+<area shape="rect" id="node5" href="$classripple_1_1_info_sub_1_1_source.html" title="Abstracts the source of subscription data. " alt="" coords="352,5,505,32"/>
 </map>

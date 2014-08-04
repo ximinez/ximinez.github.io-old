@@ -1,4 +1,4 @@
 <map id="ripple::PeerImp" name="ripple::PeerImp">
-<area shape="rect" id="node2" href="$classripple_1_1_peer.html" title="Represents a peer connection in the overlay. " alt="" coords="43,5,131,32"/>
-<area shape="rect" id="node5" href="$classripple_1_1abstract__protocol__handler.html" title="Handles protocol messages. " alt="" coords="6,187,167,229"/>
+<area shape="rect" id="node2" href="$classripple_1_1_peer.html" title="Represents a peer connection in the overlay. " alt="" coords="5,13,93,40"/>
+<area shape="rect" id="node3" href="$classripple_1_1abstract__protocol__handler.html" title="Handles protocol messages. " alt="" coords="118,6,279,47"/>
 </map>

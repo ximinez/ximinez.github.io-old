@@ -1,5 +1,5 @@
 <map id="ripple::MultiSocket_test::MultiSocketDetailsType&lt; Protocol &gt;" name="ripple::MultiSocket_test::MultiSocketDetailsType&lt; Protocol &gt;">
-<area shape="rect" id="node2" href="$classripple_1_1_multi_socket__test_1_1_multi_socket_details.html" title="ripple::MultiSocket\l_test::MultiSocketDetails" alt="" coords="438,5,607,46"/>
-<area shape="rect" id="node4" href="$classripple_1_1_multi_socket_impl.html" title="ripple::MultiSocketImpl\l\&lt; socket_type &amp; \&gt;" alt="" coords="445,70,600,111"/>
-<area shape="rect" id="node5" href="$classripple_1_1_multi_socket.html" title="An abstract_socket that can handshake with multiple protocols. " alt="" coords="227,77,357,104"/>
+<area shape="rect" id="node2" href="$classripple_1_1_multi_socket__test_1_1_multi_socket_details.html" title="ripple::MultiSocket\l_test::MultiSocketDetails" alt="" coords="187,5,357,46"/>
+<area shape="rect" id="node3" href="$classripple_1_1_multi_socket_impl.html" title="ripple::MultiSocketImpl\l\&lt; socket_type &amp; \&gt;" alt="" coords="195,70,349,111"/>
+<area shape="rect" id="node4" href="$classripple_1_1_multi_socket.html" title="An abstract_socket that can handshake with multiple protocols. " alt="" coords="5,77,136,104"/>
 </map>
