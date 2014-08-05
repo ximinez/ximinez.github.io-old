@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1core.html">core</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1core_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>core</b></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -103,52 +104,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a54372ce3a206a8d1075b15cafe3165f7"><td class="memItemLeft" align="right" valign="top">typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a54372ce3a206a8d1075b15cafe3165f7">difference_type</a></td></tr>
+<tr class="memitem:a54372ce3a206a8d1075b15cafe3165f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54372ce3a206a8d1075b15cafe3165f7"></a>
+typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
 <tr class="separator:a54372ce3a206a8d1075b15cafe3165f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab15b777ce2497611329f8b29e217e24e"><td class="memItemLeft" align="right" valign="top">typedef std::iterator_traits<br class="typebreak"/>
-&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a></td></tr>
+<tr class="memitem:ab15b777ce2497611329f8b29e217e24e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab15b777ce2497611329f8b29e217e24e"></a>
+typedef std::iterator_traits<br class="typebreak"/>
+&lt; BookIter &gt;::value_type&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
 <tr class="separator:ab15b777ce2497611329f8b29e217e24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff529fec401402dc37693a2c0bc5e589"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#aff529fec401402dc37693a2c0bc5e589">pointer</a></td></tr>
+<tr class="memitem:aff529fec401402dc37693a2c0bc5e589"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff529fec401402dc37693a2c0bc5e589"></a>
+typedef value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
 <tr class="separator:aff529fec401402dc37693a2c0bc5e589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dde575466391ef2f77c249a01a00414"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a7dde575466391ef2f77c249a01a00414">reference</a></td></tr>
+<tr class="memitem:a7dde575466391ef2f77c249a01a00414"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dde575466391ef2f77c249a01a00414"></a>
+typedef value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
 <tr class="separator:a7dde575466391ef2f77c249a01a00414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe7bccd8b3153a30e9d39cd2cd9cbefa"><td class="memItemLeft" align="right" valign="top">typedef std::conditional_t<br class="typebreak"/>
+<tr class="memitem:afe7bccd8b3153a30e9d39cd2cd9cbefa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe7bccd8b3153a30e9d39cd2cd9cbefa"></a>
+typedef std::conditional_t<br class="typebreak"/>
 &lt; std::is_const<br class="typebreak"/>
 &lt; std::remove_reference_t<br class="typebreak"/>
-&lt; <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a7dde575466391ef2f77c249a01a00414">reference</a> &gt; &gt;::value, <br class="typebreak"/>
+&lt; reference &gt; &gt;::value, <br class="typebreak"/>
 forward_const_iterator_base_tag, <br class="typebreak"/>
-forward_iterator_base_tag &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#afe7bccd8b3153a30e9d39cd2cd9cbefa">iterator_category</a></td></tr>
+forward_iterator_base_tag &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b></td></tr>
 <tr class="separator:afe7bccd8b3153a30e9d39cd2cd9cbefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7539b6994591b5d57f594f96fae23a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ac7539b6994591b5d57f594f96fae23a4">MultiBookIterator</a> ()=default</td></tr>
-<tr class="separator:ac7539b6994591b5d57f594f96fae23a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc88231d7dfa20c90734308091e20e8"><td class="memTemplParams" colspan="2">template&lt;class OtherBookIter , class  = std::enable_if_t &lt;            std::is_same &lt;value_type, typename OtherBookIter::value_type&gt;::value        &gt;&gt; </td></tr>
-<tr class="memitem:accc88231d7dfa20c90734308091e20e8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#accc88231d7dfa20c90734308091e20e8">MultiBookIterator</a> (<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&lt; OtherBookIter &gt; const &amp;other)</td></tr>
+<tr class="memitem:accc88231d7dfa20c90734308091e20e8"><td class="memTemplParams" colspan="2"><a class="anchor" id="accc88231d7dfa20c90734308091e20e8"></a>
+template&lt;class OtherBookIter , class  = std::enable_if_t &lt;            std::is_same &lt;value_type, typename OtherBookIter::value_type&gt;::value        &gt;&gt; </td></tr>
+<tr class="memitem:accc88231d7dfa20c90734308091e20e8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MultiBookIterator</b> (<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&lt; OtherBookIter &gt; const &amp;other)</td></tr>
 <tr class="separator:accc88231d7dfa20c90734308091e20e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae830edaa0adcd49456f8e836c66376fe"><td class="memTemplParams" colspan="2">template&lt;class OtherBookIter , class  = std::enable_if_t &lt;            std::is_same &lt;value_type, typename OtherBookIter::value_type&gt;::value        &gt;&gt; </td></tr>
-<tr class="memitem:ae830edaa0adcd49456f8e836c66376fe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ae830edaa0adcd49456f8e836c66376fe">MultiBookIterator</a> (OtherBookIter direct_first, OtherBookIter direct_last, OtherBookIter leg1_first, OtherBookIter leg1_last, OtherBookIter leg2_first, OtherBookIter leg2_last)</td></tr>
+<tr class="memitem:ae830edaa0adcd49456f8e836c66376fe"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae830edaa0adcd49456f8e836c66376fe"></a>
+template&lt;class OtherBookIter , class  = std::enable_if_t &lt;            std::is_same &lt;value_type, typename OtherBookIter::value_type&gt;::value        &gt;&gt; </td></tr>
+<tr class="memitem:ae830edaa0adcd49456f8e836c66376fe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MultiBookIterator</b> (OtherBookIter direct_first, OtherBookIter direct_last, OtherBookIter leg1_first, OtherBookIter leg1_last, OtherBookIter leg2_first, OtherBookIter leg2_last)</td></tr>
 <tr class="separator:ae830edaa0adcd49456f8e836c66376fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae22d06a88548bd83e636712cfcec3ca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ae22d06a88548bd83e636712cfcec3ca2">operator++</a> ()</td></tr>
+<tr class="memitem:ae22d06a88548bd83e636712cfcec3ca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae22d06a88548bd83e636712cfcec3ca2"></a>
+<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
 <tr class="separator:ae22d06a88548bd83e636712cfcec3ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ee44b8dbc286d179d2f86dc5ee253a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a42ee44b8dbc286d179d2f86dc5ee253a">operator++</a> (int)</td></tr>
+<tr class="memitem:a42ee44b8dbc286d179d2f86dc5ee253a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42ee44b8dbc286d179d2f86dc5ee253a"></a>
+<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
 <tr class="separator:a42ee44b8dbc286d179d2f86dc5ee253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1112616add8dab7e908048cc70e8daf"><td class="memTemplParams" colspan="2">template&lt;class OtherBookIter &gt; </td></tr>
-<tr class="memitem:ae1112616add8dab7e908048cc70e8daf"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ae1112616add8dab7e908048cc70e8daf">operator==</a> (<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&lt; OtherBookIter &gt; const &amp;other) const noexcept</td></tr>
+<tr class="memitem:ae1112616add8dab7e908048cc70e8daf"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae1112616add8dab7e908048cc70e8daf"></a>
+template&lt;class OtherBookIter &gt; </td></tr>
+<tr class="memitem:ae1112616add8dab7e908048cc70e8daf"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&lt; OtherBookIter &gt; const &amp;other) const noexcept</td></tr>
 <tr class="separator:ae1112616add8dab7e908048cc70e8daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e522301b22e8c9f901c8fdd900f21db"><td class="memItemLeft" align="right" valign="top">Offer const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a8e522301b22e8c9f901c8fdd900f21db">operator-&gt;</a> () const </td></tr>
+<tr class="memitem:a8e522301b22e8c9f901c8fdd900f21db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e522301b22e8c9f901c8fdd900f21db"></a>
+Offer const *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const </td></tr>
 <tr class="separator:a8e522301b22e8c9f901c8fdd900f21db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7daf3502fa9598bf04b6835d9e5dd689"><td class="memItemLeft" align="right" valign="top">Offer const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a7daf3502fa9598bf04b6835d9e5dd689">operator*</a> () const </td></tr>
+<tr class="memitem:a7daf3502fa9598bf04b6835d9e5dd689"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7daf3502fa9598bf04b6835d9e5dd689"></a>
+Offer const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const </td></tr>
 <tr class="separator:a7daf3502fa9598bf04b6835d9e5dd689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cfebd00d9ede763f806ddcac4aec7ca"><td class="memTemplParams" colspan="2">template&lt;bool MaybeConst = IsConst::value, class  = std::enable_if_t &lt;! MaybeConst&gt;&gt; </td></tr>
-<tr class="memitem:a1cfebd00d9ede763f806ddcac4aec7ca"><td class="memTemplItemLeft" align="right" valign="top">Proxy&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a1cfebd00d9ede763f806ddcac4aec7ca">operator*</a> ()</td></tr>
+<tr class="memitem:a1cfebd00d9ede763f806ddcac4aec7ca"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1cfebd00d9ede763f806ddcac4aec7ca"></a>
+template&lt;bool MaybeConst = IsConst::value, class  = std::enable_if_t &lt;! MaybeConst&gt;&gt; </td></tr>
+<tr class="memitem:a1cfebd00d9ede763f806ddcac4aec7ca"><td class="memTemplItemLeft" align="right" valign="top">Proxy&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
 <tr class="separator:a1cfebd00d9ede763f806ddcac4aec7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab63496f897da605c76daaff571f678c1"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
-<tr class="memitem:ab63496f897da605c76daaff571f678c1"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab63496f897da605c76daaff571f678c1">MultiBookIterator</a></td></tr>
+<tr class="memitem:ab63496f897da605c76daaff571f678c1"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab63496f897da605c76daaff571f678c1"></a>
+template&lt;class &gt; </td></tr>
+<tr class="memitem:ab63496f897da605c76daaff571f678c1"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MultiBookIterator</b></td></tr>
 <tr class="separator:ab63496f897da605c76daaff571f678c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -156,376 +169,7 @@ Friends</h2></td></tr>
 class ripple::core::detail::MultiBookIterator&lt; BookIter &gt;</h3>
 
 <p>Presents a set of order books as a single bridged order book. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a54372ce3a206a8d1075b15cafe3165f7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::ptrdiff_t <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a54372ce3a206a8d1075b15cafe3165f7">difference_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab15b777ce2497611329f8b29e217e24e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::iterator_traits&lt; BookIter&gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a> <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aff529fec401402dc37693a2c0bc5e589"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a>* <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#aff529fec401402dc37693a2c0bc5e589">pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7dde575466391ef2f77c249a01a00414"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#ab15b777ce2497611329f8b29e217e24e">value_type</a>&amp; <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a7dde575466391ef2f77c249a01a00414">reference</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afe7bccd8b3153a30e9d39cd2cd9cbefa"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::conditional_t&lt; std::is_const &lt;std::remove_reference_t &lt;<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#a7dde575466391ef2f77c249a01a00414">reference</a>&gt; &gt;::value, forward_const_iterator_base_tag, forward_iterator_base_tag&gt; <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html#afe7bccd8b3153a30e9d39cd2cd9cbefa">iterator_category</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac7539b6994591b5d57f594f96fae23a4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="accc88231d7dfa20c90734308091e20e8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<div class="memtemplate">
-template&lt;class OtherBookIter , class  = std::enable_if_t &lt;            std::is_same &lt;value_type, typename OtherBookIter::value_type&gt;::value        &gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&lt; OtherBookIter &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae830edaa0adcd49456f8e836c66376fe"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<div class="memtemplate">
-template&lt;class OtherBookIter , class  = std::enable_if_t &lt;            std::is_same &lt;value_type, typename OtherBookIter::value_type&gt;::value        &gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::<a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a> </td>
-          <td>(</td>
-          <td class="paramtype">OtherBookIter&#160;</td>
-          <td class="paramname"><em>direct_first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OtherBookIter&#160;</td>
-          <td class="paramname"><em>direct_last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OtherBookIter&#160;</td>
-          <td class="paramname"><em>leg1_first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OtherBookIter&#160;</td>
-          <td class="paramname"><em>leg1_last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OtherBookIter&#160;</td>
-          <td class="paramname"><em>leg2_first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OtherBookIter&#160;</td>
-          <td class="paramname"><em>leg2_last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae22d06a88548bd83e636712cfcec3ca2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&amp; <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::operator++ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a42ee44b8dbc286d179d2f86dc5ee253a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a> <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::operator++ </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae1112616add8dab7e908048cc70e8daf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<div class="memtemplate">
-template&lt;class OtherBookIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a>&lt; OtherBookIter &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e522301b22e8c9f901c8fdd900f21db"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Offer const* <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::operator-&gt; </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7daf3502fa9598bf04b6835d9e5dd689"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Offer const&amp; <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::operator* </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1cfebd00d9ede763f806ddcac4aec7ca"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<div class="memtemplate">
-template&lt;bool MaybeConst = IsConst::value, class  = std::enable_if_t &lt;! MaybeConst&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Proxy <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">ripple::core::detail::MultiBookIterator</a>&lt; BookIter &gt;::operator* </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="ab63496f897da605c76daaff571f678c1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BookIter &gt; </div>
-<div class="memtemplate">
-template&lt;class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classripple_1_1core_1_1detail_1_1_multi_book_iterator.html">MultiBookIterator</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>cross_offer.test.cpp</li>
 </ul>
 </div><!-- contents -->

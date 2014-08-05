@@ -1,4 +1,0 @@
-<map id="ripple::OverlayImpl" name="ripple::OverlayImpl">
-<area shape="rect" id="node2" href="$classripple_1_1_overlay.html" title="Manages the set of connected peers. " alt="" coords="5,13,112,40"/>
-<area shape="rect" id="node3" href="$structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. " alt="" coords="137,6,260,47"/>
-</map>

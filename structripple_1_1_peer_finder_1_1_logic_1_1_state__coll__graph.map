@@ -1,8 +1,0 @@
-<map id="ripple::PeerFinder::Logic::State" name="ripple::PeerFinder::Logic::State">
-<area shape="rect" id="node2" href="$classripple_1_1_peer_finder_1_1_bootcache.html" title="Stores IP addresses useful for gaining initial connections. " alt="" coords="258,5,382,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_peer_finder_1_1_counts.html" title="Manages the count of available connections for the various slots. " alt="" coords="258,70,382,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_peer_finder_1_1_livecache.html" title="The Livecache holds the short&#45;lived relayed Endpoint messages. " alt="" coords="248,135,392,177"/>
-<area shape="rect" id="node5" href="$classripple_1_1_peer_finder_1_1detail_1_1_livecache_base.html" title="ripple::PeerFinder\l::detail::LivecacheBase" alt="" coords="6,99,165,141"/>
-<area shape="rect" id="node6" href="$classripple_1_1_peer_finder_1_1_livecache_1_1hops__t.html" title="ripple::PeerFinder\l::Livecache\&lt; class \&gt;\l::hops_t" alt="" coords="13,164,157,220"/>
-<area shape="rect" id="node7" href="$structripple_1_1_peer_finder_1_1_config.html" title="PeerFinder configuration settings. " alt="" coords="258,201,382,242"/>
-</map>

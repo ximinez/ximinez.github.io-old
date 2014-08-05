@@ -1,5 +1,0 @@
-<map id="ripple::NodeStore::Factory" name="ripple::NodeStore::Factory">
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_memory_factory.html" title="ripple::NodeStore::\lMemoryFactory" alt="" coords="188,5,319,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_node_store_1_1_null_factory.html" title="ripple::NodeStore::\lNullFactory" alt="" coords="188,70,319,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_sqlite_factory.html" title="ripple::SqliteFactory" alt="" coords="184,136,323,163"/>
-</map>

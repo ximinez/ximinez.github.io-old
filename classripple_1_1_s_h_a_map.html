@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -105,141 +106,192 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab62b3d790cc1fd759726c37d8dcacff5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classripple_1_1_s_h_a_map.html#ab62b3d790cc1fd759726c37d8dcacff5a163727987612d91a0b87f3fbadf7ed24">STATE_MAP_BUCKETS</a> = 1024
+<tr class="memitem:ab62b3d790cc1fd759726c37d8dcacff5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>STATE_MAP_BUCKETS</b> = 1024
  }</td></tr>
 <tr class="separator:ab62b3d790cc1fd759726c37d8dcacff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7039f3c0ebb23f7f129074a53f19832d"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a7039f3c0ebb23f7f129074a53f19832d">pointer</a></td></tr>
+<tr class="memitem:a7039f3c0ebb23f7f129074a53f19832d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7039f3c0ebb23f7f129074a53f19832d"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
 <tr class="separator:a7039f3c0ebb23f7f129074a53f19832d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a977e8aaca1e0733530d747ba89d139e0"><td class="memItemLeft" align="right" valign="top">typedef const std::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a977e8aaca1e0733530d747ba89d139e0">ref</a></td></tr>
+<tr class="memitem:a977e8aaca1e0733530d747ba89d139e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977e8aaca1e0733530d747ba89d139e0"></a>
+typedef const std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b></td></tr>
 <tr class="separator:a977e8aaca1e0733530d747ba89d139e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79773b1678fb448236044103e79bd2f5"><td class="memItemLeft" align="right" valign="top">typedef std::pair<br class="typebreak"/>
-&lt; <a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>, <br class="typebreak"/>
-<a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a79773b1678fb448236044103e79bd2f5">DeltaItem</a></td></tr>
+<tr class="memitem:a79773b1678fb448236044103e79bd2f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79773b1678fb448236044103e79bd2f5"></a>
+typedef std::pair<br class="typebreak"/>
+&lt; SHAMapItem::pointer, <br class="typebreak"/>
+SHAMapItem::pointer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeltaItem</b></td></tr>
 <tr class="separator:a79773b1678fb448236044103e79bd2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49122d22dd61c7f7346ee3d9cf9446de"><td class="memItemLeft" align="right" valign="top">typedef std::pair<br class="typebreak"/>
-&lt; <a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>, <br class="typebreak"/>
-<a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a49122d22dd61c7f7346ee3d9cf9446de">DeltaRef</a></td></tr>
+<tr class="memitem:a49122d22dd61c7f7346ee3d9cf9446de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49122d22dd61c7f7346ee3d9cf9446de"></a>
+typedef std::pair<br class="typebreak"/>
+&lt; SHAMapItem::ref, <br class="typebreak"/>
+SHAMapItem::ref &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeltaRef</b></td></tr>
 <tr class="separator:a49122d22dd61c7f7346ee3d9cf9446de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af180bca329ba4a8011dd02313d3f98d9"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a>, <br class="typebreak"/>
-<a class="el" href="classripple_1_1_s_h_a_map.html#a79773b1678fb448236044103e79bd2f5">DeltaItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#af180bca329ba4a8011dd02313d3f98d9">Delta</a></td></tr>
+<tr class="memitem:af180bca329ba4a8011dd02313d3f98d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af180bca329ba4a8011dd02313d3f98d9"></a>
+typedef std::map&lt; uint256, <br class="typebreak"/>
+DeltaItem &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Delta</b></td></tr>
 <tr class="separator:af180bca329ba4a8011dd02313d3f98d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4828426ce0a98167f1ec5201d9a0e638"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceripple.html#a264a4ea9f4b2c583f442b89379832e85">hash_map</a>&lt; <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a>, <br class="typebreak"/>
-<a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#a854181c4a4e2d589b5c98432ea920c15">SHAMapTreeNode::pointer</a>, <br class="typebreak"/>
-<a class="el" href="classripple_1_1_s_h_a_map_node__hash.html">SHAMapNode_hash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a4828426ce0a98167f1ec5201d9a0e638">NodeMap</a></td></tr>
+<tr class="memitem:a4828426ce0a98167f1ec5201d9a0e638"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4828426ce0a98167f1ec5201d9a0e638"></a>
+typedef hash_map&lt; SHAMapNodeID, <br class="typebreak"/>
+SHAMapTreeNode::pointer, <br class="typebreak"/>
+SHAMapNode_hash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>NodeMap</b></td></tr>
 <tr class="separator:a4828426ce0a98167f1ec5201d9a0e638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec22abeca78398c0f7b59f6be405f86a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceripple.html#af6706a6ca37a4295262cd18f8cb619e2">hash_set</a>&lt; <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a>, <br class="typebreak"/>
-<a class="el" href="classripple_1_1_s_h_a_map_node__hash.html">SHAMapNode_hash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#aec22abeca78398c0f7b59f6be405f86a">DirtySet</a></td></tr>
+<tr class="memitem:aec22abeca78398c0f7b59f6be405f86a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec22abeca78398c0f7b59f6be405f86a"></a>
+typedef hash_set&lt; SHAMapNodeID, <br class="typebreak"/>
+SHAMapNode_hash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DirtySet</b></td></tr>
 <tr class="separator:aec22abeca78398c0f7b59f6be405f86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a56e75872d347c4b2ac3b3720bcc1ff"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a9a56e75872d347c4b2ac3b3720bcc1ff">LockType</a></td></tr>
+<tr class="memitem:a9a56e75872d347c4b2ac3b3720bcc1ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a56e75872d347c4b2ac3b3720bcc1ff"></a>
+typedef boost::shared_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>LockType</b></td></tr>
 <tr class="separator:a9a56e75872d347c4b2ac3b3720bcc1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f9e95fe1a82c5a9d6874bd43c47ddd"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_lock<br class="typebreak"/>
-&lt; <a class="el" href="classripple_1_1_s_h_a_map.html#a9a56e75872d347c4b2ac3b3720bcc1ff">LockType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a15f9e95fe1a82c5a9d6874bd43c47ddd">ScopedReadLockType</a></td></tr>
+<tr class="memitem:a15f9e95fe1a82c5a9d6874bd43c47ddd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15f9e95fe1a82c5a9d6874bd43c47ddd"></a>
+typedef boost::shared_lock<br class="typebreak"/>
+&lt; LockType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ScopedReadLockType</b></td></tr>
 <tr class="separator:a15f9e95fe1a82c5a9d6874bd43c47ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af9a5bd23cc0973ddc2a0d59df1fe1b"><td class="memItemLeft" align="right" valign="top">typedef boost::unique_lock<br class="typebreak"/>
-&lt; <a class="el" href="classripple_1_1_s_h_a_map.html#a9a56e75872d347c4b2ac3b3720bcc1ff">LockType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a9af9a5bd23cc0973ddc2a0d59df1fe1b">ScopedWriteLockType</a></td></tr>
+<tr class="memitem:a9af9a5bd23cc0973ddc2a0d59df1fe1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9af9a5bd23cc0973ddc2a0d59df1fe1b"></a>
+typedef boost::unique_lock<br class="typebreak"/>
+&lt; LockType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ScopedWriteLockType</b></td></tr>
 <tr class="separator:a9af9a5bd23cc0973ddc2a0d59df1fe1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41a0f674ea87d4eb29bcade139ed2ac"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a>, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ab41a0f674ea87d4eb29bcade139ed2ac">fetchPackEntry_t</a></td></tr>
+<tr class="memitem:ab41a0f674ea87d4eb29bcade139ed2ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab41a0f674ea87d4eb29bcade139ed2ac"></a>
+typedef std::pair&lt; uint256, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fetchPackEntry_t</b></td></tr>
 <tr class="separator:ab41a0f674ea87d4eb29bcade139ed2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06d4bf45dfe69918d8155187fc395fb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a06d4bf45dfe69918d8155187fc395fb4">SHAMap</a> (<a class="el" href="namespaceripple.html#a5d9fe757c37a7602a883d30b14e1bf3c">SHAMapType</a> t, <a class="el" href="namespaceripple.html#a56425646d607792a762d96287c2a6e23">FullBelowCache</a> &amp;fullBelowCache, <a class="el" href="namespaceripple.html#aa5785839cd43b7ea0907a6b0cb750806">TreeNodeCache</a> &amp;treeNodeCache, std::uint32_t seq=1, MissingNodeHandler missing_node_handler=DefaultMissingNodeHandler())</td></tr>
+<tr class="memitem:a06d4bf45dfe69918d8155187fc395fb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d4bf45dfe69918d8155187fc395fb4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SHAMap</b> (SHAMapType t, <a class="el" href="classripple_1_1_rad_map_1_1_basic_full_below_cache.html">FullBelowCache</a> &amp;fullBelowCache, <a class="el" href="classripple_1_1_tagged_cache.html">TreeNodeCache</a> &amp;treeNodeCache, std::uint32_t seq=1, MissingNodeHandler missing_node_handler=DefaultMissingNodeHandler())</td></tr>
 <tr class="separator:a06d4bf45dfe69918d8155187fc395fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bdceee26e9915097aa1b5c3f90604ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a8bdceee26e9915097aa1b5c3f90604ad">SHAMap</a> (<a class="el" href="namespaceripple.html#a5d9fe757c37a7602a883d30b14e1bf3c">SHAMapType</a> t, <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;hash, <a class="el" href="namespaceripple.html#a56425646d607792a762d96287c2a6e23">FullBelowCache</a> &amp;fullBelowCache, <a class="el" href="namespaceripple.html#aa5785839cd43b7ea0907a6b0cb750806">TreeNodeCache</a> &amp;treeNodeCache, MissingNodeHandler missing_node_handler=DefaultMissingNodeHandler())</td></tr>
+<tr class="memitem:a8bdceee26e9915097aa1b5c3f90604ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bdceee26e9915097aa1b5c3f90604ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SHAMap</b> (SHAMapType t, uint256 const &amp;hash, <a class="el" href="classripple_1_1_rad_map_1_1_basic_full_below_cache.html">FullBelowCache</a> &amp;fullBelowCache, <a class="el" href="classripple_1_1_tagged_cache.html">TreeNodeCache</a> &amp;treeNodeCache, MissingNodeHandler missing_node_handler=DefaultMissingNodeHandler())</td></tr>
 <tr class="separator:a8bdceee26e9915097aa1b5c3f90604ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d22ea893b23c0bca4369b62c46fd0e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a8d22ea893b23c0bca4369b62c46fd0e8">~SHAMap</a> ()</td></tr>
-<tr class="separator:a8d22ea893b23c0bca4369b62c46fd0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1642ae9b871d9031f7e55407f2a1d85"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ad1642ae9b871d9031f7e55407f2a1d85">size</a> () const noexcept</td></tr>
+<tr class="memitem:ad1642ae9b871d9031f7e55407f2a1d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1642ae9b871d9031f7e55407f2a1d85"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
 <tr class="separator:ad1642ae9b871d9031f7e55407f2a1d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc5e64ddb8f357f48630a3befa92f7b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map.html#a7039f3c0ebb23f7f129074a53f19832d">SHAMap::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#adc5e64ddb8f357f48630a3befa92f7b2">snapShot</a> (bool isMutable)</td></tr>
+<tr class="memitem:adc5e64ddb8f357f48630a3befa92f7b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc5e64ddb8f357f48630a3befa92f7b2"></a>
+SHAMap::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>snapShot</b> (bool isMutable)</td></tr>
 <tr class="separator:adc5e64ddb8f357f48630a3befa92f7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde5f30dc41bb7fa6da0b5e0ee37e03c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#abde5f30dc41bb7fa6da0b5e0ee37e03c">dropCache</a> ()</td></tr>
+<tr class="memitem:abde5f30dc41bb7fa6da0b5e0ee37e03c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abde5f30dc41bb7fa6da0b5e0ee37e03c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropCache</b> ()</td></tr>
 <tr class="separator:abde5f30dc41bb7fa6da0b5e0ee37e03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69277b2085232dc4bde1cd6eda4f0791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a69277b2085232dc4bde1cd6eda4f0791">setLedgerSeq</a> (std::uint32_t lseq)</td></tr>
+<tr class="memitem:a69277b2085232dc4bde1cd6eda4f0791"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69277b2085232dc4bde1cd6eda4f0791"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLedgerSeq</b> (std::uint32_t lseq)</td></tr>
 <tr class="separator:a69277b2085232dc4bde1cd6eda4f0791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12252e2b46137091e6a4e8bf88dc8be5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a12252e2b46137091e6a4e8bf88dc8be5">fetchRoot</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;hash, <a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *filter)</td></tr>
+<tr class="memitem:a12252e2b46137091e6a4e8bf88dc8be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12252e2b46137091e6a4e8bf88dc8be5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fetchRoot</b> (uint256 const &amp;hash, SHAMapSyncFilter *filter)</td></tr>
 <tr class="separator:a12252e2b46137091e6a4e8bf88dc8be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b8ec225cb205d648880a5dc36854e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a51b8ec225cb205d648880a5dc36854e3">hasItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;id)</td></tr>
+<tr class="memitem:a51b8ec225cb205d648880a5dc36854e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51b8ec225cb205d648880a5dc36854e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasItem</b> (uint256 const &amp;id)</td></tr>
 <tr class="separator:a51b8ec225cb205d648880a5dc36854e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34b4b3f4c26154a0ad8e63ada075f88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ad34b4b3f4c26154a0ad8e63ada075f88">delItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;id)</td></tr>
+<tr class="memitem:ad34b4b3f4c26154a0ad8e63ada075f88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad34b4b3f4c26154a0ad8e63ada075f88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>delItem</b> (uint256 const &amp;id)</td></tr>
 <tr class="separator:ad34b4b3f4c26154a0ad8e63ada075f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a680c64ea3a24815047908a6838e68452"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a680c64ea3a24815047908a6838e68452">addItem</a> (const <a class="el" href="classripple_1_1_s_h_a_map_item.html">SHAMapItem</a> &amp;i, bool isTransaction, bool hasMeta)</td></tr>
+<tr class="memitem:a680c64ea3a24815047908a6838e68452"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a680c64ea3a24815047908a6838e68452"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addItem</b> (const SHAMapItem &amp;i, bool isTransaction, bool hasMeta)</td></tr>
 <tr class="separator:a680c64ea3a24815047908a6838e68452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2210273f3f0f8fb068ad523d600b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#aae2210273f3f0f8fb068ad523d600b86">getHash</a> () const </td></tr>
+<tr class="memitem:aae2210273f3f0f8fb068ad523d600b86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae2210273f3f0f8fb068ad523d600b86"></a>
+uint256&#160;</td><td class="memItemRight" valign="bottom"><b>getHash</b> () const </td></tr>
 <tr class="separator:aae2210273f3f0f8fb068ad523d600b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7d91574b4d5a1e0b89dfd7ba0b0d8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a4a7d91574b4d5a1e0b89dfd7ba0b0d8a">updateGiveItem</a> (<a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>, bool isTransaction, bool hasMeta)</td></tr>
+<tr class="memitem:a4a7d91574b4d5a1e0b89dfd7ba0b0d8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a7d91574b4d5a1e0b89dfd7ba0b0d8a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateGiveItem</b> (SHAMapItem::ref, bool isTransaction, bool hasMeta)</td></tr>
 <tr class="separator:a4a7d91574b4d5a1e0b89dfd7ba0b0d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9719c25bdcaf5ed4fb5ab34d823218c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ad9719c25bdcaf5ed4fb5ab34d823218c">addGiveItem</a> (<a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>, bool isTransaction, bool hasMeta)</td></tr>
+<tr class="memitem:ad9719c25bdcaf5ed4fb5ab34d823218c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9719c25bdcaf5ed4fb5ab34d823218c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addGiveItem</b> (SHAMapItem::ref, bool isTransaction, bool hasMeta)</td></tr>
 <tr class="separator:ad9719c25bdcaf5ed4fb5ab34d823218c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a977b32bdbd82bd058279d67ec65a5427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a977b32bdbd82bd058279d67ec65a5427">peekItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;id)</td></tr>
+<tr class="memitem:a977b32bdbd82bd058279d67ec65a5427"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977b32bdbd82bd058279d67ec65a5427"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekItem</b> (uint256 const &amp;id)</td></tr>
 <tr class="separator:a977b32bdbd82bd058279d67ec65a5427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c829faf18ca86528479f097767bbf1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a0c829faf18ca86528479f097767bbf1c">peekItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;id, <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &amp;hash)</td></tr>
+<tr class="memitem:a0c829faf18ca86528479f097767bbf1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c829faf18ca86528479f097767bbf1c"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekItem</b> (uint256 const &amp;id, uint256 &amp;hash)</td></tr>
 <tr class="separator:a0c829faf18ca86528479f097767bbf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2df27931483ca58334cff9c88a2747c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#aa2df27931483ca58334cff9c88a2747c">peekItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;id, <a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#ad054cf6cdd57187d4b3ea8b72ed369e3">SHAMapTreeNode::TNType</a> &amp;type)</td></tr>
+<tr class="memitem:aa2df27931483ca58334cff9c88a2747c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2df27931483ca58334cff9c88a2747c"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekItem</b> (uint256 const &amp;id, SHAMapTreeNode::TNType &amp;type)</td></tr>
 <tr class="separator:aa2df27931483ca58334cff9c88a2747c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4283d156d24d9670355b526fcac785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#aed4283d156d24d9670355b526fcac785">peekFirstItem</a> ()</td></tr>
+<tr class="memitem:aed4283d156d24d9670355b526fcac785"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed4283d156d24d9670355b526fcac785"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekFirstItem</b> ()</td></tr>
 <tr class="separator:aed4283d156d24d9670355b526fcac785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc591acea85034c2441c84eb3acc831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#acdc591acea85034c2441c84eb3acc831">peekFirstItem</a> (<a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#ad054cf6cdd57187d4b3ea8b72ed369e3">SHAMapTreeNode::TNType</a> &amp;type)</td></tr>
+<tr class="memitem:acdc591acea85034c2441c84eb3acc831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdc591acea85034c2441c84eb3acc831"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekFirstItem</b> (SHAMapTreeNode::TNType &amp;type)</td></tr>
 <tr class="separator:acdc591acea85034c2441c84eb3acc831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d04896058bcf7a00b6ded90c0f33c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a52d04896058bcf7a00b6ded90c0f33c8">peekLastItem</a> ()</td></tr>
+<tr class="memitem:a52d04896058bcf7a00b6ded90c0f33c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52d04896058bcf7a00b6ded90c0f33c8"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekLastItem</b> ()</td></tr>
 <tr class="separator:a52d04896058bcf7a00b6ded90c0f33c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c6509d39084f7d0c9c6684e5942dc0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a3c6509d39084f7d0c9c6684e5942dc0c">peekNextItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;)</td></tr>
+<tr class="memitem:a3c6509d39084f7d0c9c6684e5942dc0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c6509d39084f7d0c9c6684e5942dc0c"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekNextItem</b> (uint256 const &amp;)</td></tr>
 <tr class="separator:a3c6509d39084f7d0c9c6684e5942dc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e71c6ef3c862c84eea8d7f54ee95af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a5e71c6ef3c862c84eea8d7f54ee95af0">peekNextItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;, <a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#ad054cf6cdd57187d4b3ea8b72ed369e3">SHAMapTreeNode::TNType</a> &amp;type)</td></tr>
+<tr class="memitem:a5e71c6ef3c862c84eea8d7f54ee95af0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e71c6ef3c862c84eea8d7f54ee95af0"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekNextItem</b> (uint256 const &amp;, SHAMapTreeNode::TNType &amp;type)</td></tr>
 <tr class="separator:a5e71c6ef3c862c84eea8d7f54ee95af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a697273f542f96234d66314000e63de33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a697273f542f96234d66314000e63de33">peekPrevItem</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;)</td></tr>
+<tr class="memitem:a697273f542f96234d66314000e63de33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a697273f542f96234d66314000e63de33"></a>
+SHAMapItem::pointer&#160;</td><td class="memItemRight" valign="bottom"><b>peekPrevItem</b> (uint256 const &amp;)</td></tr>
 <tr class="separator:a697273f542f96234d66314000e63de33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f58dde5427177592bc7e4feffbe623d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a1f58dde5427177592bc7e4feffbe623d">visitLeaves</a> (std::function&lt; void(<a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>)&gt;)</td></tr>
+<tr class="memitem:a1f58dde5427177592bc7e4feffbe623d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f58dde5427177592bc7e4feffbe623d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>visitLeaves</b> (std::function&lt; void(SHAMapItem::ref)&gt;)</td></tr>
 <tr class="separator:a1f58dde5427177592bc7e4feffbe623d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a098891d497bdc31fcca895b217207201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a098891d497bdc31fcca895b217207201">getMissingNodes</a> (std::vector&lt; <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> &gt; &amp;nodeIDs, std::vector&lt; <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &gt; &amp;hashes, int <a class="el" href="namespaceripple.html#a975c0f5f2493f00dbf15e444b085d785">max</a>, <a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *filter)</td></tr>
+<tr class="memitem:a098891d497bdc31fcca895b217207201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a098891d497bdc31fcca895b217207201">getMissingNodes</a> (std::vector&lt; SHAMapNodeID &gt; &amp;nodeIDs, std::vector&lt; uint256 &gt; &amp;hashes, int max, SHAMapSyncFilter *filter)</td></tr>
 <tr class="memdesc:a098891d497bdc31fcca895b217207201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of node IDs and hashes for nodes that are part of this <a class="el" href="classripple_1_1_s_h_a_map.html" title="A SHAMap is both a radix tree with a fan-out of 16 and a Merkle tree. ">SHAMap</a> but not available locally.  <a href="#a098891d497bdc31fcca895b217207201">More...</a><br/></td></tr>
 <tr class="separator:a098891d497bdc31fcca895b217207201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a811f0997c19fb406cd2f725c3d6106c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a811f0997c19fb406cd2f725c3d6106c8">getNodeFat</a> (<a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> node, std::vector&lt; <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> &gt; &amp;nodeIDs, std::list&lt; <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &gt; &amp;rawNode, bool fatRoot, bool fatLeaves)</td></tr>
+<tr class="memitem:a811f0997c19fb406cd2f725c3d6106c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a811f0997c19fb406cd2f725c3d6106c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeFat</b> (SHAMapNodeID node, std::vector&lt; SHAMapNodeID &gt; &amp;nodeIDs, std::list&lt; <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &gt; &amp;rawNode, bool fatRoot, bool fatLeaves)</td></tr>
 <tr class="separator:a811f0997c19fb406cd2f725c3d6106c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4461d201e9e511c8a647e94d43ca1b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ae4461d201e9e511c8a647e94d43ca1b0">getRootNode</a> (<a class="el" href="classripple_1_1_serializer.html">Serializer</a> &amp;s, <a class="el" href="namespaceripple.html#ac8683dfc227ea8c196fc4e4f2080e36d">SHANodeFormat</a> format)</td></tr>
+<tr class="memitem:ae4461d201e9e511c8a647e94d43ca1b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4461d201e9e511c8a647e94d43ca1b0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getRootNode</b> (Serializer &amp;s, SHANodeFormat format)</td></tr>
 <tr class="separator:ae4461d201e9e511c8a647e94d43ca1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a429e0c35495bd06580fb4d5456cef910"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a429e0c35495bd06580fb4d5456cef910">getNeededHashes</a> (int <a class="el" href="namespaceripple.html#a975c0f5f2493f00dbf15e444b085d785">max</a>, <a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *filter)</td></tr>
+<tr class="memitem:a429e0c35495bd06580fb4d5456cef910"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429e0c35495bd06580fb4d5456cef910"></a>
+std::vector&lt; uint256 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getNeededHashes</b> (int max, SHAMapSyncFilter *filter)</td></tr>
 <tr class="separator:a429e0c35495bd06580fb4d5456cef910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f32a28743da6b0f9754355ee934e69b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_add_node.html">SHAMapAddNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a4f32a28743da6b0f9754355ee934e69b">addRootNode</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;hash, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;rootNode, <a class="el" href="namespaceripple.html#ac8683dfc227ea8c196fc4e4f2080e36d">SHANodeFormat</a> format, <a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *filter)</td></tr>
+<tr class="memitem:a4f32a28743da6b0f9754355ee934e69b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f32a28743da6b0f9754355ee934e69b"></a>
+SHAMapAddNode&#160;</td><td class="memItemRight" valign="bottom"><b>addRootNode</b> (uint256 const &amp;hash, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;rootNode, SHANodeFormat format, SHAMapSyncFilter *filter)</td></tr>
 <tr class="separator:a4f32a28743da6b0f9754355ee934e69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ebd622ec06418ae6f1eea444619aaa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_add_node.html">SHAMapAddNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a4ebd622ec06418ae6f1eea444619aaa0">addRootNode</a> (<a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;rootNode, <a class="el" href="namespaceripple.html#ac8683dfc227ea8c196fc4e4f2080e36d">SHANodeFormat</a> format, <a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *filter)</td></tr>
+<tr class="memitem:a4ebd622ec06418ae6f1eea444619aaa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ebd622ec06418ae6f1eea444619aaa0"></a>
+SHAMapAddNode&#160;</td><td class="memItemRight" valign="bottom"><b>addRootNode</b> (<a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;rootNode, SHANodeFormat format, SHAMapSyncFilter *filter)</td></tr>
 <tr class="separator:a4ebd622ec06418ae6f1eea444619aaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289cb6e56d9a7b1552afe97cbb53e279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_s_h_a_map_add_node.html">SHAMapAddNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a289cb6e56d9a7b1552afe97cbb53e279">addKnownNode</a> (const <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> &amp;nodeID, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;rawNode, <a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *filter)</td></tr>
+<tr class="memitem:a289cb6e56d9a7b1552afe97cbb53e279"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a289cb6e56d9a7b1552afe97cbb53e279"></a>
+SHAMapAddNode&#160;</td><td class="memItemRight" valign="bottom"><b>addKnownNode</b> (const SHAMapNodeID &amp;nodeID, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;rawNode, SHAMapSyncFilter *filter)</td></tr>
 <tr class="separator:a289cb6e56d9a7b1552afe97cbb53e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c233c58f744565df9d65b6189e42741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a5c233c58f744565df9d65b6189e42741">setImmutable</a> ()</td></tr>
+<tr class="memitem:a5c233c58f744565df9d65b6189e42741"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c233c58f744565df9d65b6189e42741"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setImmutable</b> ()</td></tr>
 <tr class="separator:a5c233c58f744565df9d65b6189e42741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a050a4f2f37af8082474d6f9c9555d59b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a050a4f2f37af8082474d6f9c9555d59b">isSynching</a> () const </td></tr>
+<tr class="memitem:a050a4f2f37af8082474d6f9c9555d59b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a050a4f2f37af8082474d6f9c9555d59b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSynching</b> () const </td></tr>
 <tr class="separator:a050a4f2f37af8082474d6f9c9555d59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac947f8afc3f3327f2ccef35be5e6f419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ac947f8afc3f3327f2ccef35be5e6f419">setSynching</a> ()</td></tr>
+<tr class="memitem:ac947f8afc3f3327f2ccef35be5e6f419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac947f8afc3f3327f2ccef35be5e6f419"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSynching</b> ()</td></tr>
 <tr class="separator:ac947f8afc3f3327f2ccef35be5e6f419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae13bc823d7e3cbdc4d784a04f29edb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a5ae13bc823d7e3cbdc4d784a04f29edb">clearSynching</a> ()</td></tr>
+<tr class="memitem:a5ae13bc823d7e3cbdc4d784a04f29edb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ae13bc823d7e3cbdc4d784a04f29edb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearSynching</b> ()</td></tr>
 <tr class="separator:a5ae13bc823d7e3cbdc4d784a04f29edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d1bab486832fddccf954786f5c6079"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a86d1bab486832fddccf954786f5c6079">isValid</a> ()</td></tr>
+<tr class="memitem:a86d1bab486832fddccf954786f5c6079"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86d1bab486832fddccf954786f5c6079"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
 <tr class="separator:a86d1bab486832fddccf954786f5c6079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cd1aaf5c9f4ca5d306dfa918386bd0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a7cd1aaf5c9f4ca5d306dfa918386bd0e">compare</a> (<a class="el" href="classripple_1_1_s_h_a_map.html#a977e8aaca1e0733530d747ba89d139e0">SHAMap::ref</a> otherMap, <a class="el" href="classripple_1_1_s_h_a_map.html#af180bca329ba4a8011dd02313d3f98d9">Delta</a> &amp;differences, int maxCount)</td></tr>
+<tr class="memitem:a7cd1aaf5c9f4ca5d306dfa918386bd0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cd1aaf5c9f4ca5d306dfa918386bd0e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (SHAMap::ref otherMap, Delta &amp;differences, int maxCount)</td></tr>
 <tr class="separator:a7cd1aaf5c9f4ca5d306dfa918386bd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5224c39837f35fb4cd3d8afd0364e07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ab5224c39837f35fb4cd3d8afd0364e07">armDirty</a> ()</td></tr>
-<tr class="memdesc:ab5224c39837f35fb4cd3d8afd0364e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin saving dirty nodes to be written later.  <a href="#ab5224c39837f35fb4cd3d8afd0364e07">More...</a><br/></td></tr>
+<tr class="memitem:ab5224c39837f35fb4cd3d8afd0364e07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5224c39837f35fb4cd3d8afd0364e07"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ab5224c39837f35fb4cd3d8afd0364e07">armDirty</a> ()</td></tr>
+<tr class="memdesc:ab5224c39837f35fb4cd3d8afd0364e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin saving dirty nodes to be written later. <br/></td></tr>
 <tr class="separator:ab5224c39837f35fb4cd3d8afd0364e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2a18d48cb2dcc668515294ac131823"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a8c2a18d48cb2dcc668515294ac131823">flushDirty</a> (<a class="el" href="classripple_1_1_s_h_a_map.html#aec22abeca78398c0f7b59f6be405f86a">DirtySet</a> &amp;dirtySet, int maxNodes, <a class="el" href="namespaceripple.html#ad80549ab348d15a7256fe4182bed139f">NodeObjectType</a> t, std::uint32_t seq)</td></tr>
-<tr class="memdesc:a8c2a18d48cb2dcc668515294ac131823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write all modified nodes to the node store.  <a href="#a8c2a18d48cb2dcc668515294ac131823">More...</a><br/></td></tr>
+<tr class="memitem:a8c2a18d48cb2dcc668515294ac131823"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c2a18d48cb2dcc668515294ac131823"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a8c2a18d48cb2dcc668515294ac131823">flushDirty</a> (DirtySet &amp;dirtySet, int maxNodes, <a class="el" href="namespaceripple.html#ad80549ab348d15a7256fe4182bed139f">NodeObjectType</a> t, std::uint32_t seq)</td></tr>
+<tr class="memdesc:a8c2a18d48cb2dcc668515294ac131823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write all modified nodes to the node store. <br/></td></tr>
 <tr class="separator:a8c2a18d48cb2dcc668515294ac131823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39de0b916ed57a22ba9b1fc4fa99638f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classripple_1_1_s_h_a_map.html#aec22abeca78398c0f7b59f6be405f86a">DirtySet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a39de0b916ed57a22ba9b1fc4fa99638f">disarmDirty</a> ()</td></tr>
-<tr class="memdesc:a39de0b916ed57a22ba9b1fc4fa99638f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop saving dirty nodes.  <a href="#a39de0b916ed57a22ba9b1fc4fa99638f">More...</a><br/></td></tr>
+<tr class="memitem:a39de0b916ed57a22ba9b1fc4fa99638f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39de0b916ed57a22ba9b1fc4fa99638f"></a>
+std::shared_ptr&lt; DirtySet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a39de0b916ed57a22ba9b1fc4fa99638f">disarmDirty</a> ()</td></tr>
+<tr class="memdesc:a39de0b916ed57a22ba9b1fc4fa99638f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop saving dirty nodes. <br/></td></tr>
 <tr class="separator:a39de0b916ed57a22ba9b1fc4fa99638f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd77cb2fcd1df225cfec07fb8b606551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#afd77cb2fcd1df225cfec07fb8b606551">walkMap</a> (std::vector&lt; <a class="el" href="classripple_1_1_s_h_a_map_missing_node.html">SHAMapMissingNode</a> &gt; &amp;missingNodes, int maxMissing)</td></tr>
+<tr class="memitem:afd77cb2fcd1df225cfec07fb8b606551"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd77cb2fcd1df225cfec07fb8b606551"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>walkMap</b> (std::vector&lt; SHAMapMissingNode &gt; &amp;missingNodes, int maxMissing)</td></tr>
 <tr class="separator:afd77cb2fcd1df225cfec07fb8b606551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f55321e12299c56e80486e17d8cf91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a64f55321e12299c56e80486e17d8cf91">deepCompare</a> (<a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &amp;other)</td></tr>
+<tr class="memitem:a64f55321e12299c56e80486e17d8cf91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64f55321e12299c56e80486e17d8cf91"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deepCompare</b> (<a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &amp;other)</td></tr>
 <tr class="separator:a64f55321e12299c56e80486e17d8cf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e6accfcc68cecb4c327d7eafab32d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a5e6accfcc68cecb4c327d7eafab32d05">getFetchPack</a> (<a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> *have, bool includeLeaves, int <a class="el" href="namespaceripple.html#a975c0f5f2493f00dbf15e444b085d785">max</a>, std::function&lt; void(const <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &amp;, const <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &amp;)&gt;)</td></tr>
+<tr class="memitem:a5e6accfcc68cecb4c327d7eafab32d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a5e6accfcc68cecb4c327d7eafab32d05">getFetchPack</a> (<a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> *have, bool includeLeaves, int max, std::function&lt; void(const uint256 &amp;, const <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &amp;)&gt;)</td></tr>
 <tr class="separator:a5e6accfcc68cecb4c327d7eafab32d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a883220187f5b6306abf74fe3aa07f355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#a883220187f5b6306abf74fe3aa07f355">setTXMap</a> ()</td></tr>
+<tr class="memitem:a883220187f5b6306abf74fe3aa07f355"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a883220187f5b6306abf74fe3aa07f355"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTXMap</b> ()</td></tr>
 <tr class="separator:a883220187f5b6306abf74fe3aa07f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab32a6d03ba2de930bfb7bf65732c05b1"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_s_h_a_map.html#ab32a6d03ba2de930bfb7bf65732c05b1">getCountedObjectName</a> ()</td></tr>
+<tr class="memitem:ab32a6d03ba2de930bfb7bf65732c05b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab32a6d03ba2de930bfb7bf65732c05b1"></a>
+static char const *&#160;</td><td class="memItemRight" valign="bottom"><b>getCountedObjectName</b> ()</td></tr>
 <tr class="separator:ab32a6d03ba2de930bfb7bf65732c05b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -254,727 +306,7 @@ Static Public Member Functions</h2></td></tr>
 <p>A Merkle tree is a tree where each non-leaf node is labelled with the hash of the combined labels of its children nodes.</p>
 <p>A key property of a Merkle tree is that testing for node inclusion is O(log(N)) where N is the number of nodes in the tree.</p>
 <p>See <a href="https://en.wikipedia.org/wiki/Merkle_tree">https://en.wikipedia.org/wiki/Merkle_tree</a> </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a7039f3c0ebb23f7f129074a53f19832d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#a7039f3c0ebb23f7f129074a53f19832d">ripple::SHAMap::pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a977e8aaca1e0733530d747ba89d139e0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef const std::shared_ptr&lt;<a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a>&gt;&amp; <a class="el" href="classripple_1_1_s_h_a_map.html#a977e8aaca1e0733530d747ba89d139e0">ripple::SHAMap::ref</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a79773b1678fb448236044103e79bd2f5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::pair&lt;<a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>, <a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#a79773b1678fb448236044103e79bd2f5">ripple::SHAMap::DeltaItem</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a49122d22dd61c7f7346ee3d9cf9446de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::pair&lt;<a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>, <a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#a49122d22dd61c7f7346ee3d9cf9446de">ripple::SHAMap::DeltaRef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af180bca329ba4a8011dd02313d3f98d9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a>, <a class="el" href="classripple_1_1_s_h_a_map.html#a79773b1678fb448236044103e79bd2f5">DeltaItem</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#af180bca329ba4a8011dd02313d3f98d9">ripple::SHAMap::Delta</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4828426ce0a98167f1ec5201d9a0e638"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="namespaceripple.html#a264a4ea9f4b2c583f442b89379832e85">hash_map</a>&lt;<a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a>, <a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#a854181c4a4e2d589b5c98432ea920c15">SHAMapTreeNode::pointer</a>, <a class="el" href="classripple_1_1_s_h_a_map_node__hash.html">SHAMapNode_hash</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#a4828426ce0a98167f1ec5201d9a0e638">ripple::SHAMap::NodeMap</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aec22abeca78398c0f7b59f6be405f86a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="namespaceripple.html#af6706a6ca37a4295262cd18f8cb619e2">hash_set</a>&lt;<a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a>, <a class="el" href="classripple_1_1_s_h_a_map_node__hash.html">SHAMapNode_hash</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#aec22abeca78398c0f7b59f6be405f86a">ripple::SHAMap::DirtySet</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9a56e75872d347c4b2ac3b3720bcc1ff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::shared_mutex <a class="el" href="classripple_1_1_s_h_a_map.html#a9a56e75872d347c4b2ac3b3720bcc1ff">ripple::SHAMap::LockType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a15f9e95fe1a82c5a9d6874bd43c47ddd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::shared_lock&lt;<a class="el" href="classripple_1_1_s_h_a_map.html#a9a56e75872d347c4b2ac3b3720bcc1ff">LockType</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#a15f9e95fe1a82c5a9d6874bd43c47ddd">ripple::SHAMap::ScopedReadLockType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9af9a5bd23cc0973ddc2a0d59df1fe1b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::unique_lock&lt;<a class="el" href="classripple_1_1_s_h_a_map.html#a9a56e75872d347c4b2ac3b3720bcc1ff">LockType</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#a9af9a5bd23cc0973ddc2a0d59df1fe1b">ripple::SHAMap::ScopedWriteLockType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab41a0f674ea87d4eb29bcade139ed2ac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::pair&lt;<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a>, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a>&gt; <a class="el" href="classripple_1_1_s_h_a_map.html#ab41a0f674ea87d4eb29bcade139ed2ac">ripple::SHAMap::fetchPackEntry_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ab62b3d790cc1fd759726c37d8dcacff5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab62b3d790cc1fd759726c37d8dcacff5a163727987612d91a0b87f3fbadf7ed24"></a>STATE_MAP_BUCKETS</em>&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a06d4bf45dfe69918d8155187fc395fb4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::SHAMap::SHAMap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a5d9fe757c37a7602a883d30b14e1bf3c">SHAMapType</a>&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a56425646d607792a762d96287c2a6e23">FullBelowCache</a> &amp;&#160;</td>
-          <td class="paramname"><em>fullBelowCache</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#aa5785839cd43b7ea0907a6b0cb750806">TreeNodeCache</a> &amp;&#160;</td>
-          <td class="paramname"><em>treeNodeCache</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::uint32_t&#160;</td>
-          <td class="paramname"><em>seq</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MissingNodeHandler&#160;</td>
-          <td class="paramname"><em>missing_node_handler</em> = <code>DefaultMissingNodeHandler()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8bdceee26e9915097aa1b5c3f90604ad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::SHAMap::SHAMap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a5d9fe757c37a7602a883d30b14e1bf3c">SHAMapType</a>&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a56425646d607792a762d96287c2a6e23">FullBelowCache</a> &amp;&#160;</td>
-          <td class="paramname"><em>fullBelowCache</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#aa5785839cd43b7ea0907a6b0cb750806">TreeNodeCache</a> &amp;&#160;</td>
-          <td class="paramname"><em>treeNodeCache</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MissingNodeHandler&#160;</td>
-          <td class="paramname"><em>missing_node_handler</em> = <code>DefaultMissingNodeHandler()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8d22ea893b23c0bca4369b62c46fd0e8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::SHAMap::~SHAMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab32a6d03ba2de930bfb7bf65732c05b1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static char const* ripple::SHAMap::getCountedObjectName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad1642ae9b871d9031f7e55407f2a1d85"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t ripple::SHAMap::size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="adc5e64ddb8f357f48630a3befa92f7b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map.html#a7039f3c0ebb23f7f129074a53f19832d">SHAMap::pointer</a> ripple::SHAMap::snapShot </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isMutable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abde5f30dc41bb7fa6da0b5e0ee37e03c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::dropCache </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a69277b2085232dc4bde1cd6eda4f0791"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::setLedgerSeq </td>
-          <td>(</td>
-          <td class="paramtype">std::uint32_t&#160;</td>
-          <td class="paramname"><em>lseq</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a12252e2b46137091e6a4e8bf88dc8be5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::fetchRoot </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a51b8ec225cb205d648880a5dc36854e3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::hasItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad34b4b3f4c26154a0ad8e63ada075f88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::delItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a680c64ea3a24815047908a6838e68452"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::addItem </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classripple_1_1_s_h_a_map_item.html">SHAMapItem</a> &amp;&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isTransaction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>hasMeta</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aae2210273f3f0f8fb068ad523d600b86"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> ripple::SHAMap::getHash </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4a7d91574b4d5a1e0b89dfd7ba0b0d8a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::updateGiveItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>&#160;</td>
-          <td class="paramname"><em>item</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isTransaction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>hasMeta</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad9719c25bdcaf5ed4fb5ab34d823218c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::addGiveItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>&#160;</td>
-          <td class="paramname"><em>item</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isTransaction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>hasMeta</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a977b32bdbd82bd058279d67ec65a5427"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0c829faf18ca86528479f097767bbf1c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa2df27931483ca58334cff9c88a2747c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#ad054cf6cdd57187d4b3ea8b72ed369e3">SHAMapTreeNode::TNType</a> &amp;&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aed4283d156d24d9670355b526fcac785"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekFirstItem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acdc591acea85034c2441c84eb3acc831"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekFirstItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#ad054cf6cdd57187d4b3ea8b72ed369e3">SHAMapTreeNode::TNType</a> &amp;&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a52d04896058bcf7a00b6ded90c0f33c8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekLastItem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3c6509d39084f7d0c9c6684e5942dc0c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekNextItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5e71c6ef3c862c84eea8d7f54ee95af0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekNextItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_tree_node.html#ad054cf6cdd57187d4b3ea8b72ed369e3">SHAMapTreeNode::TNType</a> &amp;&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a697273f542f96234d66314000e63de33"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_item.html#a56714f67582c330d736ec92bd3b5fa6b">SHAMapItem::pointer</a> ripple::SHAMap::peekPrevItem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1f58dde5427177592bc7e4feffbe623d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::visitLeaves </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classripple_1_1_s_h_a_map_item.html#ad79f26d02946b889d49c87ef31745014">SHAMapItem::ref</a>)&gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a098891d497bdc31fcca895b217207201"></a>
 <div class="memitem">
 <div class="memproto">
@@ -982,13 +314,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ripple::SHAMap::getMissingNodes </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; SHAMapNodeID &gt; &amp;&#160;</td>
           <td class="paramname"><em>nodeIDs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; uint256 &gt; &amp;&#160;</td>
           <td class="paramname"><em>hashes</em>, </td>
         </tr>
         <tr>
@@ -1000,7 +332,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *&#160;</td>
+          <td class="paramtype">SHAMapSyncFilter *&#160;</td>
           <td class="paramname"><em>filter</em>&#160;</td>
         </tr>
         <tr>
@@ -1013,467 +345,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get a list of node IDs and hashes for nodes that are part of this <a class="el" href="classripple_1_1_s_h_a_map.html" title="A SHAMap is both a radix tree with a fan-out of 16 and a Merkle tree. ">SHAMap</a> but not available locally. </p>
 <p>The filter can hold alternate sources of nodes that are not permanently stored locally </p>
-
-</div>
-</div>
-<a class="anchor" id="a811f0997c19fb406cd2f725c3d6106c8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::getNodeFat </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a>&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>nodeIDs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::list&lt; <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rawNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fatRoot</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fatLeaves</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae4461d201e9e511c8a647e94d43ca1b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::getRootNode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#ac8683dfc227ea8c196fc4e4f2080e36d">SHANodeFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a429e0c35495bd06580fb4d5456cef910"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &gt; ripple::SHAMap::getNeededHashes </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4f32a28743da6b0f9754355ee934e69b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_add_node.html">SHAMapAddNode</a> ripple::SHAMap::addRootNode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rootNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#ac8683dfc227ea8c196fc4e4f2080e36d">SHANodeFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4ebd622ec06418ae6f1eea444619aaa0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_add_node.html">SHAMapAddNode</a> ripple::SHAMap::addRootNode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rootNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#ac8683dfc227ea8c196fc4e4f2080e36d">SHANodeFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a289cb6e56d9a7b1552afe97cbb53e279"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_s_h_a_map_add_node.html">SHAMapAddNode</a> ripple::SHAMap::addKnownNode </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classripple_1_1_s_h_a_map_node_i_d.html">SHAMapNodeID</a> &amp;&#160;</td>
-          <td class="paramname"><em>nodeID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rawNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map_sync_filter.html">SHAMapSyncFilter</a> *&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5c233c58f744565df9d65b6189e42741"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::setImmutable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a050a4f2f37af8082474d6f9c9555d59b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::isSynching </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac947f8afc3f3327f2ccef35be5e6f419"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::setSynching </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5ae13bc823d7e3cbdc4d784a04f29edb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::clearSynching </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a86d1bab486832fddccf954786f5c6079"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::isValid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7cd1aaf5c9f4ca5d306dfa918386bd0e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::compare </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map.html#a977e8aaca1e0733530d747ba89d139e0">SHAMap::ref</a>&#160;</td>
-          <td class="paramname"><em>otherMap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map.html#af180bca329ba4a8011dd02313d3f98d9">Delta</a> &amp;&#160;</td>
-          <td class="paramname"><em>differences</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxCount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab5224c39837f35fb4cd3d8afd0364e07"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ripple::SHAMap::armDirty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Begin saving dirty nodes to be written later. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8c2a18d48cb2dcc668515294ac131823"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ripple::SHAMap::flushDirty </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map.html#aec22abeca78398c0f7b59f6be405f86a">DirtySet</a> &amp;&#160;</td>
-          <td class="paramname"><em>dirtySet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxNodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#ad80549ab348d15a7256fe4182bed139f">NodeObjectType</a>&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::uint32_t&#160;</td>
-          <td class="paramname"><em>seq</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write all modified nodes to the node store. </p>
-
-</div>
-</div>
-<a class="anchor" id="a39de0b916ed57a22ba9b1fc4fa99638f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classripple_1_1_s_h_a_map.html#aec22abeca78398c0f7b59f6be405f86a">SHAMap::DirtySet</a> &gt; ripple::SHAMap::disarmDirty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stop saving dirty nodes. </p>
-
-</div>
-</div>
-<a class="anchor" id="afd77cb2fcd1df225cfec07fb8b606551"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::walkMap </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classripple_1_1_s_h_a_map_missing_node.html">SHAMapMissingNode</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>missingNodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxMissing</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a64f55321e12299c56e80486e17d8cf91"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::SHAMap::deepCompare </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_s_h_a_map.html">SHAMap</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1502,7 +373,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> &amp;, const <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(const uint256 &amp;, const <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
@@ -1522,29 +393,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Note: a caller should set includeLeaves to false for transaction trees. There's no point in including the leaves of transaction trees. </p>
-
-</div>
-</div>
-<a class="anchor" id="a883220187f5b6306abf74fe3aa07f355"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::SHAMap::setTXMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

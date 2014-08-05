@@ -1,5 +1,0 @@
-<map id="ripple::NodeStore::Backend" name="ripple::NodeStore::Backend">
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_memory_backend.html" title="ripple::NodeStore::\lMemoryBackend" alt="" coords="192,5,323,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_node_store_1_1_null_backend.html" title="ripple::NodeStore::\lNullBackend" alt="" coords="192,70,323,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_sqlite_backend.html" title="ripple::SqliteBackend" alt="" coords="185,136,330,163"/>
-</map>

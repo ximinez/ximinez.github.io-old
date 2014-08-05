@@ -1,6 +1,0 @@
-<map id="ripple::NodeStore::TestBase" name="ripple::NodeStore::TestBase">
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_backend__test.html" title="ripple::NodeStore::\lBackend_test" alt="" coords="204,5,335,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_node_store_1_1_node_store_basic__test.html" title="ripple::NodeStore::\lNodeStoreBasic_test" alt="" coords="196,70,343,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_node_store_1_1_node_store_database__test.html" title="ripple::NodeStore::\lNodeStoreDatabase_test" alt="" coords="185,135,354,177"/>
-<area shape="rect" id="node5" href="$classripple_1_1_node_store_1_1_node_store_timing__test.html" title="ripple::NodeStore::\lNodeStoreTiming_test" alt="" coords="193,201,345,242"/>
-</map>

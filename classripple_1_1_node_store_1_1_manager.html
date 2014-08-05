@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_manager.html">Manager</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>NodeStore</b></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_manager.html">Manager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,64 +97,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Singleton for managing <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> factories and back ends.  
+<p>Singleton for managing NodeStore factories and back ends.  
  <a href="classripple_1_1_node_store_1_1_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;Manager.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::NodeStore::Manager:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_node_store_1_1_manager__inherit__graph.png" border="0" usemap="#ripple_1_1_node_store_1_1_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_node_store_1_1_manager_inherit__map" id="ripple_1_1_node_store_1_1_manager_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_node_store_1_1_manager_imp.html" title="ripple::NodeStore::\lManagerImp" alt="" coords="4,97,133,138"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by ripple::NodeStore::ManagerImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa6ca638a1d582553798520a5a783dd83"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#aa6ca638a1d582553798520a5a783dd83">~Manager</a> ()=0</td></tr>
-<tr class="separator:aa6ca638a1d582553798520a5a783dd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210b05b4030bc0bed378e25b7b98088d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#a210b05b4030bc0bed378e25b7b98088d">add_factory</a> (std::unique_ptr&lt; <a class="el" href="classripple_1_1_node_store_1_1_factory.html">Factory</a> &gt; factory)=0</td></tr>
 <tr class="memdesc:a210b05b4030bc0bed378e25b7b98088d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the specified factory to the manager.  <a href="#a210b05b4030bc0bed378e25b7b98088d">More...</a><br/></td></tr>
 <tr class="separator:a210b05b4030bc0bed378e25b7b98088d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a5a0a60d6bf17a1c5eeb8ef4e70ee1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1_node_store_1_1_factory.html">Factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#a41a5a0a60d6bf17a1c5eeb8ef4e70ee1">find</a> (std::string const &amp;name) const =0</td></tr>
 <tr class="memdesc:a41a5a0a60d6bf17a1c5eeb8ef4e70ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the matching factory if it exists.  <a href="#a41a5a0a60d6bf17a1c5eeb8ef4e70ee1">More...</a><br/></td></tr>
 <tr class="separator:a41a5a0a60d6bf17a1c5eeb8ef4e70ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd944045b131868d025d28c96ea8b84"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classripple_1_1_node_store_1_1_backend.html">Backend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#afcd944045b131868d025d28c96ea8b84">make_Backend</a> (<a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a> const &amp;parameters, <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html">Scheduler</a> &amp;scheduler, beast::Journal journal)=0</td></tr>
+<tr class="memitem:afcd944045b131868d025d28c96ea8b84"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classripple_1_1_node_store_1_1_backend.html">Backend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#afcd944045b131868d025d28c96ea8b84">make_Backend</a> (Parameters const &amp;parameters, <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html">Scheduler</a> &amp;scheduler, beast::Journal journal)=0</td></tr>
 <tr class="memdesc:afcd944045b131868d025d28c96ea8b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a backend.  <a href="#afcd944045b131868d025d28c96ea8b84">More...</a><br/></td></tr>
 <tr class="separator:afcd944045b131868d025d28c96ea8b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad52c36f60bfdd5465e84532254570aa2"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classripple_1_1_node_store_1_1_database.html">Database</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#ad52c36f60bfdd5465e84532254570aa2">make_Database</a> (std::string const &amp;name, <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html">Scheduler</a> &amp;scheduler, beast::Journal journal, int readThreads, <a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a> const &amp;backendParameters, <a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a> fastBackendParameters=<a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a>())=0</td></tr>
-<tr class="memdesc:ad52c36f60bfdd5465e84532254570aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> database.  <a href="#ad52c36f60bfdd5465e84532254570aa2">More...</a><br/></td></tr>
+<tr class="memitem:ad52c36f60bfdd5465e84532254570aa2"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classripple_1_1_node_store_1_1_database.html">Database</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_manager.html#ad52c36f60bfdd5465e84532254570aa2">make_Database</a> (std::string const &amp;name, <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html">Scheduler</a> &amp;scheduler, beast::Journal journal, int readThreads, Parameters const &amp;backendParameters, Parameters fastBackendParameters=Parameters())=0</td></tr>
+<tr class="memdesc:ad52c36f60bfdd5465e84532254570aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a NodeStore database.  <a href="#ad52c36f60bfdd5465e84532254570aa2">More...</a><br/></td></tr>
 <tr class="separator:ad52c36f60bfdd5465e84532254570aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Singleton for managing <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> factories and back ends. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa6ca638a1d582553798520a5a783dd83"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::NodeStore::Manager::~Manager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Singleton for managing NodeStore factories and back ends. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a210b05b4030bc0bed378e25b7b98088d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,8 +146,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Add the specified factory to the manager. </p>
 <p>Thread safety: Not thread-safe. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_manager_imp.html#a06a220893ec5880e8c8890d3e466d1a8">ripple::NodeStore::ManagerImp</a>.</p>
 
 </div>
 </div>
@@ -214,8 +180,6 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if a match was not found. </dd></dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_manager_imp.html#a7a7ce81490258c2be67ce3429162aeb7">ripple::NodeStore::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="afcd944045b131868d025d28c96ea8b84"></a>
@@ -228,7 +192,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classripple_1_1_node_store_1_1_backend.html">Backend</a>&gt; ripple::NodeStore::Manager::make_Backend </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a> const &amp;&#160;</td>
+          <td class="paramtype">Parameters const &amp;&#160;</td>
           <td class="paramname"><em>parameters</em>, </td>
         </tr>
         <tr>
@@ -257,8 +221,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a backend. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_manager_imp.html#ab1f491ae4fde78635a7a834ebfc039a5">ripple::NodeStore::ManagerImp</a>.</p>
 
 </div>
 </div>
@@ -296,14 +258,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a> const &amp;&#160;</td>
+          <td class="paramtype">Parameters const &amp;&#160;</td>
           <td class="paramname"><em>backendParameters</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a>&#160;</td>
-          <td class="paramname"><em>fastBackendParameters</em> = <code><a class="el" href="namespaceripple_1_1_node_store.html#a7ed3c7d1da592f6cbf81b36ca7ee35df">Parameters</a>()</code>&#160;</td>
+          <td class="paramtype">Parameters&#160;</td>
+          <td class="paramname"><em>fastBackendParameters</em> = <code>Parameters()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -318,7 +280,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> database. </p>
+<p>Construct a NodeStore database. </p>
 <p>The parameters are key value pairs passed to the backend. The 'type' key must exist, it defines the choice of backend. Most backends also require a 'path' field.</p>
 <p>Some choices for 'type' are: HyperLevelDB, LevelDBFactory, SQLite, MDB</p>
 <p>If the fastBackendParameter is omitted or empty, no ephemeral database is used. If the scheduler parameter is omited or unspecified, a synchronous scheduler is used which performs all tasks immediately on the caller's thread.</p>
@@ -334,8 +296,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The opened database. </dd></dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_manager_imp.html#ae631cc5751368985945f77ef02a14f6a">ripple::NodeStore::ManagerImp</a>.</p>
 
 </div>
 </div>

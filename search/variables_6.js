@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gmaxhttpheadersize',['gMaxHTTPHeaderSize',['../namespaceripple.html#ae23b76e774ab43ced6e79d43b7896c1c',1,'ripple']]],
-  ['goldenratio',['goldenRatio',['../classripple_1_1_hash_maps.html#a2fd4ad4d207e5cb90109b6377752bdcc',1,'ripple::HashMaps']]]
+  ['maxpeers',['maxPeers',['../structripple_1_1_peer_finder_1_1_config.html#abba35b1a687d5a8b95781659d6c898a0',1,'ripple::PeerFinder::Config']]]
 ];

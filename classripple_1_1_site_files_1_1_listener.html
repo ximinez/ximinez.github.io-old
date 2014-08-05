@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_site_files.html">SiteFiles</a></li><li class="navelem"><a class="el" href="classripple_1_1_site_files_1_1_listener.html">Listener</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>SiteFiles</b></li><li class="navelem"><a class="el" href="classripple_1_1_site_files_1_1_listener.html">Listener</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,28 +97,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespaceripple_1_1_site_files.html">SiteFiles</a> listeners receive notifications on new files and sections.  
+<p>SiteFiles listeners receive notifications on new files and sections.  
  <a href="classripple_1_1_site_files_1_1_listener.html#details">More...</a></p>
 
 <p><code>#include &lt;Listener.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::SiteFiles::Listener:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_site_files_1_1_listener__inherit__graph.png" border="0" usemap="#ripple_1_1_site_files_1_1_listener_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_site_files_1_1_listener_inherit__map" id="ripple_1_1_site_files_1_1_listener_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_peer_finder_1_1_manager_imp.html" title="ripple::PeerFinder\l::ManagerImp" alt="" coords="5,97,128,138"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by ripple::PeerFinder::ManagerImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af93ee32be41b6f8e7972868010b6f491"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_site_files_1_1_listener.html#af93ee32be41b6f8e7972868010b6f491">onSiteFileFetch</a> (std::string const &amp;name, <a class="el" href="classripple_1_1_site_files_1_1_site_file.html">SiteFile</a> const &amp;siteFile)=0</td></tr>
+<tr class="memitem:af93ee32be41b6f8e7972868010b6f491"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_site_files_1_1_listener.html#af93ee32be41b6f8e7972868010b6f491">onSiteFileFetch</a> (std::string const &amp;name, SiteFile const &amp;siteFile)=0</td></tr>
 <tr class="memdesc:af93ee32be41b6f8e7972868010b6f491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every time a new site file is retrieved.  <a href="#af93ee32be41b6f8e7972868010b6f491">More...</a><br/></td></tr>
 <tr class="separator:af93ee32be41b6f8e7972868010b6f491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespaceripple_1_1_site_files.html">SiteFiles</a> listeners receive notifications on new files and sections. </p>
+<div class="textblock"><p>SiteFiles listeners receive notifications on new files and sections. </p>
 <p>Calls are made on an implementation-defined, unspecified thread. Subclasses implementations should not perform blocking i/o or take a long time. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af93ee32be41b6f8e7972868010b6f491"></a>
@@ -136,7 +130,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_site_files_1_1_site_file.html">SiteFile</a> const &amp;&#160;</td>
+          <td class="paramtype">SiteFile const &amp;&#160;</td>
           <td class="paramname"><em>siteFile</em>&#160;</td>
         </tr>
         <tr>
@@ -153,9 +147,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called every time a new site file is retrieved. </p>
-<p>Notifications for <a class="el" href="structripple_1_1_site_files_1_1_site.html">Site</a> files retrieved before a listener was added will be sent at the time the listener is added. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#a3eabdb58fbb3af24cc0e6ed02ba3df58">ripple::PeerFinder::ManagerImp</a>.</p>
+<p>Notifications for Site files retrieved before a listener was added will be sent at the time the listener is added. </p>
 
 </div>
 </div>

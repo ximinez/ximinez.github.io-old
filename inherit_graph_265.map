@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classripple_1_1_s_h_a_map_node__hash.html" title="ripple::SHAMapNode_hash" alt="" coords="6,5,186,32"/>
+<area shape="rect" id="node1" href="$classripple_1_1_validators_1_1_store.html" title="Abstract persistence for Validators data. " alt="" coords="6,5,125,46"/>
+<area shape="rect" id="node2" href="$classripple_1_1_validators_1_1_store_sqdb.html" title="Database persistence for Validators using SQLite. " alt="" coords="174,5,293,46"/>
 </map>

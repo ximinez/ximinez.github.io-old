@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -101,198 +102,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_json_1_1_value_allocator.html#details">More...</a></p>
 
 <p><code>#include &lt;json_value.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Json::ValueAllocator:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_json_1_1_value_allocator__inherit__graph.png" border="0" usemap="#_json_1_1_value_allocator_inherit__map" alt="Inheritance graph"/></div>
-<map name="_json_1_1_value_allocator_inherit__map" id="_json_1_1_value_allocator_inherit__map">
-<area shape="rect" id="node2" href="class_json_1_1_default_value_allocator.html" title="Json::DefaultValueAllocator" alt="" coords="5,80,189,107"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by Json::DefaultValueAllocator.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af0288f8845def7740be1af23e61ceea2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_json_1_1_value_allocator.html#af0288f8845def7740be1af23e61ceea2a44ee3be5d5610907974eb88656bc22fd">unknown</a> = (unsigned) - 1
+<tr class="memitem:af0288f8845def7740be1af23e61ceea2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>unknown</b> = (unsigned) - 1
  }</td></tr>
 <tr class="separator:af0288f8845def7740be1af23e61ceea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3c31c9a2de499fffad6711672d686b7c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_1_1_value_allocator.html#a3c31c9a2de499fffad6711672d686b7c">~ValueAllocator</a> ()</td></tr>
-<tr class="separator:a3c31c9a2de499fffad6711672d686b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2370043912c62bb2f3d3277b2c0a125"><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_1_1_value_allocator.html#af2370043912c62bb2f3d3277b2c0a125">makeMemberName</a> (const char *memberName)=0</td></tr>
+<tr class="memitem:af2370043912c62bb2f3d3277b2c0a125"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2370043912c62bb2f3d3277b2c0a125"></a>
+virtual char *&#160;</td><td class="memItemRight" valign="bottom"><b>makeMemberName</b> (const char *memberName)=0</td></tr>
 <tr class="separator:af2370043912c62bb2f3d3277b2c0a125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8206cbaf1004994696a1ffec0d7e29a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_1_1_value_allocator.html#ae8206cbaf1004994696a1ffec0d7e29a">releaseMemberName</a> (char *memberName)=0</td></tr>
+<tr class="memitem:ae8206cbaf1004994696a1ffec0d7e29a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8206cbaf1004994696a1ffec0d7e29a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseMemberName</b> (char *memberName)=0</td></tr>
 <tr class="separator:ae8206cbaf1004994696a1ffec0d7e29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa63197291f55d060541a01fcf5a5dfc"><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_1_1_value_allocator.html#aaa63197291f55d060541a01fcf5a5dfc">duplicateStringValue</a> (const char *value, unsigned int length=<a class="el" href="class_json_1_1_value_allocator.html#af0288f8845def7740be1af23e61ceea2a44ee3be5d5610907974eb88656bc22fd">unknown</a>)=0</td></tr>
+<tr class="memitem:aaa63197291f55d060541a01fcf5a5dfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa63197291f55d060541a01fcf5a5dfc"></a>
+virtual char *&#160;</td><td class="memItemRight" valign="bottom"><b>duplicateStringValue</b> (const char *value, unsigned int length=unknown)=0</td></tr>
 <tr class="separator:aaa63197291f55d060541a01fcf5a5dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa75c50f08bab7db386673ab355668c99"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_1_1_value_allocator.html#aa75c50f08bab7db386673ab355668c99">releaseStringValue</a> (char *value)=0</td></tr>
+<tr class="memitem:aa75c50f08bab7db386673ab355668c99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa75c50f08bab7db386673ab355668c99"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseStringValue</b> (char *value)=0</td></tr>
 <tr class="separator:aa75c50f08bab7db386673ab355668c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Experimental do not use: Allocator to customize member name and string value memory management done by <a class="el" href="class_json_1_1_value.html" title="Represents a JSON value. ">Value</a>. </p>
 <ul>
-<li><a class="el" href="class_json_1_1_value_allocator.html#af2370043912c62bb2f3d3277b2c0a125">makeMemberName()</a> and <a class="el" href="class_json_1_1_value_allocator.html#ae8206cbaf1004994696a1ffec0d7e29a">releaseMemberName()</a> are called to respectively duplicate and free an <a class="el" href="namespace_json.html#a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" title="object value (collection of name/value pairs). ">Json::objectValue</a> member name.</li>
-<li><a class="el" href="class_json_1_1_value_allocator.html#aaa63197291f55d060541a01fcf5a5dfc">duplicateStringValue()</a> and <a class="el" href="class_json_1_1_value_allocator.html#aa75c50f08bab7db386673ab355668c99">releaseStringValue()</a> are called similarly to duplicate and free a <a class="el" href="namespace_json.html#a7d654b75c16a57007925868e38212b4ea804ef857affea2d415843c73f261c258" title="UTF-8 string value. ">Json::stringValue</a> value. </li>
+<li>makeMemberName() and releaseMemberName() are called to respectively duplicate and free an <a class="el" href="namespace_json.html#a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" title="object value (collection of name/value pairs). ">Json::objectValue</a> member name.</li>
+<li>duplicateStringValue() and releaseStringValue() are called similarly to duplicate and free a <a class="el" href="namespace_json.html#a7d654b75c16a57007925868e38212b4ea804ef857affea2d415843c73f261c258" title="UTF-8 string value. ">Json::stringValue</a> value. </li>
 </ul>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="af0288f8845def7740be1af23e61ceea2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af0288f8845def7740be1af23e61ceea2a44ee3be5d5610907974eb88656bc22fd"></a>unknown</em>&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3c31c9a2de499fffad6711672d686b7c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Json::ValueAllocator::~ValueAllocator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af2370043912c62bb2f3d3277b2c0a125"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual char* Json::ValueAllocator::makeMemberName </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>memberName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_json_1_1_default_value_allocator.html#a83643548a23763cd9e8fcc9889ae3428">Json::DefaultValueAllocator</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae8206cbaf1004994696a1ffec0d7e29a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Json::ValueAllocator::releaseMemberName </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>memberName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_json_1_1_default_value_allocator.html#a62df0985d957573f82be4f520bf00043">Json::DefaultValueAllocator</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaa63197291f55d060541a01fcf5a5dfc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual char* Json::ValueAllocator::duplicateStringValue </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>length</em> = <code><a class="el" href="class_json_1_1_value_allocator.html#af0288f8845def7740be1af23e61ceea2a44ee3be5d5610907974eb88656bc22fd">unknown</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_json_1_1_default_value_allocator.html#adc2dc8da259fe1153594787cfcfc68d5">Json::DefaultValueAllocator</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa75c50f08bab7db386673ab355668c99"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Json::ValueAllocator::releaseStringValue </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_json_1_1_default_value_allocator.html#a5e7f4fbebe7f9263090276e937a6a8d2">Json::DefaultValueAllocator</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>json_value.h</li>
 <li>json_value.cpp</li>
 </ul>

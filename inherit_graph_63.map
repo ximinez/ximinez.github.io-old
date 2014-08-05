@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classripple_1_1_config_1_1_error.html" title="The result of performing a load on the parsed config file data. " alt="" coords="6,5,141,32"/>
+<area shape="rect" id="node1" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; InfoSub \&gt;" alt="" coords="6,5,154,46"/>
+<area shape="rect" id="node2" href="$classripple_1_1_info_sub.html" title="Manages a client&#39;s subscription to data feeds. " alt="" coords="224,12,331,39"/>
+<area shape="rect" id="node3" href="$classripple_1_1_r_p_c_sub.html" title="Subscription object for JSON RPC. " alt="" coords="418,12,531,39"/>
+<area shape="rect" id="node4" href="$classripple_1_1_w_s_connection.html" title="A Ripple WebSocket connection handler. " alt="" coords="400,67,549,93"/>
+<area shape="rect" id="node5" href="$classripple_1_1_w_s_connection_type.html" title="A Ripple WebSocket connection handler for a specific endpoint_type. " alt="" coords="597,59,776,101"/>
+<area shape="rect" id="node6" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; WSConnection \&gt;" alt="" coords="203,63,351,105"/>
 </map>

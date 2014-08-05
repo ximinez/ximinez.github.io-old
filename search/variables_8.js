@@ -1,20 +1,5 @@
 var searchData=
 [
-  ['immediate_5for_5fcancel',['immediate_or_cancel',['../structripple_1_1core_1_1_taker_1_1_options.html#a92fce4f1d86a6404db17fe0401900da7',1,'ripple::core::Taker::Options']]],
-  ['importnodedatabase',['importNodeDatabase',['../classripple_1_1_config.html#aa90182d3cabe7348896afcd907a66c31',1,'ripple::Config']]],
-  ['in',['in',['../structripple_1_1core_1_1_amounts.html#ac09986b4f07cb715ad41305234dcfdb5',1,'ripple::core::Amounts::in()'],['../classripple_1_1_book_type.html#ad604dbffd38fce4633c2265d62584aa9',1,'ripple::BookType::in()']]],
-  ['info',['info',['../structripple_1_1_job_type_data.html#acead86044a299cb8e6f6fff97ff95dfd',1,'ripple::JobTypeData']]],
-  ['infosub_5f',['infoSub_',['../structripple_1_1_r_p_c_1_1_context.html#a9d20684d535ffa101dbd2bd01b6d84aa',1,'ripple::RPC::Context']]],
-  ['innernode',['innerNode',['../classripple_1_1_hash_prefix.html#a3ef349b2959c1720bb03215bb4317cda',1,'ripple::HashPrefix']]],
-  ['insightsettings',['insightSettings',['../classripple_1_1_config.html#a6cfb9d5a9a02e3b3ae733cbd268e93ad',1,'ripple::Config']]],
-  ['ips',['IPS',['../classripple_1_1_config.html#a4d565d92bcdf3e2a4156a65604e219c2',1,'ripple::Config']]],
-  ['ips_5ffixed',['IPS_FIXED',['../classripple_1_1_config.html#a3aaac87eab79667cbfd584dc4e7d6d6e',1,'ripple::Config']]],
-  ['isasync',['isAsync',['../structripple_1_1_node_store_1_1_fetch_report.html#a989fdb05f6f07b1c34ea63a3524d6029',1,'ripple::NodeStore::FetchReport']]],
-  ['isledgeropen_5f',['isLedgerOpen_',['../structripple_1_1path_1_1_ripple_calc.html#abe7cd4d0b1cf1f9b02f6fb163f146dea',1,'ripple::path::RippleCalc']]],
-  ['isoverloaded',['isOverloaded',['../structripple_1_1_load_monitor_1_1_stats.html#ad66013a90da20496431ea45a15707f7a',1,'ripple::LoadMonitor::Stats']]],
-  ['issue_5f',['issue_',['../structripple_1_1path_1_1_node.html#a490eb15ed91c41fb9f5d3bb17a38860d',1,'ripple::path::Node']]],
-  ['it',['it',['../classripple_1_1_sync_unordered_map_type_1_1iterator.html#a7adbc46c24c460a091757dd3f2c3a95c',1,'ripple::SyncUnorderedMapType::iterator']]],
-  ['item',['item',['../structripple_1_1_sized_item.html#adcea0bca2272047fdbf37a791232bf49',1,'ripple::SizedItem']]],
-  ['items',['items',['../structripple_1_1_resource_1_1_gossip.html#a8c788bd6a0e2d50da642c5b5f26e688f',1,'ripple::Resource::Gossip::items()'],['../structripple_1_1_resource_1_1_import.html#a24407aead5c02447020ec73c3d88a379',1,'ripple::Resource::Import::items()']]],
-  ['iterations',['iterations',['../structripple_1_1_proof_of_work_factory_imp_1_1_pow_entry.html#a145539980bc695e90dbc76ed03b38b3a',1,'ripple::ProofOfWorkFactoryImp::PowEntry']]]
+  ['proposal',['proposal',['../classripple_1_1_hash_prefix.html#af550d8236d3588f01ed90b4f02161884',1,'ripple::HashPrefix']]],
+  ['publickey',['publicKey',['../structripple_1_1_validators_1_1_source_1_1_item.html#a833d29cddb75b667e60acdc0efa95a59',1,'ripple::Validators::Source::Item']]]
 ];

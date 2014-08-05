@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -101,15 +102,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classripple_1_1_ripple_s_s_l_context.html#details">More...</a></p>
 
 <p><code>#include &lt;RippleSSLContext.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::RippleSSLContext:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_ripple_s_s_l_context__inherit__graph.png" border="0" usemap="#ripple_1_1_ripple_s_s_l_context_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_ripple_s_s_l_context_inherit__map" id="ripple_1_1_ripple_s_s_l_context_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_ripple_s_s_l_context_imp.html" title="ripple::RippleSSLContextImp" alt="" coords="5,80,195,107"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherits SSLContext.</p>
+
+<p>Inherited by ripple::RippleSSLContextImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -131,38 +127,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2d9c696a5beb59d7ae204e9f6f74a4de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ripple_s_s_l_context.html#a2d9c696a5beb59d7ae204e9f6f74a4de">RippleSSLContext</a> (ContextType &amp;context)</td></tr>
+<tr class="memitem:a2d9c696a5beb59d7ae204e9f6f74a4de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d9c696a5beb59d7ae204e9f6f74a4de"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RippleSSLContext</b> (ContextType &amp;context)</td></tr>
 <tr class="separator:a2d9c696a5beb59d7ae204e9f6f74a4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The SSL contexts used by Ripple. </p>
 <p>This is what Ripple uses for its secure connections. The ECDSA curve parameters are predefined and verified to be secure. The context is set to sslv23, Transport Layer Security / General. This is primarily used for peer to peer servers that don't care about certificates or identity verification. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2d9c696a5beb59d7ae204e9f6f74a4de"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::RippleSSLContext::RippleSSLContext </td>
-          <td>(</td>
-          <td class="paramtype">ContextType &amp;&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af1a5e9dce09d5e49a3a62a66682167d7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +185,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a bare SSL context with just sslv23 set. </p>
-<p>This is used for <a class="el" href="namespaceripple_1_1_r_p_c.html">RPC</a> connections. </p>
+<p>This is used for RPC connections. </p>
 
 </div>
 </div>

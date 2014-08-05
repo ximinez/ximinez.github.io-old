@@ -1,6 +1,0 @@
-<map id="ripple::SerializedLedgerEntry" name="ripple::SerializedLedgerEntry">
-<area shape="rect" id="node2" href="$classripple_1_1_s_t_object.html" title="ripple::STObject" alt="" coords="106,104,221,131"/>
-<area shape="rect" id="node3" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="5,13,152,40"/>
-<area shape="rect" id="node4" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STObject \&gt;" alt="" coords="177,6,324,47"/>
-<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; SerializedLedgerEntry \&gt;" alt="" coords="247,97,420,138"/>
-</map>

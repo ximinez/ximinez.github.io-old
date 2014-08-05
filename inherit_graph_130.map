@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classripple_1_1_json_property_stream.html" title="A PropertyStream::Sink which produces a Json::Value. " alt="" coords="169,5,349,32"/>
+<area shape="rect" id="node1" href="$classripple_1_1_multi_socket.html" title="An abstract_socket that can handshake with multiple protocols. " alt="" coords="5,45,136,72"/>
+<area shape="rect" id="node2" href="$classripple_1_1_multi_socket_impl.html" title="ripple::MultiSocketImpl\l\&lt; socket_type &amp; \&gt;" alt="" coords="184,5,339,46"/>
+<area shape="rect" id="node3" href="$classripple_1_1_multi_socket_impl.html" title="Template for producing instances of MultiSocket. " alt="" coords="184,70,339,111"/>
 </map>

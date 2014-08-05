@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['core',['core',['../namespaceripple_1_1core.html',1,'ripple']]],
-  ['detail',['detail',['../namespaceripple_1_1detail.html',1,'ripple']]],
-  ['detail',['detail',['../namespaceripple_1_1_r_p_c_1_1detail.html',1,'ripple::RPC']]],
-  ['detail',['detail',['../namespaceripple_1_1_peer_finder_1_1detail.html',1,'ripple::PeerFinder']]],
-  ['detail',['detail',['../namespaceripple_1_1core_1_1detail.html',1,'ripple::core']]],
-  ['http',['HTTP',['../namespaceripple_1_1_h_t_t_p.html',1,'ripple']]],
-  ['jss',['jss',['../namespaceripple_1_1jss.html',1,'ripple']]],
-  ['nodestore',['NodeStore',['../namespaceripple_1_1_node_store.html',1,'ripple']]],
-  ['path',['path',['../namespaceripple_1_1path.html',1,'ripple']]],
-  ['peerfinder',['PeerFinder',['../namespaceripple_1_1_peer_finder.html',1,'ripple']]],
-  ['radixmap',['RadixMap',['../namespaceripple_1_1_radix_map.html',1,'ripple']]],
-  ['radmap',['RadMap',['../namespaceripple_1_1_rad_map.html',1,'ripple']]],
-  ['resource',['Resource',['../namespaceripple_1_1_resource.html',1,'ripple']]],
-  ['ripple',['ripple',['../namespaceripple.html',1,'']]],
-  ['rpc',['RPC',['../namespaceripple_1_1_r_p_c.html',1,'ripple']]],
-  ['sim',['Sim',['../namespaceripple_1_1_peer_finder_1_1_sim.html',1,'ripple::PeerFinder']]],
-  ['sitefiles',['SiteFiles',['../namespaceripple_1_1_site_files.html',1,'ripple']]],
-  ['testoverlay',['TestOverlay',['../namespaceripple_1_1_test_overlay.html',1,'ripple']]],
-  ['tuning',['Tuning',['../namespaceripple_1_1_tuning.html',1,'ripple']]],
-  ['tuning',['Tuning',['../namespaceripple_1_1_peer_finder_1_1_tuning.html',1,'ripple::PeerFinder']]],
-  ['validators',['Validators',['../namespaceripple_1_1_validators.html',1,'ripple']]],
-  ['version',['version',['../namespaceripple_1_1version.html',1,'ripple']]]
+  ['testoverlay',['TestOverlay',['../namespace_test_overlay.html',1,'']]]
 ];

@@ -1,8 +1,0 @@
-<map id="ripple::Config" name="ripple::Config">
-<area shape="rect" id="node2" href="$classripple_1_1_test_overlay_1_1_connection_type.html" title="A connection between two nodes. " alt="" coords="152,5,339,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_test_overlay_1_1_message_type.html" title="A message sent between peers. " alt="" coords="158,70,333,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_test_overlay_1_1_peer_logic_base.html" title="Base class for all PeerLogic implementations. " alt="" coords="155,135,335,177"/>
-<area shape="rect" id="node7" href="$classripple_1_1_test_overlay_1_1_peer_type.html" title="A peer in the overlay network. " alt="" coords="171,201,319,242"/>
-<area shape="rect" id="node5" href="$classripple_1_1_test_overlay_1_1_network1__test_1_1_peer_logic.html" title="ripple::TestOverlay\l::Network1_test::PeerLogic\l\&lt; Config \&gt;" alt="" coords="387,88,568,144"/>
-<area shape="rect" id="node6" href="$classripple_1_1_validators_1_1_logic__test_1_1_peer_logic.html" title="ripple::Validators\l::Logic_test::PeerLogic\l\&lt; Config \&gt;" alt="" coords="399,168,555,224"/>
-</map>

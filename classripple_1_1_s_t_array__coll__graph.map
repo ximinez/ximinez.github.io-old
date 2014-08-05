@@ -1,6 +1,0 @@
-<map id="ripple::STArray" name="ripple::STArray">
-<area shape="rect" id="node2" href="$classripple_1_1_serialized_type.html" title="A type which can be exported to a well known binary format. " alt="" coords="5,195,152,221"/>
-<area shape="rect" id="node3" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="29,96,128,123"/>
-<area shape="rect" id="node4" href="$class_json_1_1_static_string.html" title="Lightweight wrapper to tag static string. " alt="" coords="15,5,141,32"/>
-<area shape="rect" id="node5" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; STArray \&gt;" alt="" coords="177,187,324,229"/>
-</map>

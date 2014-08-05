@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,13 +85,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_resource.html">Resource</a></li><li class="navelem"><a class="el" href="classripple_1_1_resource_1_1_manager.html">Manager</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>Resource</b></li><li class="navelem"><a class="el" href="classripple_1_1_resource_1_1_manager.html">Manager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classripple_1_1_resource_1_1_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ripple::Resource::Manager Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -101,20 +101,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classripple_1_1_resource_1_1_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;Manager.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::Resource::Manager:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_resource_1_1_manager__inherit__graph.png" border="0" usemap="#ripple_1_1_resource_1_1_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_resource_1_1_manager_inherit__map" id="ripple_1_1_resource_1_1_manager_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_resource_1_1_manager_imp.html" title="ripple::Resource::ManagerImp" alt="" coords="5,80,203,107"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherits Source.</p>
+
+<p>Inherited by ripple::Resource::ManagerImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aed175bd08f4c56dd79befd9479258b1c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_resource_1_1_manager.html#aed175bd08f4c56dd79befd9479258b1c">~Manager</a> ()=0</td></tr>
-<tr class="separator:aed175bd08f4c56dd79befd9479258b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a031c6f28346713cb93ea3ff9018f6a9a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1_resource_1_1_consumer.html">Consumer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_resource_1_1_manager.html#a031c6f28346713cb93ea3ff9018f6a9a">newInboundEndpoint</a> (beast::IP::Endpoint const &amp;address)=0</td></tr>
 <tr class="memdesc:a031c6f28346713cb93ea3ff9018f6a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new endpoint keyed by inbound IP address.  <a href="#a031c6f28346713cb93ea3ff9018f6a9a">More...</a><br/></td></tr>
 <tr class="separator:a031c6f28346713cb93ea3ff9018f6a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,67 +123,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06751117098e01ef0e0a780df25a9b2d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_json_1_1_value.html">Json::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_resource_1_1_manager.html#a06751117098e01ef0e0a780df25a9b2d">getJson</a> ()=0</td></tr>
 <tr class="memdesc:a06751117098e01ef0e0a780df25a9b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract consumer information for reporting.  <a href="#a06751117098e01ef0e0a780df25a9b2d">More...</a><br/></td></tr>
 <tr class="separator:a06751117098e01ef0e0a780df25a9b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5fe84b72cd833f4cd659b0ceca673b0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_json_1_1_value.html">Json::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_resource_1_1_manager.html#ab5fe84b72cd833f4cd659b0ceca673b0">getJson</a> (int threshold)=0</td></tr>
+<tr class="memitem:ab5fe84b72cd833f4cd659b0ceca673b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5fe84b72cd833f4cd659b0ceca673b0"></a>
+virtual <a class="el" href="class_json_1_1_value.html">Json::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getJson</b> (int threshold)=0</td></tr>
 <tr class="separator:ab5fe84b72cd833f4cd659b0ceca673b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa932836afb30bf1db023222eff401247"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_resource_1_1_manager.html#aa932836afb30bf1db023222eff401247">importConsumers</a> (std::string const &amp;origin, <a class="el" href="structripple_1_1_resource_1_1_gossip.html">Gossip</a> const &amp;gossip)=0</td></tr>
 <tr class="memdesc:aa932836afb30bf1db023222eff401247"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structripple_1_1_resource_1_1_import.html" title="A set of imported consumer data from a gossip origin. ">Import</a> packaged consumer information.  <a href="#aa932836afb30bf1db023222eff401247">More...</a><br/></td></tr>
 <tr class="separator:aa932836afb30bf1db023222eff401247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad9ff7bb6e15ca04c4ee9288618b4e362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_resource_1_1_manager.html#ad9ff7bb6e15ca04c4ee9288618b4e362">Manager</a> ()</td></tr>
-<tr class="separator:ad9ff7bb6e15ca04c4ee9288618b4e362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracks load and resource consumption. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad9ff7bb6e15ca04c4ee9288618b4e362"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::Resource::Manager::Manager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aed175bd08f4c56dd79befd9479258b1c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::Resource::Manager::~Manager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a031c6f28346713cb93ea3ff9018f6a9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -214,8 +156,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new endpoint keyed by inbound IP address. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#a3cf30ffa8e7062ce4cfd9a26a0e2e1c3">ripple::Resource::ManagerImp</a>.</p>
 
 </div>
 </div>
@@ -243,8 +183,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Create a new endpoint keyed by outbound IP address and port. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#ad950ec18e1da44ad93a213eed2eb5079">ripple::Resource::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a7bd699b983c2e4bf00f32d0bcf54247c"></a>
@@ -271,8 +209,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Create a new endpoint keyed by name. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#ab54f15e5f537ba410e3363f80d5a2be6">ripple::Resource::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a098033b7735f83f882d9945939c63d6c"></a>
@@ -298,8 +234,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Extract packaged consumer information for export. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#a9352336fe87321aa862bd9738b45241e">ripple::Resource::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a06751117098e01ef0e0a780df25a9b2d"></a>
@@ -324,34 +258,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Extract consumer information for reporting. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#a907b853be94c5a8b9aa76f3901f303f1">ripple::Resource::ManagerImp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab5fe84b72cd833f4cd659b0ceca673b0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_json_1_1_value.html">Json::Value</a> ripple::Resource::Manager::getJson </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>threshold</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#a97c21ad5990dc63d15d2fd1bb5d2e66c">ripple::Resource::ManagerImp</a>.</p>
 
 </div>
 </div>
@@ -394,8 +300,6 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1_resource_1_1_manager_imp.html#ad3c7af7e9455bc4970c207c9ae76a9a7">ripple::Resource::ManagerImp</a>.</p>
 
 </div>
 </div>

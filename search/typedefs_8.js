@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['jobdatamap',['JobDataMap',['../classripple_1_1_job_queue_imp.html#ad1af5eabaf5e22b827ab560f9dcf1543',1,'ripple::JobQueueImp']]],
-  ['jobset',['JobSet',['../classripple_1_1_job_queue_imp.html#aecfcc7ffd41020e0d30861e7652dd389',1,'ripple::JobQueueImp']]]
+  ['rippleledgerhash',['RippleLedgerHash',['../namespaceripple.html#a78ad18720766364865eabb09a3667950',1,'ripple']]],
+  ['ripplemutex',['RippleMutex',['../namespaceripple.html#aab6e87faf0380a09123d8626f2ae71c4',1,'ripple']]],
+  ['ripplepublickeyhash',['RipplePublicKeyHash',['../namespaceripple.html#aac9402b55e293dac960f54685ddaa78c',1,'ripple']]]
 ];

@@ -1,8 +1,0 @@
-<map id="ripple::Validators::ManagerImp" name="ripple::Validators::ManagerImp">
-<area shape="rect" id="node2" href="$classripple_1_1_validators_1_1_manager.html" title="Maintains the list of chosen validators. " alt="" coords="409,5,527,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_validators_1_1_store_sqdb.html" title="Database persistence for Validators using SQLite. " alt="" coords="409,70,527,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_validators_1_1_store.html" title="Abstract persistence for Validators data. " alt="" coords="55,66,174,107"/>
-<area shape="rect" id="node5" href="$classripple_1_1_validators_1_1_logic.html" title="ripple::Validators\l::Logic" alt="" coords="409,142,527,183"/>
-<area shape="rect" id="node6" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l RippleLedgerHash, RippleLedger\lHash::hasher, RippleLedgerHash\l::key_equal \&gt;" alt="" coords="6,131,223,202"/>
-<area shape="rect" id="node7" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l ReceivedValidation,\l ReceivedValidationHash,\l ReceivedValidationKeyEqual \&gt;" alt="" coords="11,226,218,297"/>
-</map>

@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_peer_finder.html">PeerFinder</a></li><li class="navelem"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html">Callback</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>PeerFinder</b></li><li class="navelem"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html">Callback</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,38 +97,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. ">Callback</a> receives <a class="el" href="namespaceripple_1_1_peer_finder.html">PeerFinder</a> notifications.  
+<p>The <a class="el" href="structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. ">Callback</a> receives PeerFinder notifications.  
  <a href="structripple_1_1_peer_finder_1_1_callback.html#details">More...</a></p>
 
 <p><code>#include &lt;Callback.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::PeerFinder::Callback:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="structripple_1_1_peer_finder_1_1_callback__inherit__graph.png" border="0" usemap="#ripple_1_1_peer_finder_1_1_callback_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_peer_finder_1_1_callback_inherit__map" id="ripple_1_1_peer_finder_1_1_callback_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_overlay_impl.html" title="ripple::OverlayImpl" alt="" coords="4,96,133,123"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by ripple::OverlayImpl.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60c5148e30d51adb1ab0e19163db6d50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#a60c5148e30d51adb1ab0e19163db6d50">connect</a> (<a class="el" href="namespaceripple_1_1_peer_finder.html#a494b77875416abf4ff9427bc77ad5aef">IPAddresses</a> const &amp;addresses)=0</td></tr>
+<tr class="memitem:a60c5148e30d51adb1ab0e19163db6d50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#a60c5148e30d51adb1ab0e19163db6d50">connect</a> (IPAddresses const &amp;addresses)=0</td></tr>
 <tr class="memdesc:a60c5148e30d51adb1ab0e19163db6d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate outgoing <a class="el" href="classripple_1_1_peer.html" title="Represents a peer connection in the overlay. ">Peer</a> connections to the specified set of endpoints.  <a href="#a60c5148e30d51adb1ab0e19163db6d50">More...</a><br/></td></tr>
 <tr class="separator:a60c5148e30d51adb1ab0e19163db6d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920d4499f5648d3f6dca9aace2375c0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#a920d4499f5648d3f6dca9aace2375c0d">activate</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot)=0</td></tr>
+<tr class="memitem:a920d4499f5648d3f6dca9aace2375c0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#a920d4499f5648d3f6dca9aace2375c0d">activate</a> (Slot::ptr const &amp;slot)=0</td></tr>
 <tr class="memdesc:a920d4499f5648d3f6dca9aace2375c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the handshaked peer with the specified address.  <a href="#a920d4499f5648d3f6dca9aace2375c0d">More...</a><br/></td></tr>
 <tr class="separator:a920d4499f5648d3f6dca9aace2375c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ce6f37452066beb2204c70cccad594"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#a82ce6f37452066beb2204c70cccad594">send</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot, <a class="el" href="namespaceripple_1_1_peer_finder.html#a44f338ee3a1614e9c54c23915c5432e6">Endpoints</a> const &amp;endpoints)=0</td></tr>
+<tr class="memitem:a82ce6f37452066beb2204c70cccad594"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#a82ce6f37452066beb2204c70cccad594">send</a> (Slot::ptr const &amp;slot, Endpoints const &amp;endpoints)=0</td></tr>
 <tr class="memdesc:a82ce6f37452066beb2204c70cccad594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a set of <a class="el" href="structripple_1_1_peer_finder_1_1_endpoint.html" title="Describes a connectible peer address along with some metadata. ">Endpoint</a> records to the specified peer.  <a href="#a82ce6f37452066beb2204c70cccad594">More...</a><br/></td></tr>
 <tr class="separator:a82ce6f37452066beb2204c70cccad594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa15516794a80cb812ed99ef1ef54f269"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#aa15516794a80cb812ed99ef1ef54f269">disconnect</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot, bool graceful)=0</td></tr>
+<tr class="memitem:aa15516794a80cb812ed99ef1ef54f269"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_peer_finder_1_1_callback.html#aa15516794a80cb812ed99ef1ef54f269">disconnect</a> (Slot::ptr const &amp;slot, bool graceful)=0</td></tr>
 <tr class="memdesc:aa15516794a80cb812ed99ef1ef54f269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect the handshaked peer with the specified address.  <a href="#aa15516794a80cb812ed99ef1ef54f269">More...</a><br/></td></tr>
 <tr class="separator:aa15516794a80cb812ed99ef1ef54f269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. ">Callback</a> receives <a class="el" href="namespaceripple_1_1_peer_finder.html">PeerFinder</a> notifications. </p>
-<p>The notifications are sent on a thread owned by the <a class="el" href="namespaceripple_1_1_peer_finder.html">PeerFinder</a>, so it is best not to do too much work in here. Just post functor to another worker thread or job queue and return. </p>
+<div class="textblock"><p>The <a class="el" href="structripple_1_1_peer_finder_1_1_callback.html" title="The Callback receives PeerFinder notifications. ">Callback</a> receives PeerFinder notifications. </p>
+<p>The notifications are sent on a thread owned by the PeerFinder, so it is best not to do too much work in here. Just post functor to another worker thread or job queue and return. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a60c5148e30d51adb1ab0e19163db6d50"></a>
 <div class="memitem">
@@ -139,7 +133,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Callback::connect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_peer_finder.html#a494b77875416abf4ff9427bc77ad5aef">IPAddresses</a> const &amp;&#160;</td>
+          <td class="paramtype">IPAddresses const &amp;&#160;</td>
           <td class="paramname"><em>addresses</em></td><td>)</td>
           <td></td>
         </tr>
@@ -153,8 +147,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Initiate outgoing <a class="el" href="classripple_1_1_peer.html" title="Represents a peer connection in the overlay. ">Peer</a> connections to the specified set of endpoints. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_overlay_impl.html#a41ffb563533fd26345f42d63949b7d9d">ripple::OverlayImpl</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a920d4499f5648d3f6dca9aace2375c0d"></a>
@@ -167,7 +159,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Callback::activate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em></td><td>)</td>
           <td></td>
         </tr>
@@ -181,8 +173,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Activate the handshaked peer with the specified address. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_overlay_impl.html#ab96caa67be889971c6642de9aa7c2a45">ripple::OverlayImpl</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a82ce6f37452066beb2204c70cccad594"></a>
@@ -195,13 +185,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Callback::send </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_peer_finder.html#a44f338ee3a1614e9c54c23915c5432e6">Endpoints</a> const &amp;&#160;</td>
+          <td class="paramtype">Endpoints const &amp;&#160;</td>
           <td class="paramname"><em>endpoints</em>&#160;</td>
         </tr>
         <tr>
@@ -231,7 +221,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Callback::disconnect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em>, </td>
         </tr>
         <tr>
@@ -260,8 +250,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1_overlay_impl.html#a7cff3da8e418c4b955a6fccd02dd5a6f">ripple::OverlayImpl</a>.</p>
 
 </div>
 </div>

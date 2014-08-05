@@ -1,7 +1,0 @@
-<map id="ripple::NodeStore::DatabaseImp" name="ripple::NodeStore::DatabaseImp">
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_database.html" title="Persistency layer for NodeObject. " alt="" coords="23,5,153,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_key_cache.html" title="ripple::KeyCache\&lt; ripple\l::base_uint \&gt;" alt="" coords="5,70,171,111"/>
-<area shape="rect" id="node4" href="$classripple_1_1_tagged_cache.html" title="ripple::TaggedCache\l\&lt; ripple::base_uint,\l ripple::NodeObject \&gt;" alt="" coords="15,135,161,191"/>
-<area shape="rect" id="node5" href="$classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. " alt="" coords="23,214,153,255"/>
-<area shape="rect" id="node6" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="25,279,151,321"/>
-</map>

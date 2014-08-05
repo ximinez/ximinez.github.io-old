@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classripple_1_1_identifier_type.html" title="Template for generalizing the cryptographic primitives used. " alt="" coords="105,5,245,46"/>
+<area shape="rect" id="node1" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; LedgerConsensusImp \&gt;" alt="" coords="5,5,179,46"/>
+<area shape="rect" id="node2" href="$classripple_1_1_ledger_consensus_imp.html" title="Provides the implementation for LedgerConsensus. " alt="" coords="227,41,415,68"/>
+<area shape="rect" id="node3" href="$classripple_1_1_ledger_consensus.html" title="Manager for achieving consensus on the next ledger. " alt="" coords="9,71,175,97"/>
 </map>

@@ -1,5 +1,0 @@
-<map id="ripple::Validators::Logic" name="ripple::Validators::Logic">
-<area shape="rect" id="node2" href="$classripple_1_1_validators_1_1_store.html" title="Abstract persistence for Validators data. " alt="" coords="55,5,174,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l RippleLedgerHash, RippleLedger\lHash::hasher, RippleLedgerHash\l::key_equal \&gt;" alt="" coords="6,70,223,141"/>
-<area shape="rect" id="node4" href="$classripple_1_1_cycled_set.html" title="ripple::CycledSet\&lt;\l ReceivedValidation,\l ReceivedValidationHash,\l ReceivedValidationKeyEqual \&gt;" alt="" coords="11,165,218,235"/>
-</map>

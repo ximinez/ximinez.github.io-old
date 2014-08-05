@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html">DummyScheduler</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>NodeStore</b></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html">DummyScheduler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Simple <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. ">Scheduler</a> that just peforms the tasks synchronously.  
+<p>Simple NodeStore <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. ">Scheduler</a> that just peforms the tasks synchronously.  
  <a href="classripple_1_1_node_store_1_1_dummy_scheduler.html#details">More...</a></p>
 
 <p><code>#include &lt;DummyScheduler.h&gt;</code></p>
@@ -121,59 +122,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad818cf87d82da1e1224deacbe4cfb73f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#ad818cf87d82da1e1224deacbe4cfb73f">DummyScheduler</a> ()</td></tr>
-<tr class="separator:ad818cf87d82da1e1224deacbe4cfb73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4031050edd45722ede5a618207550079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#a4031050edd45722ede5a618207550079">~DummyScheduler</a> ()</td></tr>
-<tr class="separator:a4031050edd45722ede5a618207550079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414b6895a6ddf89d02acaa4ff4b816b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#a414b6895a6ddf89d02acaa4ff4b816b0">scheduleTask</a> (<a class="el" href="structripple_1_1_node_store_1_1_task.html">Task</a> &amp;task)</td></tr>
 <tr class="memdesc:a414b6895a6ddf89d02acaa4ff4b816b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a task.  <a href="#a414b6895a6ddf89d02acaa4ff4b816b0">More...</a><br/></td></tr>
 <tr class="separator:a414b6895a6ddf89d02acaa4ff4b816b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70984490e789c45cc49aec4eb07e5eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#a70984490e789c45cc49aec4eb07e5eb5">scheduledTasksStopped</a> ()</td></tr>
+<tr class="memitem:a70984490e789c45cc49aec4eb07e5eb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70984490e789c45cc49aec4eb07e5eb5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>scheduledTasksStopped</b> ()</td></tr>
 <tr class="separator:a70984490e789c45cc49aec4eb07e5eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77c0eec0a3c23752082f34bcd81019e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#a77c0eec0a3c23752082f34bcd81019e2">onFetch</a> (<a class="el" href="structripple_1_1_node_store_1_1_fetch_report.html">FetchReport</a> const &amp;report) override</td></tr>
-<tr class="memdesc:a77c0eec0a3c23752082f34bcd81019e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports completion of a fetch Allows the scheduler to monitor the node store's performance.  <a href="#a77c0eec0a3c23752082f34bcd81019e2">More...</a><br/></td></tr>
+<tr class="memitem:a77c0eec0a3c23752082f34bcd81019e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77c0eec0a3c23752082f34bcd81019e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#a77c0eec0a3c23752082f34bcd81019e2">onFetch</a> (<a class="el" href="structripple_1_1_node_store_1_1_fetch_report.html">FetchReport</a> const &amp;report) override</td></tr>
+<tr class="memdesc:a77c0eec0a3c23752082f34bcd81019e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports completion of a fetch Allows the scheduler to monitor the node store's performance. <br/></td></tr>
 <tr class="separator:a77c0eec0a3c23752082f34bcd81019e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b696b6cd74015ecc865a6087a87878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#ad8b696b6cd74015ecc865a6087a87878">onBatchWrite</a> (<a class="el" href="structripple_1_1_node_store_1_1_batch_write_report.html">BatchWriteReport</a> const &amp;report) override</td></tr>
-<tr class="memdesc:ad8b696b6cd74015ecc865a6087a87878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the completion of a batch write Allows the scheduler to monitor the node store's performance.  <a href="#ad8b696b6cd74015ecc865a6087a87878">More...</a><br/></td></tr>
+<tr class="memitem:ad8b696b6cd74015ecc865a6087a87878"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8b696b6cd74015ecc865a6087a87878"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_dummy_scheduler.html#ad8b696b6cd74015ecc865a6087a87878">onBatchWrite</a> (<a class="el" href="structripple_1_1_node_store_1_1_batch_write_report.html">BatchWriteReport</a> const &amp;report) override</td></tr>
+<tr class="memdesc:ad8b696b6cd74015ecc865a6087a87878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the completion of a batch write Allows the scheduler to monitor the node store's performance. <br/></td></tr>
 <tr class="separator:ad8b696b6cd74015ecc865a6087a87878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classripple_1_1_node_store_1_1_scheduler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classripple_1_1_node_store_1_1_scheduler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html">ripple::NodeStore::Scheduler</a></td></tr>
-<tr class="memitem:ad74d91caf125c75a9c0cfec015a70aa6 inherit pub_methods_classripple_1_1_node_store_1_1_scheduler"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_scheduler.html#ad74d91caf125c75a9c0cfec015a70aa6">~Scheduler</a> ()=0</td></tr>
-<tr class="separator:ad74d91caf125c75a9c0cfec015a70aa6 inherit pub_methods_classripple_1_1_node_store_1_1_scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simple <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. ">Scheduler</a> that just peforms the tasks synchronously. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad818cf87d82da1e1224deacbe4cfb73f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::NodeStore::DummyScheduler::DummyScheduler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4031050edd45722ede5a618207550079"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::NodeStore::DummyScheduler::~DummyScheduler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Simple NodeStore <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. ">Scheduler</a> that just peforms the tasks synchronously. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a414b6895a6ddf89d02acaa4ff4b816b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -200,77 +166,6 @@ Public Member Functions</h2></td></tr>
 <p>Depending on the implementation, the task may be invoked either on the current thread of execution, or an unspecified implementation-defined foreign thread. </p>
 
 <p>Implements <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html#af3734617d65f9903e3b33d3ee6de8102">ripple::NodeStore::Scheduler</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a70984490e789c45cc49aec4eb07e5eb5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::NodeStore::DummyScheduler::scheduledTasksStopped </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a77c0eec0a3c23752082f34bcd81019e2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::NodeStore::DummyScheduler::onFetch </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structripple_1_1_node_store_1_1_fetch_report.html">FetchReport</a> const &amp;&#160;</td>
-          <td class="paramname"><em>report</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reports completion of a fetch Allows the scheduler to monitor the node store's performance. </p>
-
-<p>Implements <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html#acf9a08ef64dd95c98da3e095ee919171">ripple::NodeStore::Scheduler</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad8b696b6cd74015ecc865a6087a87878"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::NodeStore::DummyScheduler::onBatchWrite </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structripple_1_1_node_store_1_1_batch_write_report.html">BatchWriteReport</a> const &amp;&#160;</td>
-          <td class="paramname"><em>report</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reports the completion of a batch write Allows the scheduler to monitor the node store's performance. </p>
-
-<p>Implements <a class="el" href="classripple_1_1_node_store_1_1_scheduler.html#a0adffe6c4e42f062bd47864f4e615a39">ripple::NodeStore::Scheduler</a>.</p>
 
 </div>
 </div>

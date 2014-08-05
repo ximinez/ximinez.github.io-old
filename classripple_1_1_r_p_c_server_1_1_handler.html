@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -96,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Handles a <a class="el" href="namespaceripple_1_1_r_p_c.html">RPC</a> client request.  
+<p>Handles a RPC client request.  
  <a href="classripple_1_1_r_p_c_server_1_1_handler.html#details">More...</a></p>
 
 <p><code>#include &lt;RPCServer.h&gt;</code></p>
@@ -112,111 +113,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a61c07722e96f139bc70aec8668aaa773"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_r_p_c_server_1_1_handler.html#a61c07722e96f139bc70aec8668aaa773">~Handler</a> ()</td></tr>
-<tr class="separator:a61c07722e96f139bc70aec8668aaa773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca5340eaa9fee1cdd89127adb354e7f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_r_p_c_server_1_1_handler.html#afca5340eaa9fee1cdd89127adb354e7f">createResponse</a> (int statusCode, std::string const &amp;description)=0</td></tr>
-<tr class="memdesc:afca5340eaa9fee1cdd89127adb354e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="namespaceripple_1_1_h_t_t_p.html">HTTP</a> response string.  <a href="#afca5340eaa9fee1cdd89127adb354e7f">More...</a><br/></td></tr>
+<tr class="memitem:afca5340eaa9fee1cdd89127adb354e7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afca5340eaa9fee1cdd89127adb354e7f"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_r_p_c_server_1_1_handler.html#afca5340eaa9fee1cdd89127adb354e7f">createResponse</a> (int statusCode, std::string const &amp;description)=0</td></tr>
+<tr class="memdesc:afca5340eaa9fee1cdd89127adb354e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a HTTP response string. <br/></td></tr>
 <tr class="separator:afca5340eaa9fee1cdd89127adb354e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e21bd6d64a281247514695b2e7a195"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_r_p_c_server_1_1_handler.html#a45e21bd6d64a281247514695b2e7a195">isAuthorized</a> (std::map&lt; std::string, std::string &gt; const &amp;headers)=0</td></tr>
-<tr class="memdesc:a45e21bd6d64a281247514695b2e7a195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the connection is authorized.  <a href="#a45e21bd6d64a281247514695b2e7a195">More...</a><br/></td></tr>
+<tr class="memitem:a45e21bd6d64a281247514695b2e7a195"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45e21bd6d64a281247514695b2e7a195"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_r_p_c_server_1_1_handler.html#a45e21bd6d64a281247514695b2e7a195">isAuthorized</a> (std::map&lt; std::string, std::string &gt; const &amp;headers)=0</td></tr>
+<tr class="memdesc:a45e21bd6d64a281247514695b2e7a195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the connection is authorized. <br/></td></tr>
 <tr class="separator:a45e21bd6d64a281247514695b2e7a195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbcd73e6f1fba957977df3d6bdc60efe"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_r_p_c_server_1_1_handler.html#abbcd73e6f1fba957977df3d6bdc60efe">processRequest</a> (std::string const &amp;request, beast::IP::Endpoint const &amp;remoteIPAddress)=0</td></tr>
 <tr class="memdesc:abbcd73e6f1fba957977df3d6bdc60efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce a response for a given request.  <a href="#abbcd73e6f1fba957977df3d6bdc60efe">More...</a><br/></td></tr>
 <tr class="separator:abbcd73e6f1fba957977df3d6bdc60efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles a <a class="el" href="namespaceripple_1_1_r_p_c.html">RPC</a> client request. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a61c07722e96f139bc70aec8668aaa773"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual ripple::RPCServer::Handler::~Handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afca5340eaa9fee1cdd89127adb354e7f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string ripple::RPCServer::Handler::createResponse </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>statusCode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>description</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a <a class="el" href="namespaceripple_1_1_h_t_t_p.html">HTTP</a> response string. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_server_handler.html#ab651caeaa50c54e660d2f64ab34f1e74">ripple::RPCServerHandler</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a45e21bd6d64a281247514695b2e7a195"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool ripple::RPCServer::Handler::isAuthorized </td>
-          <td>(</td>
-          <td class="paramtype">std::map&lt; std::string, std::string &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>headers</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determine if the connection is authorized. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_server_handler.html#a946ec5a337ef8d9560487c078cf60c70">ripple::RPCServerHandler</a>.</p>
-
-</div>
-</div>
+<div class="textblock"><p>Handles a RPC client request. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="abbcd73e6f1fba957977df3d6bdc60efe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <p>Produce a response for a given request. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">request</td><td>The <a class="el" href="namespaceripple_1_1_r_p_c.html">RPC</a> request string. </td></tr>
+    <tr><td class="paramname">request</td><td>The RPC request string. </td></tr>
   </table>
   </dd>
 </dl>

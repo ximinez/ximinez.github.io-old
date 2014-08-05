@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classripple_1_1_s_field.html" title="Identifies fields. " alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node1" href="$classripple_1_1_validators_1_1_source.html" title="A source of validator descriptors. " alt="" coords="6,70,125,111"/>
+<area shape="rect" id="node2" href="$classripple_1_1_validators_1_1_source_file.html" title="Provides validators from a text file. " alt="" coords="174,5,293,46"/>
+<area shape="rect" id="node3" href="$classripple_1_1_validators_1_1_source_strings.html" title="Provides validators from a set of Validator strings. " alt="" coords="174,70,293,111"/>
+<area shape="rect" id="node4" href="$classripple_1_1_validators_1_1_source_u_r_l.html" title="Provides validators from a trusted URI (e.g. " alt="" coords="174,135,293,177"/>
 </map>

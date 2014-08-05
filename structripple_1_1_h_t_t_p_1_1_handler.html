@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_h_t_t_p.html">HTTP</a></li><li class="navelem"><a class="el" href="structripple_1_1_h_t_t_p_1_1_handler.html">Handler</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>HTTP</b></li><li class="navelem"><a class="el" href="structripple_1_1_h_t_t_p_1_1_handler.html">Handler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,15 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="structripple_1_1_h_t_t_p_1_1_handler.html#details">More...</a></p>
 
 <p><code>#include &lt;Server.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::HTTP::Handler:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="structripple_1_1_h_t_t_p_1_1_handler__inherit__graph.png" border="0" usemap="#ripple_1_1_h_t_t_p_1_1_handler_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_h_t_t_p_1_1_handler_inherit__map" id="ripple_1_1_h_t_t_p_1_1_handler_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_r_p_c_h_t_t_p_server_imp.html" title="ripple::RPCHTTPServerImp" alt="" coords="5,80,189,107"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by ripple::RPCHTTPServerImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5e37580ac432e074b8b83abae5aca2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the connection is accepted and we know remoteAddress.  <a href="#a5e37580ac432e074b8b83abae5aca2cd">More...</a><br/></td></tr>
 <tr class="separator:a5e37580ac432e074b8b83abae5aca2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab38aad2062b0cdd3240c7f83d2b46b64"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_h_t_t_p_1_1_handler.html#ab38aad2062b0cdd3240c7f83d2b46b64">onHeaders</a> (<a class="el" href="classripple_1_1_h_t_t_p_1_1_session.html">Session</a> &amp;session)=0</td></tr>
-<tr class="memdesc:ab38aad2062b0cdd3240c7f83d2b46b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called repeatedly as new <a class="el" href="namespaceripple_1_1_h_t_t_p.html">HTTP</a> headers are received.  <a href="#ab38aad2062b0cdd3240c7f83d2b46b64">More...</a><br/></td></tr>
+<tr class="memdesc:ab38aad2062b0cdd3240c7f83d2b46b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called repeatedly as new HTTP headers are received.  <a href="#ab38aad2062b0cdd3240c7f83d2b46b64">More...</a><br/></td></tr>
 <tr class="separator:ab38aad2062b0cdd3240c7f83d2b46b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b4be6e9ffdc6cf34eb93072eed70c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1_h_t_t_p_1_1_handler.html#a95b4be6e9ffdc6cf34eb93072eed70c2">onRequest</a> (<a class="el" href="classripple_1_1_h_t_t_p_1_1_session.html">Session</a> &amp;session)=0</td></tr>
 <tr class="memdesc:a95b4be6e9ffdc6cf34eb93072eed70c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we have the full Content-Body.  <a href="#a95b4be6e9ffdc6cf34eb93072eed70c2">More...</a><br/></td></tr>
@@ -156,8 +150,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Called when the connection is accepted and we know remoteAddress. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_h_t_t_p_server_imp.html#a2079cdb829e3bafb3463f72ab6a0155f">ripple::RPCHTTPServerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab38aad2062b0cdd3240c7f83d2b46b64"></a>
@@ -182,10 +174,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called repeatedly as new <a class="el" href="namespaceripple_1_1_h_t_t_p.html">HTTP</a> headers are received. </p>
+<p>Called repeatedly as new HTTP headers are received. </p>
 <p>Guaranteed to be called at least once. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_h_t_t_p_server_imp.html#a3a4c36b393f1c32a406b8f4b11e45e4f">ripple::RPCHTTPServerImp</a>.</p>
 
 </div>
 </div>
@@ -212,8 +202,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when we have the full Content-Body. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_h_t_t_p_server_imp.html#a19d94b89eb7a1c0a5f5185dabd6689c7">ripple::RPCHTTPServerImp</a>.</p>
 
 </div>
 </div>
@@ -258,8 +246,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_h_t_t_p_server_imp.html#a5d9188143ed408df3677da1112818ac2">ripple::RPCHTTPServerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a59d270ea7de65940da520932b6fa87b5"></a>
@@ -285,8 +271,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the server has finished its stop. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_r_p_c_h_t_t_p_server_imp.html#ad6bb49d14eb85df7b96bbf7c317770c0">ripple::RPCHTTPServerImp</a>.</p>
 
 </div>
 </div>

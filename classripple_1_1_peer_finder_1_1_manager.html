@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_peer_finder.html">PeerFinder</a></li><li class="navelem"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html">Manager</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>PeerFinder</b></li><li class="navelem"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html">Manager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -102,15 +103,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classripple_1_1_peer_finder_1_1_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;Manager.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::PeerFinder::Manager:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_peer_finder_1_1_manager__inherit__graph.png" border="0" usemap="#ripple_1_1_peer_finder_1_1_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_peer_finder_1_1_manager_inherit__map" id="ripple_1_1_peer_finder_1_1_manager_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_peer_finder_1_1_manager_imp.html" title="ripple::PeerFinder\l::ManagerImp" alt="" coords="5,97,128,138"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherits Stoppable, and Source.</p>
+
+<p>Inherited by ripple::PeerFinder::ManagerImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -126,69 +122,46 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb5e8a50579a9235a9524348714b2641"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#aeb5e8a50579a9235a9524348714b2641">addFallbackStrings</a> (std::string const &amp;name, std::vector&lt; std::string &gt; const &amp;strings)=0</td></tr>
 <tr class="memdesc:aeb5e8a50579a9235a9524348714b2641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a set of strings as fallback IP::Endpoint sources.  <a href="#aeb5e8a50579a9235a9524348714b2641">More...</a><br/></td></tr>
 <tr class="separator:aeb5e8a50579a9235a9524348714b2641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a940ae023082b83f5a2ec2e5e2d2ff328"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a940ae023082b83f5a2ec2e5e2d2ff328">new_inbound_slot</a> (beast::IP::Endpoint const &amp;local_endpoint, beast::IP::Endpoint const &amp;remote_endpoint)=0</td></tr>
+<tr class="memitem:a940ae023082b83f5a2ec2e5e2d2ff328"><td class="memItemLeft" align="right" valign="top">virtual Slot::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a940ae023082b83f5a2ec2e5e2d2ff328">new_inbound_slot</a> (beast::IP::Endpoint const &amp;local_endpoint, beast::IP::Endpoint const &amp;remote_endpoint)=0</td></tr>
 <tr class="memdesc:a940ae023082b83f5a2ec2e5e2d2ff328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a URL as a fallback location to obtain IP::Endpoint sources.  <a href="#a940ae023082b83f5a2ec2e5e2d2ff328">More...</a><br/></td></tr>
 <tr class="separator:a940ae023082b83f5a2ec2e5e2d2ff328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1c80755850376934b32eb829094d9f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a3f1c80755850376934b32eb829094d9f">new_outbound_slot</a> (beast::IP::Endpoint const &amp;remote_endpoint)=0</td></tr>
+<tr class="memitem:a3f1c80755850376934b32eb829094d9f"><td class="memItemLeft" align="right" valign="top">virtual Slot::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a3f1c80755850376934b32eb829094d9f">new_outbound_slot</a> (beast::IP::Endpoint const &amp;remote_endpoint)=0</td></tr>
 <tr class="memdesc:a3f1c80755850376934b32eb829094d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new outbound slot with the specified remote endpoint.  <a href="#a3f1c80755850376934b32eb829094d9f">More...</a><br/></td></tr>
 <tr class="separator:a3f1c80755850376934b32eb829094d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec6111e6cd05ddd63fafcd83a1886d95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#aec6111e6cd05ddd63fafcd83a1886d95">on_connected</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot, beast::IP::Endpoint const &amp;local_endpoint)=0</td></tr>
+<tr class="memitem:aec6111e6cd05ddd63fafcd83a1886d95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#aec6111e6cd05ddd63fafcd83a1886d95">on_connected</a> (Slot::ptr const &amp;slot, beast::IP::Endpoint const &amp;local_endpoint)=0</td></tr>
 <tr class="memdesc:aec6111e6cd05ddd63fafcd83a1886d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an outbound connection attempt succeeds.  <a href="#aec6111e6cd05ddd63fafcd83a1886d95">More...</a><br/></td></tr>
 <tr class="separator:aec6111e6cd05ddd63fafcd83a1886d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b01cbdbaf822be79a34b4b41bc5912"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a23b01cbdbaf822be79a34b4b41bc5912">on_handshake</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot, <a class="el" href="namespaceripple.html#ad055bd0a1d4c7de9da4f74750bfe0460">RipplePublicKey</a> const &amp;key, bool cluster)=0</td></tr>
+<tr class="memitem:a23b01cbdbaf822be79a34b4b41bc5912"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a23b01cbdbaf822be79a34b4b41bc5912">on_handshake</a> (Slot::ptr const &amp;slot, <a class="el" href="classripple_1_1_identifier_type.html">RipplePublicKey</a> const &amp;key, bool cluster)=0</td></tr>
 <tr class="memdesc:a23b01cbdbaf822be79a34b4b41bc5912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a handshake is completed.  <a href="#a23b01cbdbaf822be79a34b4b41bc5912">More...</a><br/></td></tr>
 <tr class="separator:a23b01cbdbaf822be79a34b4b41bc5912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d5a5797dd429fda5ab0ecc5dea9aec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a02d5a5797dd429fda5ab0ecc5dea9aec">on_endpoints</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot, <a class="el" href="namespaceripple_1_1_peer_finder.html#a44f338ee3a1614e9c54c23915c5432e6">Endpoints</a> const &amp;endpoints)=0</td></tr>
+<tr class="memitem:a02d5a5797dd429fda5ab0ecc5dea9aec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a02d5a5797dd429fda5ab0ecc5dea9aec">on_endpoints</a> (Slot::ptr const &amp;slot, Endpoints const &amp;endpoints)=0</td></tr>
 <tr class="memdesc:a02d5a5797dd429fda5ab0ecc5dea9aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when mtENDPOINTS is received.  <a href="#a02d5a5797dd429fda5ab0ecc5dea9aec">More...</a><br/></td></tr>
 <tr class="separator:a02d5a5797dd429fda5ab0ecc5dea9aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58bbc275775c108fd0f9dba028186ee0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a58bbc275775c108fd0f9dba028186ee0">on_legacy_endpoints</a> (<a class="el" href="namespaceripple_1_1_peer_finder.html#a494b77875416abf4ff9427bc77ad5aef">IPAddresses</a> const &amp;addresses)=0</td></tr>
+<tr class="memitem:a58bbc275775c108fd0f9dba028186ee0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a58bbc275775c108fd0f9dba028186ee0">on_legacy_endpoints</a> (IPAddresses const &amp;addresses)=0</td></tr>
 <tr class="memdesc:a58bbc275775c108fd0f9dba028186ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when legacy IP/port addresses are received.  <a href="#a58bbc275775c108fd0f9dba028186ee0">More...</a><br/></td></tr>
 <tr class="separator:a58bbc275775c108fd0f9dba028186ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accfb8c7141256fd17012fd1d81c84294"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#accfb8c7141256fd17012fd1d81c84294">on_closed</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot)=0</td></tr>
+<tr class="memitem:accfb8c7141256fd17012fd1d81c84294"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#accfb8c7141256fd17012fd1d81c84294">on_closed</a> (Slot::ptr const &amp;slot)=0</td></tr>
 <tr class="memdesc:accfb8c7141256fd17012fd1d81c84294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the slot is closed.  <a href="#accfb8c7141256fd17012fd1d81c84294">More...</a><br/></td></tr>
 <tr class="separator:accfb8c7141256fd17012fd1d81c84294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1fdba69239fdaca9e756832477a9212"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#ab1fdba69239fdaca9e756832477a9212">on_cancel</a> (<a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;slot)=0</td></tr>
+<tr class="memitem:ab1fdba69239fdaca9e756832477a9212"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#ab1fdba69239fdaca9e756832477a9212">on_cancel</a> (Slot::ptr const &amp;slot)=0</td></tr>
 <tr class="memdesc:ab1fdba69239fdaca9e756832477a9212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the slot is closed via canceling operations.  <a href="#ab1fdba69239fdaca9e756832477a9212">More...</a><br/></td></tr>
 <tr class="separator:ab1fdba69239fdaca9e756832477a9212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ae6272485fd31cfc762ea14fba821c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classripple_1_1_peer_finder_1_1_manager.html">Manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a6ae6272485fd31cfc762ea14fba821c9">New</a> (Stoppable &amp;parent, <a class="el" href="classripple_1_1_site_files_1_1_manager.html">SiteFiles::Manager</a> &amp;siteFiles, beast::File const &amp;pathToDbFileOrDirectory, <a class="el" href="structripple_1_1_peer_finder_1_1_callback.html">Callback</a> &amp;callback, <a class="el" href="namespaceripple_1_1_peer_finder.html#a42f1942743fddc856d9584669ced509e">clock_type</a> &amp;clock, beast::Journal journal)</td></tr>
+<tr class="memitem:a6ae6272485fd31cfc762ea14fba821c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classripple_1_1_peer_finder_1_1_manager.html">Manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a6ae6272485fd31cfc762ea14fba821c9">New</a> (Stoppable &amp;parent, <a class="el" href="classripple_1_1_site_files_1_1_manager.html">SiteFiles::Manager</a> &amp;siteFiles, beast::File const &amp;pathToDbFileOrDirectory, <a class="el" href="structripple_1_1_peer_finder_1_1_callback.html">Callback</a> &amp;callback, clock_type &amp;clock, beast::Journal journal)</td></tr>
 <tr class="memdesc:a6ae6272485fd31cfc762ea14fba821c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classripple_1_1_peer_finder_1_1_manager.html" title="Maintains a set of IP addresses used for getting into the network. ">Manager</a>.  <a href="#a6ae6272485fd31cfc762ea14fba821c9">More...</a><br/></td></tr>
 <tr class="separator:a6ae6272485fd31cfc762ea14fba821c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2e4a66df556c199a25368843cc66c469"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_peer_finder_1_1_manager.html#a2e4a66df556c199a25368843cc66c469">Manager</a> (Stoppable &amp;parent)</td></tr>
+<tr class="memitem:a2e4a66df556c199a25368843cc66c469"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e4a66df556c199a25368843cc66c469"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Manager</b> (Stoppable &amp;parent)</td></tr>
 <tr class="separator:a2e4a66df556c199a25368843cc66c469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Maintains a set of IP addresses used for getting into the network. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2e4a66df556c199a25368843cc66c469"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::PeerFinder::Manager::Manager </td>
-          <td>(</td>
-          <td class="paramtype">Stoppable &amp;&#160;</td>
-          <td class="paramname"><em>parent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a35439ac6bd2310435ed933e72bbfec45"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +223,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_peer_finder.html#a42f1942743fddc856d9584669ced509e">clock_type</a> &amp;&#160;</td>
+          <td class="paramtype">clock_type &amp;&#160;</td>
           <td class="paramname"><em>clock</em>, </td>
         </tr>
         <tr>
@@ -301,8 +274,6 @@ Protected Member Functions</h2></td></tr>
 <p>Set the configuration for the manager. </p>
 <p>The new settings will be applied asynchronously. Thread safety: Can be called from any threads at any time. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#ad08db86059b7fcb9896b877be1fec618">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a4f94bdaf80e6bdba37b733512789401d"></a>
@@ -339,8 +310,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Add a peer that should always be connected. </p>
 <p>This is useful for maintaining a private cluster of peers. The string is the name as specified in the configuration file, along with the set of corresponding IP addresses. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#a748d7eb17909efbc014f7575f48b8d8a">ripple::PeerFinder::ManagerImp</a>.</p>
 
 </div>
 </div>
@@ -384,8 +353,6 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#a7b499cab69b8d85c0cbd9ae72f300201">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a940ae023082b83f5a2ec2e5e2d2ff328"></a>
@@ -396,7 +363,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> ripple::PeerFinder::Manager::new_inbound_slot </td>
+          <td class="memname">virtual Slot::ptr ripple::PeerFinder::Manager::new_inbound_slot </td>
           <td>(</td>
           <td class="paramtype">beast::IP::Endpoint const &amp;&#160;</td>
           <td class="paramname"><em>local_endpoint</em>, </td>
@@ -428,8 +395,6 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#a09025a0728a3020a33be60dd4cbe2166">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a3f1c80755850376934b32eb829094d9f"></a>
@@ -440,7 +405,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> ripple::PeerFinder::Manager::new_outbound_slot </td>
+          <td class="memname">virtual Slot::ptr ripple::PeerFinder::Manager::new_outbound_slot </td>
           <td>(</td>
           <td class="paramtype">beast::IP::Endpoint const &amp;&#160;</td>
           <td class="paramname"><em>remote_endpoint</em></td><td>)</td>
@@ -457,8 +422,6 @@ Protected Member Functions</h2></td></tr>
 <p>Create a new outbound slot with the specified remote endpoint. </p>
 <p>If nullptr is returned, then the slot could not be assigned. Usually this is because of a duplicate connection. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#ad5466752f0d8949cc02dce5aba12c4cc">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aec6111e6cd05ddd63fafcd83a1886d95"></a>
@@ -471,7 +434,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Manager::on_connected </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em>, </td>
         </tr>
         <tr>
@@ -496,8 +459,6 @@ Protected Member Functions</h2></td></tr>
 <p>Called when an outbound connection attempt succeeds. </p>
 <p>The local endpoint must be valid. If the caller receives an error when retrieving the local endpoint from the socket, it should proceed as if the connection attempt failed by calling on_closed instead of on_connected. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#a2e6bf812c3dfdf734918e5f4f82b04d3">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a23b01cbdbaf822be79a34b4b41bc5912"></a>
@@ -510,13 +471,13 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Manager::on_handshake </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#ad055bd0a1d4c7de9da4f74750bfe0460">RipplePublicKey</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classripple_1_1_identifier_type.html">RipplePublicKey</a> const &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -540,8 +501,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called when a handshake is completed. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#a821aed96cad550e2e952e914ecc0b318">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a02d5a5797dd429fda5ab0ecc5dea9aec"></a>
@@ -554,13 +513,13 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Manager::on_endpoints </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_peer_finder.html#a44f338ee3a1614e9c54c23915c5432e6">Endpoints</a> const &amp;&#160;</td>
+          <td class="paramtype">Endpoints const &amp;&#160;</td>
           <td class="paramname"><em>endpoints</em>&#160;</td>
         </tr>
         <tr>
@@ -578,8 +537,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called when mtENDPOINTS is received. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#ab41b799d78f788021ae24c965c67676b">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a58bbc275775c108fd0f9dba028186ee0"></a>
@@ -592,7 +549,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Manager::on_legacy_endpoints </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_peer_finder.html#a494b77875416abf4ff9427bc77ad5aef">IPAddresses</a> const &amp;&#160;</td>
+          <td class="paramtype">IPAddresses const &amp;&#160;</td>
           <td class="paramname"><em>addresses</em></td><td>)</td>
           <td></td>
         </tr>
@@ -606,8 +563,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called when legacy IP/port addresses are received. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#ae00d766bffe6a40411195f82c0e50081">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="accfb8c7141256fd17012fd1d81c84294"></a>
@@ -620,7 +575,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Manager::on_closed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em></td><td>)</td>
           <td></td>
         </tr>
@@ -635,8 +590,6 @@ Protected Member Functions</h2></td></tr>
 <p>Called when the slot is closed. </p>
 <p>This always happens when the socket is closed, unless the socket was canceled. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#ad6b4e5a2b7bc01d7816762e2caec6a8c">ripple::PeerFinder::ManagerImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab1fdba69239fdaca9e756832477a9212"></a>
@@ -649,7 +602,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::PeerFinder::Manager::on_cancel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_peer_finder_1_1_slot.html#af8634ad4f6a8d38f67c41590b5ac6d71">Slot::ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">Slot::ptr const &amp;&#160;</td>
           <td class="paramname"><em>slot</em></td><td>)</td>
           <td></td>
         </tr>
@@ -663,8 +616,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called when the slot is closed via canceling operations. </p>
 <p>This is instead of on_closed. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_peer_finder_1_1_manager_imp.html#af8232f90fecba1296206a0b87c0398db">ripple::PeerFinder::ManagerImp</a>.</p>
 
 </div>
 </div>

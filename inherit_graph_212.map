@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classripple_1_1_resolver_asio_impl.html" title="ripple::ResolverAsioImpl" alt="" coords="355,31,519,57"/>
-<area shape="rect" id="node3" href="$classripple_1_1_resolver.html" title="ripple::Resolver" alt="" coords="6,56,119,83"/>
-<area shape="rect" id="node4" href="$classripple_1_1_resolver_asio.html" title="ripple::ResolverAsio" alt="" coords="168,56,307,83"/>
+<area shape="rect" id="node1" href="$classripple_1_1_simple_identifier.html" title="ripple::SimpleIdentifier\l\&lt; 32 \&gt;" alt="" coords="6,5,157,46"/>
+<area shape="rect" id="node2" href="$classripple_1_1_ripple_ledger_hash_traits.html" title="The SHA256 bit hash of a signed ledger. " alt="" coords="205,5,373,46"/>
 </map>

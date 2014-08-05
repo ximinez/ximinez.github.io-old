@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classripple_1_1basic__message_1_1parser.html" title="ripple::basic_message\l::parser" alt="" coords="173,5,325,46"/>
+<area shape="rect" id="node1" href="$classripple_1_1_counted_object.html" title="ripple::CountedObject\l\&lt; LedgerEntrySet \&gt;" alt="" coords="6,5,154,46"/>
+<area shape="rect" id="node2" href="$classripple_1_1_ledger_entry_set.html" title="An LES is a LedgerEntrySet. " alt="" coords="203,12,354,39"/>
 </map>

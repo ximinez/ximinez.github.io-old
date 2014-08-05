@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -103,14 +104,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9ae58e6dfe5960158de51d1ae951a1f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a9ae58e6dfe5960158de51d1ae951a1f2">DirectoryEntryIterator</a> ()</td></tr>
-<tr class="separator:a9ae58e6dfe5960158de51d1ae951a1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a520de3fc09caee5ed1206905d0d4f67d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a520de3fc09caee5ed1206905d0d4f67d">DirectoryEntryIterator</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;index)</td></tr>
+<tr class="memitem:a520de3fc09caee5ed1206905d0d4f67d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a520de3fc09caee5ed1206905d0d4f67d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DirectoryEntryIterator</b> (uint256 const &amp;index)</td></tr>
 <tr class="separator:a520de3fc09caee5ed1206905d0d4f67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684fc96cca8b93db050d1415bd7af701"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a684fc96cca8b93db050d1415bd7af701">DirectoryEntryIterator</a> (<a class="el" href="classripple_1_1_serialized_ledger_entry.html#a7424ad226fa23ef85fc075581390c17d">SLE::ref</a> directory)</td></tr>
-<tr class="memdesc:a684fc96cca8b93db050d1415bd7af701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a reference to the root directory.  <a href="#a684fc96cca8b93db050d1415bd7af701">More...</a><br/></td></tr>
+<tr class="memitem:a684fc96cca8b93db050d1415bd7af701"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a684fc96cca8b93db050d1415bd7af701"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a684fc96cca8b93db050d1415bd7af701">DirectoryEntryIterator</a> (SLE::ref directory)</td></tr>
+<tr class="memdesc:a684fc96cca8b93db050d1415bd7af701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a reference to the root directory. <br/></td></tr>
 <tr class="separator:a684fc96cca8b93db050d1415bd7af701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5483c068dd1769c8f736c5aadb5b27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_serialized_ledger_entry.html#a53d2dcf2569057fd7e77b10e965e215d">SLE::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a3b5483c068dd1769c8f736c5aadb5b27">getEntry</a> (<a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;les, <a class="el" href="group__protocol.html#gaf6e0324b257fc9992b83ecf827c2a07b">LedgerEntryType</a> type)</td></tr>
+<tr class="memitem:a3b5483c068dd1769c8f736c5aadb5b27"><td class="memItemLeft" align="right" valign="top">SLE::pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a3b5483c068dd1769c8f736c5aadb5b27">getEntry</a> (<a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;les, <a class="el" href="group__protocol.html#gaf6e0324b257fc9992b83ecf827c2a07b">LedgerEntryType</a> type)</td></tr>
 <tr class="memdesc:a3b5483c068dd1769c8f736c5aadb5b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SLE this iterator currently references.  <a href="#a3b5483c068dd1769c8f736c5aadb5b27">More...</a><br/></td></tr>
 <tr class="separator:a3b5483c068dd1769c8f736c5aadb5b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116b89ee485c23d2a611c0da008bfe38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a116b89ee485c23d2a611c0da008bfe38">firstEntry</a> (<a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;)</td></tr>
@@ -119,104 +120,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb66bbf56a58c5196dac086794f2e428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#afb66bbf56a58c5196dac086794f2e428">nextEntry</a> (<a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;)</td></tr>
 <tr class="memdesc:afb66bbf56a58c5196dac086794f2e428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make this iterator point to the next offer.  <a href="#afb66bbf56a58c5196dac086794f2e428">More...</a><br/></td></tr>
 <tr class="separator:afb66bbf56a58c5196dac086794f2e428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181e787d51b0874c76a4b22609c4e65a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a181e787d51b0874c76a4b22609c4e65a">addJson</a> (<a class="el" href="class_json_1_1_value.html">Json::Value</a> &amp;) const </td></tr>
-<tr class="memdesc:a181e787d51b0874c76a4b22609c4e65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add this iterator's position to a JSON object.  <a href="#a181e787d51b0874c76a4b22609c4e65a">More...</a><br/></td></tr>
+<tr class="memitem:a181e787d51b0874c76a4b22609c4e65a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a181e787d51b0874c76a4b22609c4e65a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a181e787d51b0874c76a4b22609c4e65a">addJson</a> (<a class="el" href="class_json_1_1_value.html">Json::Value</a> &amp;) const </td></tr>
+<tr class="memdesc:a181e787d51b0874c76a4b22609c4e65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add this iterator's position to a JSON object. <br/></td></tr>
 <tr class="separator:a181e787d51b0874c76a4b22609c4e65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24999f50c16b36ba5dcf8e0d17b701d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a24999f50c16b36ba5dcf8e0d17b701d8">setJson</a> (<a class="el" href="class_json_1_1_value.html">Json::Value</a> const &amp;, <a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;les)</td></tr>
-<tr class="memdesc:a24999f50c16b36ba5dcf8e0d17b701d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this iterator's position from a JSON object.  <a href="#a24999f50c16b36ba5dcf8e0d17b701d8">More...</a><br/></td></tr>
+<tr class="memitem:a24999f50c16b36ba5dcf8e0d17b701d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24999f50c16b36ba5dcf8e0d17b701d8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a24999f50c16b36ba5dcf8e0d17b701d8">setJson</a> (<a class="el" href="class_json_1_1_value.html">Json::Value</a> const &amp;, <a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;les)</td></tr>
+<tr class="memdesc:a24999f50c16b36ba5dcf8e0d17b701d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this iterator's position from a JSON object. <br/></td></tr>
 <tr class="separator:a24999f50c16b36ba5dcf8e0d17b701d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b08c8fb9fe42d1d1f7749a3e9a522f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a51b08c8fb9fe42d1d1f7749a3e9a522f">getEntryLedgerIndex</a> () const </td></tr>
+<tr class="memitem:a51b08c8fb9fe42d1d1f7749a3e9a522f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51b08c8fb9fe42d1d1f7749a3e9a522f"></a>
+uint256 const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getEntryLedgerIndex</b> () const </td></tr>
 <tr class="separator:a51b08c8fb9fe42d1d1f7749a3e9a522f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040d297be27ea6e19b59ddbb3f78eab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a040d297be27ea6e19b59ddbb3f78eab4">getDirectory</a> () const </td></tr>
+<tr class="memitem:a040d297be27ea6e19b59ddbb3f78eab4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a040d297be27ea6e19b59ddbb3f78eab4"></a>
+uint256&#160;</td><td class="memItemRight" valign="bottom"><b>getDirectory</b> () const </td></tr>
 <tr class="separator:a040d297be27ea6e19b59ddbb3f78eab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb192a4e2f44ccc8e92145eb4838911"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#a6eb192a4e2f44ccc8e92145eb4838911">operator==</a> (<a class="el" href="classripple_1_1_directory_entry_iterator.html">DirectoryEntryIterator</a> const &amp;other) const </td></tr>
+<tr class="memitem:a6eb192a4e2f44ccc8e92145eb4838911"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eb192a4e2f44ccc8e92145eb4838911"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classripple_1_1_directory_entry_iterator.html">DirectoryEntryIterator</a> const &amp;other) const </td></tr>
 <tr class="separator:a6eb192a4e2f44ccc8e92145eb4838911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce46c5b34ce66702766b6744823af83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_directory_entry_iterator.html#acce46c5b34ce66702766b6744823af83">operator!=</a> (<a class="el" href="classripple_1_1_directory_entry_iterator.html">DirectoryEntryIterator</a> const &amp;other) const </td></tr>
+<tr class="memitem:acce46c5b34ce66702766b6744823af83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acce46c5b34ce66702766b6744823af83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="classripple_1_1_directory_entry_iterator.html">DirectoryEntryIterator</a> const &amp;other) const </td></tr>
 <tr class="separator:acce46c5b34ce66702766b6744823af83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An iterator that walks the ledger entries in a single directory. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9ae58e6dfe5960158de51d1ae951a1f2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::DirectoryEntryIterator::DirectoryEntryIterator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a520de3fc09caee5ed1206905d0d4f67d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::DirectoryEntryIterator::DirectoryEntryIterator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a684fc96cca8b93db050d1415bd7af701"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::DirectoryEntryIterator::DirectoryEntryIterator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_serialized_ledger_entry.html#a7424ad226fa23ef85fc075581390c17d">SLE::ref</a>&#160;</td>
-          <td class="paramname"><em>directory</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct from a reference to the root directory. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3b5483c068dd1769c8f736c5aadb5b27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_serialized_ledger_entry.html#a53d2dcf2569057fd7e77b10e965e215d">SLE::pointer</a> ripple::DirectoryEntryIterator::getEntry </td>
+          <td class="memname">SLE::pointer ripple::DirectoryEntryIterator::getEntry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;&#160;</td>
           <td class="paramname"><em>les</em>, </td>
@@ -275,146 +208,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Make this iterator point to the next offer. </p>
 <p>Advance the iterator to the next entry. </p>
-
-</div>
-</div>
-<a class="anchor" id="a181e787d51b0874c76a4b22609c4e65a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::DirectoryEntryIterator::addJson </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_json_1_1_value.html">Json::Value</a> &amp;&#160;</td>
-          <td class="paramname"><em>j</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add this iterator's position to a JSON object. </p>
-
-</div>
-</div>
-<a class="anchor" id="a24999f50c16b36ba5dcf8e0d17b701d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::DirectoryEntryIterator::setJson </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_json_1_1_value.html">Json::Value</a> const &amp;&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_ledger_entry_set.html">LedgerEntrySet</a> &amp;&#160;</td>
-          <td class="paramname"><em>les</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set this iterator's position from a JSON object. </p>
-
-</div>
-</div>
-<a class="anchor" id="a51b08c8fb9fe42d1d1f7749a3e9a522f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const&amp; ripple::DirectoryEntryIterator::getEntryLedgerIndex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a040d297be27ea6e19b59ddbb3f78eab4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> ripple::DirectoryEntryIterator::getDirectory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6eb192a4e2f44ccc8e92145eb4838911"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::DirectoryEntryIterator::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_directory_entry_iterator.html">DirectoryEntryIterator</a> const &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acce46c5b34ce66702766b6744823af83"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ripple::DirectoryEntryIterator::operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_directory_entry_iterator.html">DirectoryEntryIterator</a> const &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

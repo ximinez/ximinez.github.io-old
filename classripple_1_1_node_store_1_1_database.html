@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_database.html">Database</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>NodeStore</b></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_database.html">Database</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,15 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classripple_1_1_node_store_1_1_database.html#details">More...</a></p>
 
 <p><code>#include &lt;Database.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::NodeStore::Database:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_node_store_1_1_database__inherit__graph.png" border="0" usemap="#ripple_1_1_node_store_1_1_database_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_node_store_1_1_database_inherit__map" id="ripple_1_1_node_store_1_1_database_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_node_store_1_1_database_imp.html" title="ripple::NodeStore::\lDatabaseImp" alt="" coords="4,97,133,138"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by ripple::NodeStore::DatabaseImp.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -118,22 +112,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0aa67a0af48b998fa138e1e6298b5e00"><td class="memItemLeft" align="right" valign="top">virtual beast::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a0aa67a0af48b998fa138e1e6298b5e00">getName</a> () const =0</td></tr>
 <tr class="memdesc:a0aa67a0af48b998fa138e1e6298b5e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the name associated with this backend.  <a href="#a0aa67a0af48b998fa138e1e6298b5e00">More...</a><br/></td></tr>
 <tr class="separator:a0aa67a0af48b998fa138e1e6298b5e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94726cd802a99e23c4d494a81d496063"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1_node_object.html#a20419bc473468453f57a379fb0b8838d">NodeObject::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a94726cd802a99e23c4d494a81d496063">fetch</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;hash)=0</td></tr>
+<tr class="memitem:a94726cd802a99e23c4d494a81d496063"><td class="memItemLeft" align="right" valign="top">virtual NodeObject::pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a94726cd802a99e23c4d494a81d496063">fetch</a> (uint256 const &amp;hash)=0</td></tr>
 <tr class="memdesc:a94726cd802a99e23c4d494a81d496063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch an object.  <a href="#a94726cd802a99e23c4d494a81d496063">More...</a><br/></td></tr>
 <tr class="separator:a94726cd802a99e23c4d494a81d496063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11a6e82575ae2a38b8f2bba7a0b9f43"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#ab11a6e82575ae2a38b8f2bba7a0b9f43">asyncFetch</a> (<a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;hash, <a class="el" href="classripple_1_1_node_object.html#a20419bc473468453f57a379fb0b8838d">NodeObject::pointer</a> &amp;object)=0</td></tr>
+<tr class="memitem:ab11a6e82575ae2a38b8f2bba7a0b9f43"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#ab11a6e82575ae2a38b8f2bba7a0b9f43">asyncFetch</a> (uint256 const &amp;hash, NodeObject::pointer &amp;object)=0</td></tr>
 <tr class="memdesc:ab11a6e82575ae2a38b8f2bba7a0b9f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch an object without waiting.  <a href="#ab11a6e82575ae2a38b8f2bba7a0b9f43">More...</a><br/></td></tr>
 <tr class="separator:ab11a6e82575ae2a38b8f2bba7a0b9f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a539d10a0f85deee16c500f4e57fa9648"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a539d10a0f85deee16c500f4e57fa9648">waitReads</a> ()=0</td></tr>
-<tr class="memdesc:a539d10a0f85deee16c500f4e57fa9648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for all currently pending async reads to complete.  <a href="#a539d10a0f85deee16c500f4e57fa9648">More...</a><br/></td></tr>
+<tr class="memitem:a539d10a0f85deee16c500f4e57fa9648"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a539d10a0f85deee16c500f4e57fa9648"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a539d10a0f85deee16c500f4e57fa9648">waitReads</a> ()=0</td></tr>
+<tr class="memdesc:a539d10a0f85deee16c500f4e57fa9648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for all currently pending async reads to complete. <br/></td></tr>
 <tr class="separator:a539d10a0f85deee16c500f4e57fa9648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fb091e51bd36690e0652565a54802e9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a0fb091e51bd36690e0652565a54802e9">getDesiredAsyncReadCount</a> ()=0</td></tr>
 <tr class="memdesc:a0fb091e51bd36690e0652565a54802e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of async reads the node store prefers.  <a href="#a0fb091e51bd36690e0652565a54802e9">More...</a><br/></td></tr>
 <tr class="separator:a0fb091e51bd36690e0652565a54802e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d54d0537134fd3b1cbd4b8fbb6e3c34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a2d54d0537134fd3b1cbd4b8fbb6e3c34">store</a> (<a class="el" href="namespaceripple.html#ad80549ab348d15a7256fe4182bed139f">NodeObjectType</a> type, std::uint32_t ledgerIndex, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &amp;&amp;data, <a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;hash)=0</td></tr>
+<tr class="memitem:a2d54d0537134fd3b1cbd4b8fbb6e3c34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a2d54d0537134fd3b1cbd4b8fbb6e3c34">store</a> (<a class="el" href="namespaceripple.html#ad80549ab348d15a7256fe4182bed139f">NodeObjectType</a> type, std::uint32_t ledgerIndex, <a class="el" href="namespaceripple.html#a1b87ba4732cf1725393e8dd60bf73b0c">Blob</a> &amp;&amp;data, uint256 const &amp;hash)=0</td></tr>
 <tr class="memdesc:a2d54d0537134fd3b1cbd4b8fbb6e3c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the object.  <a href="#a2d54d0537134fd3b1cbd4b8fbb6e3c34">More...</a><br/></td></tr>
 <tr class="separator:a2d54d0537134fd3b1cbd4b8fbb6e3c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8968d298143c29a6720acffeb2516aa0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a8968d298143c29a6720acffeb2516aa0">for_each</a> (std::function&lt; void(<a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a>)&gt; f)=0</td></tr>
+<tr class="memitem:a8968d298143c29a6720acffeb2516aa0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#a8968d298143c29a6720acffeb2516aa0">for_each</a> (std::function&lt; void(NodeObject::Ptr)&gt; f)=0</td></tr>
 <tr class="memdesc:a8968d298143c29a6720acffeb2516aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visit every object in the database This is usually called during import.  <a href="#a8968d298143c29a6720acffeb2516aa0">More...</a><br/></td></tr>
 <tr class="separator:a8968d298143c29a6720acffeb2516aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1946e6706aecab34d6ea2207a33f6bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_database.html#ac1946e6706aecab34d6ea2207a33f6bc">import</a> (<a class="el" href="classripple_1_1_node_store_1_1_database.html">Database</a> &amp;source)=0</td></tr>
@@ -209,8 +204,6 @@ Public Member Functions</h2></td></tr>
 <p>Retrieve the name associated with this backend. </p>
 <p>This is used for diagnostics and may not reflect the actual path or paths used by the underlying backend. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a739188dd07f503587346c5c90e278dba">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a94726cd802a99e23c4d494a81d496063"></a>
@@ -221,9 +214,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classripple_1_1_node_object.html#a20419bc473468453f57a379fb0b8838d">NodeObject::pointer</a> ripple::NodeStore::Database::fetch </td>
+          <td class="memname">virtual NodeObject::pointer ripple::NodeStore::Database::fetch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
+          <td class="paramtype">uint256 const &amp;&#160;</td>
           <td class="paramname"><em>hash</em></td><td>)</td>
           <td></td>
         </tr>
@@ -246,8 +239,6 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The object, or nullptr if it couldn't be retrieved. </dd></dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a05a045042c858248fafe862cab247898">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab11a6e82575ae2a38b8f2bba7a0b9f43"></a>
@@ -260,13 +251,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool ripple::NodeStore::Database::asyncFetch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
+          <td class="paramtype">uint256 const &amp;&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_node_object.html#a20419bc473468453f57a379fb0b8838d">NodeObject::pointer</a> &amp;&#160;</td>
+          <td class="paramtype">NodeObject::pointer &amp;&#160;</td>
           <td class="paramname"><em>object</em>&#160;</td>
         </tr>
         <tr>
@@ -294,35 +285,6 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the operation completed </dd></dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#ad5722779ebf33de1e2c7b4ff7c2a8ff9">ripple::NodeStore::DatabaseImp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a539d10a0f85deee16c500f4e57fa9648"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ripple::NodeStore::Database::waitReads </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait for all currently pending async reads to complete. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a31e5ec3465c6063a2b4f1014ae6286ae">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a0fb091e51bd36690e0652565a54802e9"></a>
@@ -348,8 +310,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the maximum number of async reads the node store prefers. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of async reads preferred. </dd></dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a000797cd7a52957f7a2f049b658fcd64">ripple::NodeStore::DatabaseImp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +341,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> const &amp;&#160;</td>
+          <td class="paramtype">uint256 const &amp;&#160;</td>
           <td class="paramname"><em>hash</em>&#160;</td>
         </tr>
         <tr>
@@ -410,8 +370,6 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object was stored? </dd></dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a2f559d9d186da00531a84da4066f3be3">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a8968d298143c29a6720acffeb2516aa0"></a>
@@ -424,7 +382,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::NodeStore::Database::for_each </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(NodeObject::Ptr)&gt;&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
@@ -439,8 +397,6 @@ Public Member Functions</h2></td></tr>
 <p>Visit every object in the database This is usually called during import. </p>
 <dl class="section note"><dt>Note</dt><dd>This routine will not be called concurrently with itself or other methods. </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classripple_1_1_node_store_1_1_database.html#ac1946e6706aecab34d6ea2207a33f6bc" title="Import objects from another database. ">import</a> </dd></dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#ac0a454ca39b2a2b08be07429f566df4a">ripple::NodeStore::DatabaseImp</a>.</p>
 
 </div>
 </div>
@@ -468,8 +424,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Import objects from another database. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#ac7b5024674b6ebd9128d664f633a1e8b">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aabb70be2c6ef7841f534ff9202326e46"></a>
@@ -496,8 +450,6 @@ Public Member Functions</h2></td></tr>
 <p>Retrieve the estimated number of pending write operations. </p>
 <p>This is used for diagnostics. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a6be1971563ede74beb771e6d598a6d25">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a105cc1993a6e21fa10b5f35ec837ac89"></a>
@@ -522,8 +474,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the positive cache hits to total attempts ratio. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a78da88ec849cba95d8e22f0b0cf15700">ripple::NodeStore::DatabaseImp</a>.</p>
 
 </div>
 </div>
@@ -568,8 +518,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a3acbbadb58ac0e077a0450e48a081d00">ripple::NodeStore::DatabaseImp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a40a0e5a30857e9ba3c7561748af31e29"></a>
@@ -594,8 +542,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove expired entries from the positive and negative caches. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_node_store_1_1_database_imp.html#a46cd4cab7f3ec8f5cacd8b612d5613ab">ripple::NodeStore::DatabaseImp</a>.</p>
 
 </div>
 </div>

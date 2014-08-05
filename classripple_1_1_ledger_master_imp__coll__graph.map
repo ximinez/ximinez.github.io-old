@@ -1,8 +1,0 @@
-<map id="ripple::LedgerMasterImp" name="ripple::LedgerMasterImp">
-<area shape="rect" id="node2" href="$classripple_1_1_ledger_master.html" title="ripple::LedgerMaster" alt="" coords="14,5,154,32"/>
-<area shape="rect" id="node3" href="$classripple_1_1_ledger_holder.html" title="Hold a ledger in a thread&#45;safe way. " alt="" coords="15,67,153,93"/>
-<area shape="rect" id="node4" href="$classripple_1_1_range_set.html" title="A sparse set of integers. " alt="" coords="25,117,143,144"/>
-<area shape="rect" id="node5" href="$classripple_1_1_canonical_t_x_set.html" title="Holds transactions which were deferred to the next pass of consensus. " alt="" coords="6,168,162,195"/>
-<area shape="rect" id="node6" href="$classripple_1_1base__uint.html" title="ripple::base_uint\&lt;\l 256 \&gt;" alt="" coords="21,219,147,261"/>
-<area shape="rect" id="node7" href="$classripple_1_1_ledger_history.html" title="Retains historical ledgers. " alt="" coords="13,285,155,312"/>
-</map>

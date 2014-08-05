@@ -1,4 +1,0 @@
-<map id="ripple::NodeStore::MemoryBackend" name="ripple::NodeStore::MemoryBackend">
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_backend.html" title="A backend used for the NodeStore. " alt="" coords="5,6,135,47"/>
-<area shape="rect" id="node3" href="$classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. " alt="" coords="160,6,289,47"/>
-</map>

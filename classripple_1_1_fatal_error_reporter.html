@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -105,66 +106,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acd59ff1e9ea63fcdcaee35ce148c1453"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_fatal_error_reporter.html#acd59ff1e9ea63fcdcaee35ce148c1453">FatalErrorReporter</a> ()</td></tr>
-<tr class="separator:acd59ff1e9ea63fcdcaee35ce148c1453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a116e43db7b1db73cf8382420dfe649ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_fatal_error_reporter.html#a116e43db7b1db73cf8382420dfe649ec">~FatalErrorReporter</a> ()</td></tr>
-<tr class="separator:a116e43db7b1db73cf8382420dfe649ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a592e70d7a57f029e5bf7f9f7cf2c117f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_fatal_error_reporter.html#a592e70d7a57f029e5bf7f9f7cf2c117f">reportMessage</a> (beast::String &amp;formattedMessage)</td></tr>
+<tr class="memitem:a592e70d7a57f029e5bf7f9f7cf2c117f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a592e70d7a57f029e5bf7f9f7cf2c117f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reportMessage</b> (beast::String &amp;formattedMessage)</td></tr>
 <tr class="separator:a592e70d7a57f029e5bf7f9f7cf2c117f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>FatalError reporter. </p>
 <p>This writes the details to standard error and the log. The reporter is installed for the lifetime of the object so typically you would put this at the top of main().</p>
 <p>An alternative is to make it a global variable but for this to cover all possible cases, there can be no other global variables with non trivial constructors that can report a fatal error. Also, the Log would need to be guaranteed to be set up for this handler to work. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acd59ff1e9ea63fcdcaee35ce148c1453"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::FatalErrorReporter::FatalErrorReporter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a116e43db7b1db73cf8382420dfe649ec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::FatalErrorReporter::~FatalErrorReporter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a592e70d7a57f029e5bf7f9f7cf2c117f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::FatalErrorReporter::reportMessage </td>
-          <td>(</td>
-          <td class="paramtype">beast::String &amp;&#160;</td>
-          <td class="paramname"><em>formattedMessage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>FatalErrorReporter.h</li>
 <li>FatalErrorReporter.cpp</li>
 </ul>

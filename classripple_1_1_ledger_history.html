@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -105,58 +106,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ced172f2079aa5484429128eab53902"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a2ced172f2079aa5484429128eab53902">LedgerHistory</a> ()</td></tr>
-<tr class="separator:a2ced172f2079aa5484429128eab53902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34b301afcb6775938c3cca3bcd2ff9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#ae34b301afcb6775938c3cca3bcd2ff9b">addLedger</a> (<a class="el" href="classripple_1_1_ledger.html#aa0095d1ace058c9f883f21da9827fbfa">Ledger::pointer</a> ledger, bool validated)</td></tr>
+<tr class="memitem:ae34b301afcb6775938c3cca3bcd2ff9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#ae34b301afcb6775938c3cca3bcd2ff9b">addLedger</a> (Ledger::pointer ledger, bool validated)</td></tr>
 <tr class="memdesc:ae34b301afcb6775938c3cca3bcd2ff9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Track a ledger.  <a href="#ae34b301afcb6775938c3cca3bcd2ff9b">More...</a><br/></td></tr>
 <tr class="separator:ae34b301afcb6775938c3cca3bcd2ff9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507bb40b5649985141e3dcbf57bd481d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a507bb40b5649985141e3dcbf57bd481d">getCacheHitRate</a> ()</td></tr>
 <tr class="memdesc:a507bb40b5649985141e3dcbf57bd481d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ledgers_by_hash cache hit rate.  <a href="#a507bb40b5649985141e3dcbf57bd481d">More...</a><br/></td></tr>
 <tr class="separator:a507bb40b5649985141e3dcbf57bd481d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee809a129221dcf26b25a709fd732c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_ledger.html#aa0095d1ace058c9f883f21da9827fbfa">Ledger::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a2ee809a129221dcf26b25a709fd732c6">getLedgerBySeq</a> (<a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a> ledgerIndex)</td></tr>
+<tr class="memitem:a2ee809a129221dcf26b25a709fd732c6"><td class="memItemLeft" align="right" valign="top">Ledger::pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a2ee809a129221dcf26b25a709fd732c6">getLedgerBySeq</a> (<a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a> ledgerIndex)</td></tr>
 <tr class="memdesc:a2ee809a129221dcf26b25a709fd732c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a ledger given its squence number.  <a href="#a2ee809a129221dcf26b25a709fd732c6">More...</a><br/></td></tr>
 <tr class="separator:a2ee809a129221dcf26b25a709fd732c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d5f0e7116d4f7e44e1c7d0dd2587a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceripple.html#a077afaa330c14078c1f60b740ffc7f73">LedgerHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#ab9d5f0e7116d4f7e44e1c7d0dd2587a6">getLedgerHash</a> (<a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a> ledgerIndex)</td></tr>
+<tr class="memitem:ab9d5f0e7116d4f7e44e1c7d0dd2587a6"><td class="memItemLeft" align="right" valign="top">LedgerHash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#ab9d5f0e7116d4f7e44e1c7d0dd2587a6">getLedgerHash</a> (<a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a> ledgerIndex)</td></tr>
 <tr class="memdesc:ab9d5f0e7116d4f7e44e1c7d0dd2587a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a ledger's hash given its sequence number.  <a href="#ab9d5f0e7116d4f7e44e1c7d0dd2587a6">More...</a><br/></td></tr>
 <tr class="separator:ab9d5f0e7116d4f7e44e1c7d0dd2587a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55709ad23e8fb3e226bfb3e07c7890a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classripple_1_1_ledger.html#aa0095d1ace058c9f883f21da9827fbfa">Ledger::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a55709ad23e8fb3e226bfb3e07c7890a4">getLedgerByHash</a> (<a class="el" href="namespaceripple.html#a077afaa330c14078c1f60b740ffc7f73">LedgerHash</a> const &amp;ledgerHash)</td></tr>
+<tr class="memitem:a55709ad23e8fb3e226bfb3e07c7890a4"><td class="memItemLeft" align="right" valign="top">Ledger::pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a55709ad23e8fb3e226bfb3e07c7890a4">getLedgerByHash</a> (LedgerHash const &amp;ledgerHash)</td></tr>
 <tr class="memdesc:a55709ad23e8fb3e226bfb3e07c7890a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a ledger given its hash.  <a href="#a55709ad23e8fb3e226bfb3e07c7890a4">More...</a><br/></td></tr>
 <tr class="separator:a55709ad23e8fb3e226bfb3e07c7890a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d358b94342ad934f4739b78035ff99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a45d358b94342ad934f4739b78035ff99">tune</a> (int size, int age)</td></tr>
 <tr class="memdesc:a45d358b94342ad934f4739b78035ff99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the history cache's paramters.  <a href="#a45d358b94342ad934f4739b78035ff99">More...</a><br/></td></tr>
 <tr class="separator:a45d358b94342ad934f4739b78035ff99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3fbc509e1f5446d85176bac513e74c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a5c3fbc509e1f5446d85176bac513e74c">sweep</a> ()</td></tr>
-<tr class="memdesc:a5c3fbc509e1f5446d85176bac513e74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove stale cache entries.  <a href="#a5c3fbc509e1f5446d85176bac513e74c">More...</a><br/></td></tr>
+<tr class="memitem:a5c3fbc509e1f5446d85176bac513e74c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3fbc509e1f5446d85176bac513e74c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a5c3fbc509e1f5446d85176bac513e74c">sweep</a> ()</td></tr>
+<tr class="memdesc:a5c3fbc509e1f5446d85176bac513e74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove stale cache entries. <br/></td></tr>
 <tr class="separator:a5c3fbc509e1f5446d85176bac513e74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd3968d9908661546e6985e72d4a4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a9dd3968d9908661546e6985e72d4a4fa">builtLedger</a> (<a class="el" href="classripple_1_1_ledger.html#a6fc6c429f622e955ec5a06329a351d60">Ledger::ref</a>)</td></tr>
-<tr class="memdesc:a9dd3968d9908661546e6985e72d4a4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that we have locally built a particular ledger.  <a href="#a9dd3968d9908661546e6985e72d4a4fa">More...</a><br/></td></tr>
+<tr class="memitem:a9dd3968d9908661546e6985e72d4a4fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dd3968d9908661546e6985e72d4a4fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a9dd3968d9908661546e6985e72d4a4fa">builtLedger</a> (Ledger::ref)</td></tr>
+<tr class="memdesc:a9dd3968d9908661546e6985e72d4a4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that we have locally built a particular ledger. <br/></td></tr>
 <tr class="separator:a9dd3968d9908661546e6985e72d4a4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b16de5d97321a8ba613f5d2eca079a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a64b16de5d97321a8ba613f5d2eca079a">validatedLedger</a> (<a class="el" href="classripple_1_1_ledger.html#a6fc6c429f622e955ec5a06329a351d60">Ledger::ref</a>)</td></tr>
-<tr class="memdesc:a64b16de5d97321a8ba613f5d2eca079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that we have validated a particular ledger.  <a href="#a64b16de5d97321a8ba613f5d2eca079a">More...</a><br/></td></tr>
+<tr class="memitem:a64b16de5d97321a8ba613f5d2eca079a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b16de5d97321a8ba613f5d2eca079a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#a64b16de5d97321a8ba613f5d2eca079a">validatedLedger</a> (Ledger::ref)</td></tr>
+<tr class="memdesc:a64b16de5d97321a8ba613f5d2eca079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that we have validated a particular ledger. <br/></td></tr>
 <tr class="separator:a64b16de5d97321a8ba613f5d2eca079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03adeae0930b7092edb4139cc7d0330"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#ae03adeae0930b7092edb4139cc7d0330">fixIndex</a> (<a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a> ledgerIndex, <a class="el" href="namespaceripple.html#a077afaa330c14078c1f60b740ffc7f73">LedgerHash</a> const &amp;ledgerHash)</td></tr>
+<tr class="memitem:ae03adeae0930b7092edb4139cc7d0330"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_ledger_history.html#ae03adeae0930b7092edb4139cc7d0330">fixIndex</a> (<a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a> ledgerIndex, LedgerHash const &amp;ledgerHash)</td></tr>
 <tr class="memdesc:ae03adeae0930b7092edb4139cc7d0330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repair a hash to index mapping.  <a href="#ae03adeae0930b7092edb4139cc7d0330">More...</a><br/></td></tr>
 <tr class="separator:ae03adeae0930b7092edb4139cc7d0330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Retains historical ledgers. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2ced172f2079aa5484429128eab53902"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ripple::LedgerHistory::LedgerHistory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae34b301afcb6775938c3cca3bcd2ff9b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +150,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool ripple::LedgerHistory::addLedger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_ledger.html#aa0095d1ace058c9f883f21da9827fbfa">Ledger::pointer</a>&#160;</td>
+          <td class="paramtype">Ledger::pointer&#160;</td>
           <td class="paramname"><em>ledger</em>, </td>
         </tr>
         <tr>
@@ -217,7 +203,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_ledger.html#aa0095d1ace058c9f883f21da9827fbfa">Ledger::pointer</a> ripple::LedgerHistory::getLedgerBySeq </td>
+          <td class="memname">Ledger::pointer ripple::LedgerHistory::getLedgerBySeq </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a>&#160;</td>
           <td class="paramname"><em>ledgerIndex</em></td><td>)</td>
@@ -241,7 +227,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceripple.html#a200e1f483329afea363db3caefe69b05">uint256</a> ripple::LedgerHistory::getLedgerHash </td>
+          <td class="memname">uint256 ripple::LedgerHistory::getLedgerHash </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceripple.html#a5aef073754f1be626fabfee7a85500df">LedgerIndex</a>&#160;</td>
           <td class="paramname"><em>ledgerIndex</em></td><td>)</td>
@@ -266,9 +252,9 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classripple_1_1_ledger.html#aa0095d1ace058c9f883f21da9827fbfa">Ledger::pointer</a> ripple::LedgerHistory::getLedgerByHash </td>
+          <td class="memname">Ledger::pointer ripple::LedgerHistory::getLedgerByHash </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a077afaa330c14078c1f60b740ffc7f73">LedgerHash</a> const &amp;&#160;</td>
+          <td class="paramtype">LedgerHash const &amp;&#160;</td>
           <td class="paramname"><em>ledgerHash</em></td><td>)</td>
           <td></td>
         </tr>
@@ -321,67 +307,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5c3fbc509e1f5446d85176bac513e74c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::LedgerHistory::sweep </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove stale cache entries. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9dd3968d9908661546e6985e72d4a4fa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::LedgerHistory::builtLedger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_ledger.html#a6fc6c429f622e955ec5a06329a351d60">Ledger::ref</a>&#160;</td>
-          <td class="paramname"><em>ledger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Report that we have locally built a particular ledger. </p>
-
-</div>
-</div>
-<a class="anchor" id="a64b16de5d97321a8ba613f5d2eca079a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ripple::LedgerHistory::validatedLedger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_ledger.html#a6fc6c429f622e955ec5a06329a351d60">Ledger::ref</a>&#160;</td>
-          <td class="paramname"><em>ledger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Report that we have validated a particular ledger. </p>
-
-</div>
-</div>
 <a class="anchor" id="ae03adeae0930b7092edb4139cc7d0330"></a>
 <div class="memitem">
 <div class="memproto">
@@ -395,7 +320,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceripple.html#a077afaa330c14078c1f60b740ffc7f73">LedgerHash</a> const &amp;&#160;</td>
+          <td class="paramtype">LedgerHash const &amp;&#160;</td>
           <td class="paramname"><em>ledgerHash</em>&#160;</td>
         </tr>
         <tr>

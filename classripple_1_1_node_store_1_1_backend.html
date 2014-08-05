@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoForDocumentation.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RippleD
    </div>
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_backend.html">Backend</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceripple.html">ripple</a></li><li class="navelem"><b>NodeStore</b></li><li class="navelem"><a class="el" href="classripple_1_1_node_store_1_1_backend.html">Backend</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,19 +97,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A backend used for the <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a>.  
+<p>A backend used for the NodeStore.  
  <a href="classripple_1_1_node_store_1_1_backend.html#details">More...</a></p>
 
 <p><code>#include &lt;Backend.h&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ripple::NodeStore::Backend:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classripple_1_1_node_store_1_1_backend__inherit__graph.png" border="0" usemap="#ripple_1_1_node_store_1_1_backend_inherit__map" alt="Inheritance graph"/></div>
-<map name="ripple_1_1_node_store_1_1_backend_inherit__map" id="ripple_1_1_node_store_1_1_backend_inherit__map">
-<area shape="rect" id="node2" href="classripple_1_1_node_store_1_1_memory_backend.html" title="ripple::NodeStore::\lMemoryBackend" alt="" coords="192,5,323,46"/><area shape="rect" id="node3" href="classripple_1_1_node_store_1_1_null_backend.html" title="ripple::NodeStore::\lNullBackend" alt="" coords="192,70,323,111"/><area shape="rect" id="node4" href="classripple_1_1_sqlite_backend.html" title="ripple::SqliteBackend" alt="" coords="185,136,330,163"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherited by ripple::NodeStore::MemoryBackend, ripple::NodeStore::NullBackend, and ripple::SqliteBackend.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -118,16 +112,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a206d540c4b8359c598f2309c5ee194bd"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#a206d540c4b8359c598f2309c5ee194bd">getName</a> ()=0</td></tr>
 <tr class="memdesc:a206d540c4b8359c598f2309c5ee194bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the human-readable name of this backend.  <a href="#a206d540c4b8359c598f2309c5ee194bd">More...</a><br/></td></tr>
 <tr class="separator:a206d540c4b8359c598f2309c5ee194bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd00808ce7604486c59ae09c5ae3211e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceripple_1_1_node_store.html#af127c2e4fc73b5d35647147ef45b350c">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#afd00808ce7604486c59ae09c5ae3211e">fetch</a> (void const *key, <a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a> *pObject)=0</td></tr>
+<tr class="memitem:afd00808ce7604486c59ae09c5ae3211e"><td class="memItemLeft" align="right" valign="top">virtual Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#afd00808ce7604486c59ae09c5ae3211e">fetch</a> (void const *key, NodeObject::Ptr *pObject)=0</td></tr>
 <tr class="memdesc:afd00808ce7604486c59ae09c5ae3211e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch a single object.  <a href="#afd00808ce7604486c59ae09c5ae3211e">More...</a><br/></td></tr>
 <tr class="separator:afd00808ce7604486c59ae09c5ae3211e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c2396fa1f88c2267df48e8e576071f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#ac5c2396fa1f88c2267df48e8e576071f">store</a> (<a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a> const &amp;object)=0</td></tr>
+<tr class="memitem:ac5c2396fa1f88c2267df48e8e576071f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#ac5c2396fa1f88c2267df48e8e576071f">store</a> (NodeObject::Ptr const &amp;object)=0</td></tr>
 <tr class="memdesc:ac5c2396fa1f88c2267df48e8e576071f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a single object.  <a href="#ac5c2396fa1f88c2267df48e8e576071f">More...</a><br/></td></tr>
 <tr class="separator:ac5c2396fa1f88c2267df48e8e576071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb1f22b4101841e695477646c95376a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#acb1f22b4101841e695477646c95376a7">storeBatch</a> (<a class="el" href="namespaceripple_1_1_node_store.html#acf19d444177700242aa5562442f3990f">Batch</a> const &amp;batch)=0</td></tr>
+<tr class="memitem:acb1f22b4101841e695477646c95376a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#acb1f22b4101841e695477646c95376a7">storeBatch</a> (Batch const &amp;batch)=0</td></tr>
 <tr class="memdesc:acb1f22b4101841e695477646c95376a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a group of objects.  <a href="#acb1f22b4101841e695477646c95376a7">More...</a><br/></td></tr>
 <tr class="separator:acb1f22b4101841e695477646c95376a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f4ad4e5007c1687bb1f329abdbd161"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#aa8f4ad4e5007c1687bb1f329abdbd161">for_each</a> (std::function&lt; void(<a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a>)&gt; f)=0</td></tr>
+<tr class="memitem:aa8f4ad4e5007c1687bb1f329abdbd161"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#aa8f4ad4e5007c1687bb1f329abdbd161">for_each</a> (std::function&lt; void(NodeObject::Ptr)&gt; f)=0</td></tr>
 <tr class="memdesc:aa8f4ad4e5007c1687bb1f329abdbd161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visit every object in the database This is usually called during import.  <a href="#aa8f4ad4e5007c1687bb1f329abdbd161">More...</a><br/></td></tr>
 <tr class="separator:aa8f4ad4e5007c1687bb1f329abdbd161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d7008b7a616ce05568da3e96a204ec"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1_node_store_1_1_backend.html#ac4d7008b7a616ce05568da3e96a204ec">getWriteLoad</a> ()=0</td></tr>
@@ -135,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac4d7008b7a616ce05568da3e96a204ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A backend used for the <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a>. </p>
-<p>The <a class="el" href="namespaceripple_1_1_node_store.html">NodeStore</a> uses a swappable backend so that other database systems can be tried. Different databases may offer various features such as improved performance, fault tolerant or distributed storage, or all in-memory operation.</p>
+<div class="textblock"><p>A backend used for the NodeStore. </p>
+<p>The NodeStore uses a swappable backend so that other database systems can be tried. Different databases may offer various features such as improved performance, fault tolerant or distributed storage, or all in-memory operation.</p>
 <p>A given instance of a backend is fixed to a particular key size. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a568617192cdf5fa3095f2f1bdb990dd5"></a>
@@ -190,8 +184,6 @@ Public Member Functions</h2></td></tr>
 <p>Get the human-readable name of this backend. </p>
 <p>This is used for diagnostic output. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1_sqlite_backend.html#afefe2019ecf24a615e1bcc7eff7751a6">ripple::SqliteBackend</a>, <a class="el" href="classripple_1_1_node_store_1_1_memory_backend.html#ac17d4b5162413d9f3f6b63a6f9bd119d">ripple::NodeStore::MemoryBackend</a>, and <a class="el" href="classripple_1_1_node_store_1_1_null_backend.html#a92c2fb46bc6af4c2d9f27c211f217ea9">ripple::NodeStore::NullBackend</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="afd00808ce7604486c59ae09c5ae3211e"></a>
@@ -202,7 +194,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceripple_1_1_node_store.html#af127c2e4fc73b5d35647147ef45b350c">Status</a> ripple::NodeStore::Backend::fetch </td>
+          <td class="memname">virtual Status ripple::NodeStore::Backend::fetch </td>
           <td>(</td>
           <td class="paramtype">void const *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -210,7 +202,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a> *&#160;</td>
+          <td class="paramtype">NodeObject::Ptr *&#160;</td>
           <td class="paramname"><em>pObject</em>&#160;</td>
         </tr>
         <tr>
@@ -238,8 +230,6 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the operation. </dd></dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_sqlite_backend.html#a75d63eb28f12c44c5e920de6dd7cae90">ripple::SqliteBackend</a>, <a class="el" href="classripple_1_1_node_store_1_1_memory_backend.html#ab6366a28903d1a7c90f839037c170585">ripple::NodeStore::MemoryBackend</a>, and <a class="el" href="classripple_1_1_node_store_1_1_null_backend.html#a620245bccb39f9b990c9680a368e9202">ripple::NodeStore::NullBackend</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ac5c2396fa1f88c2267df48e8e576071f"></a>
@@ -252,7 +242,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::NodeStore::Backend::store </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a> const &amp;&#160;</td>
+          <td class="paramtype">NodeObject::Ptr const &amp;&#160;</td>
           <td class="paramname"><em>object</em></td><td>)</td>
           <td></td>
         </tr>
@@ -286,7 +276,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::NodeStore::Backend::storeBatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceripple_1_1_node_store.html#acf19d444177700242aa5562442f3990f">Batch</a> const &amp;&#160;</td>
+          <td class="paramtype">Batch const &amp;&#160;</td>
           <td class="paramname"><em>batch</em></td><td>)</td>
           <td></td>
         </tr>
@@ -301,8 +291,6 @@ Public Member Functions</h2></td></tr>
 <p>Store a group of objects. </p>
 <dl class="section note"><dt>Note</dt><dd>This function will not be called concurrently with itself or <a class="el" href="classripple_1_1_node_store_1_1_backend.html#ac5c2396fa1f88c2267df48e8e576071f">store</a>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1_sqlite_backend.html#a1c9705f4372eace459937b2463338bbc">ripple::SqliteBackend</a>, <a class="el" href="classripple_1_1_node_store_1_1_memory_backend.html#ad993c8dbba3a158c03ab3be75e8a995b">ripple::NodeStore::MemoryBackend</a>, and <a class="el" href="classripple_1_1_node_store_1_1_null_backend.html#a1dfe4d043b6522369046c986fca114c2">ripple::NodeStore::NullBackend</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aa8f4ad4e5007c1687bb1f329abdbd161"></a>
@@ -315,7 +303,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void ripple::NodeStore::Backend::for_each </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classripple_1_1_node_object.html#a33e817747f33060470bf2c5a1b2790de">NodeObject::Ptr</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(NodeObject::Ptr)&gt;&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
@@ -330,8 +318,6 @@ Public Member Functions</h2></td></tr>
 <p>Visit every object in the database This is usually called during import. </p>
 <dl class="section note"><dt>Note</dt><dd>This routine will not be called concurrently with itself or other methods. </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>import </dd></dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1_sqlite_backend.html#a02f125e51ad6309267825cd777862e92">ripple::SqliteBackend</a>, <a class="el" href="classripple_1_1_node_store_1_1_memory_backend.html#acfffebdb379bed9fc5f20f31a67c6a83">ripple::NodeStore::MemoryBackend</a>, and <a class="el" href="classripple_1_1_node_store_1_1_null_backend.html#a3b648a5344d65a5a7a8de45c0f3597eb">ripple::NodeStore::NullBackend</a>.</p>
 
 </div>
 </div>
@@ -357,8 +343,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Estimate the number of write operations pending. </p>
-
-<p>Implemented in <a class="el" href="classripple_1_1_sqlite_backend.html#a1157d3bfde1b5004a30acce5e07dc0a7">ripple::SqliteBackend</a>, <a class="el" href="classripple_1_1_node_store_1_1_memory_backend.html#a2cad41693dfbd371b41fc8f9701dbf01">ripple::NodeStore::MemoryBackend</a>, and <a class="el" href="classripple_1_1_node_store_1_1_null_backend.html#a7bc0fe5e6df3e9840d152c3b34c30e18">ripple::NodeStore::NullBackend</a>.</p>
 
 </div>
 </div>
