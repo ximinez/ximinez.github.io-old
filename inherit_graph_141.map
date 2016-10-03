@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classripple_1_1_node_store_1_1_scheduler.html" title="Scheduling for asynchronous backend activity. " alt="" coords="5,34,136,75"/>
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_dummy_scheduler.html" title="Simple NodeStore Scheduler that just peforms the tasks synchronously. " alt="" coords="209,5,340,46"/>
-<area shape="rect" id="node3" href="$classripple_1_1_node_store_scheduler.html" title="A NodeStore::Scheduler which uses the JobQueue and implements the Stoppable API. " alt="" coords="184,71,365,97"/>
-</map>

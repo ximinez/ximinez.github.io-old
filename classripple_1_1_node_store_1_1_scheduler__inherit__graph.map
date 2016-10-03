@@ -1,4 +1,0 @@
-<map id="ripple::NodeStore::Scheduler" name="ripple::NodeStore::Scheduler">
-<area shape="rect" id="node2" href="$classripple_1_1_node_store_1_1_dummy_scheduler.html" title="Simple NodeStore Scheduler that just peforms the tasks synchronously. " alt="" coords="5,97,135,138"/>
-<area shape="rect" id="node3" href="$classripple_1_1_node_store_scheduler.html" title="A NodeStore::Scheduler which uses the JobQueue and implements the Stoppable API. " alt="" coords="160,104,341,131"/>
-</map>

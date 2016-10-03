@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classripple_1_1_peer_finder_1_1_checker.html" title="Tests remote listening sockets to make sure they are connectible. " alt="" coords="6,5,130,46"/>
-<area shape="rect" id="node2" href="$classripple_1_1_peer_finder_1_1_checker_adapter.html" title="Adapts a ServiceQueue to dispatch Checker handler completions. " alt="" coords="179,5,303,46"/>
-</map>
