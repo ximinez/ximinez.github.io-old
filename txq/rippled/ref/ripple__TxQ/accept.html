@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>TxQ::accept</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__TxQ.html" title="TxQ">
+<link rel="prev" href="TxQ.html" title="TxQ::TxQ">
+<link rel="next" href="apply.html" title="TxQ::apply">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="TxQ.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__TxQ.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="apply.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__TxQ.accept"></a><a class="link" href="accept.html" title="TxQ::accept">TxQ::accept</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1487802"></a>
+Fill the new open ledger with transactions from the queue.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__TxQ.accept.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ.accept.synopsis"></a></span><a class="link" href="accept.html#rippled.ref.ripple__TxQ.accept.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">bool</span>
+<span class="identifier">accept</span><span class="special">(</span>
+    <span class="identifier">Application</span><span class="special">&amp;</span> <span class="identifier">app</span><span class="special">,</span>
+    <span class="identifier">OpenView</span><span class="special">&amp;</span> <span class="identifier">view</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__TxQ.accept.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ.accept.description"></a></span><a class="link" href="accept.html#rippled.ref.ripple__TxQ.accept.description">Description</a>
+        </h6>
+<p>
+          As we apply more transactions to the ledger, the required fee will increase.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__TxQ.accept.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ.accept.return_value"></a></span><a class="link" href="accept.html#rippled.ref.ripple__TxQ.accept.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          Whether any txs were added to the view.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="TxQ.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__TxQ.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="apply.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

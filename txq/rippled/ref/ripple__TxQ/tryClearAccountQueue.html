@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>TxQ::tryClearAccountQueue</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__TxQ.html" title="TxQ">
+<link rel="prev" href="setup_.html" title="TxQ::setup_">
+<link rel="next" href="_TxQ.html" title="TxQ::~TxQ">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="setup_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__TxQ.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="_TxQ.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__TxQ.tryClearAccountQueue"></a><a class="link" href="tryClearAccountQueue.html" title="TxQ::tryClearAccountQueue">TxQ::tryClearAccountQueue</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1491232"></a>
+
+        </p>
+<h6>
+<a name="rippled.ref.ripple__TxQ.tryClearAccountQueue.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ.tryClearAccountQueue.synopsis"></a></span><a class="link" href="tryClearAccountQueue.html#rippled.ref.ripple__TxQ.tryClearAccountQueue.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">TER</span><span class="special">,</span> <span class="keyword">bool</span> <span class="special">&gt;</span>
+<span class="identifier">tryClearAccountQueue</span><span class="special">(</span>
+    <span class="identifier">Application</span><span class="special">&amp;</span> <span class="identifier">app</span><span class="special">,</span>
+    <span class="identifier">OpenView</span><span class="special">&amp;</span> <span class="identifier">view</span><span class="special">,</span>
+    <span class="identifier">STTx</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">tx</span><span class="special">,</span>
+    <span class="identifier">AccountMap</span><span class="special">::</span><span class="identifier">iterator</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">accountIter</span><span class="special">,</span>
+    <span class="identifier">TxQAccount</span><span class="special">::</span><span class="identifier">TxMap</span><span class="special">::</span><span class="identifier">iterator</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint64_t</span> <span class="identifier">feeLevelPaid</span><span class="special">,</span>
+    <span class="identifier">PreflightResult</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">pfresult</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="keyword">const</span> <span class="identifier">txExtraCount</span><span class="special">,</span>
+    <span class="identifier">ApplyFlags</span> <span class="identifier">flags</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__TxQ.tryClearAccountQueue.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ.tryClearAccountQueue.description"></a></span><a class="link" href="tryClearAccountQueue.html#rippled.ref.ripple__TxQ.tryClearAccountQueue.description">Description</a>
+        </h6>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="setup_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__TxQ.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="_TxQ.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

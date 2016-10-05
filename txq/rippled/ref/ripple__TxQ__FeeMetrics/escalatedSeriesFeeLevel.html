@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>TxQ::FeeMetrics::escalatedSeriesFeeLevel</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__TxQ__FeeMetrics.html" title="TxQ::FeeMetrics">
+<link rel="prev" href="FeeMetrics.html" title="TxQ::FeeMetrics::FeeMetrics">
+<link rel="next" href="escalationMultiplier_.html" title="TxQ::FeeMetrics::escalationMultiplier_">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="FeeMetrics.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__TxQ__FeeMetrics.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="escalationMultiplier_.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel"></a><a class="link" href="escalatedSeriesFeeLevel.html" title="TxQ::FeeMetrics::escalatedSeriesFeeLevel">TxQ::FeeMetrics::escalatedSeriesFeeLevel</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1493215"></a>
+Returns the total fee level for all
+          transactions in a series.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel.synopsis"></a></span><a class="link" href="escalatedSeriesFeeLevel.html#rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="keyword">bool</span><span class="special">,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint64_t</span> <span class="special">&gt;</span>
+<span class="identifier">escalatedSeriesFeeLevel</span><span class="special">(</span>
+    <span class="identifier">OpenView</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">view</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">extraCount</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">seriesSize</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel.description"></a></span><a class="link" href="escalatedSeriesFeeLevel.html#rippled.ref.ripple__TxQ__FeeMetrics.escalatedSeriesFeeLevel.description">Description</a>
+        </h6>
+<p>
+          Assumes that there are already more than txnsExpected_ txns in the view.
+          If there aren't, the math still works, but the level will be high.
+        </p>
+<p>
+          Returns: A <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span></code> as returned from <code class="computeroutput"><span class="identifier">mulDiv</span></code>
+          indicating whether the calculation result is safe.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="FeeMetrics.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__TxQ__FeeMetrics.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="escalationMultiplier_.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
