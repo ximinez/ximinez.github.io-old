@@ -1,0 +1,220 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>rippled</title>
+<link rel="stylesheet" href="boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="rippled">
+<link rel="next" href="rippled/ref.html" title="Reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav"><a accesskey="n" href="rippled/ref.html"><img src="images/next.png" alt="Next"></a></div>
+<div class="chapter">
+<div class="titlepage"><div>
+<div><h2 class="title">
+<a name="rippled"></a>rippled</h2></div>
+<div><div class="author"><h3 class="author">
+<span class="firstname">Ripple</span> <span class="surname">Labs</span>
+</h3></div></div>
+<div><p class="copyright">Copyright &#169; 2012-2016 Ripple Labs Inc.</p></div>
+<div><div class="legalnotice">
+<a name="rippled.legal"></a><p>
+        Distributed under the ISC License
+      </p>
+</div></div>
+</div></div>
+<div class="toc"><dl class="toc">
+<dt><span class="section"><a href="rippled/ref.html">Reference</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="rippled/ref/ripple__OptionaledField.html">OptionaledField</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_Account.html">SF_Account</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_Amount.html">SF_Amount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_Blob.html">SF_Blob</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U128.html">SF_U128</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U160.html">SF_U160</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U16.html">SF_U16</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U256.html">SF_U256</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U32.html">SF_U32</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U64.html">SF_U64</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_U8.html">SF_U8</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SF_Vec256.html">SF_Vec256</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SField.html">SField</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__STBitString.html">STBitString</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__STInteger.html">STInteger</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__SerializedTypeID.html">SerializedTypeID</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__TER.html">TER</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__TypedField.html">TypedField</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__feature.html">feature</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureCompareFlowV1V2.html">featureCompareFlowV1V2</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureCryptoConditions.html">featureCryptoConditions</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureFeeEscalation.html">featureFeeEscalation</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureFlow.html">featureFlow</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureMultiSign.html">featureMultiSign</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureOwnerPaysFee.html">featureOwnerPaysFee</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featurePayChan.html">featurePayChan</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureSHAMapV2.html">featureSHAMapV2</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureSusPay.html">featureSusPay</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureTickSize.html">featureTickSize</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureTickets.html">featureTickets</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__featureTrustSetAuth.html">featureTrustSetAuth</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__field_code.html">field_code</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__isTecClaim.html">isTecClaim</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__isTefFailure.html">isTefFailure</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__isTelLocal.html">isTelLocal</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__isTemMalformed.html">isTemMalformed</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__isTerRetry.html">isTerRetry</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__isTesSuccess.html">isTesSuccess</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__operator_.html">operator~</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAccount.html">sfAccount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAccountHash.html">sfAccountHash</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAccountTxnID.html">sfAccountTxnID</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAffectedNodes.html">sfAffectedNodes</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAmendment.html">sfAmendment</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAmendments.html">sfAmendments</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfAmount.html">sfAmount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfBalance.html">sfBalance</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfBaseFee.html">sfBaseFee</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfBondAmount.html">sfBondAmount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfBookDirectory.html">sfBookDirectory</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfBookNode.html">sfBookNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfCancelAfter.html">sfCancelAfter</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfClearFlag.html">sfClearFlag</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfCloseResolution.html">sfCloseResolution</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfCloseTime.html">sfCloseTime</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfCondition.html">sfCondition</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfCreateCode.html">sfCreateCode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfCreatedNode.html">sfCreatedNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDeletedNode.html">sfDeletedNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDeliverMin.html">sfDeliverMin</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDeliveredAmount.html">sfDeliveredAmount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDestination.html">sfDestination</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDestinationTag.html">sfDestinationTag</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDigest.html">sfDigest</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfDomain.html">sfDomain</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfEmailHash.html">sfEmailHash</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfExchangeRate.html">sfExchangeRate</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfExpiration.html">sfExpiration</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfExpireCode.html">sfExpireCode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFee.html">sfFee</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFinalFields.html">sfFinalFields</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFinishAfter.html">sfFinishAfter</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFirstLedgerSequence.html">sfFirstLedgerSequence</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFlags.html">sfFlags</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFulfillment.html">sfFulfillment</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfFundCode.html">sfFundCode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfGeneric.html">sfGeneric</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfHashes.html">sfHashes</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfHighLimit.html">sfHighLimit</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfHighNode.html">sfHighNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfHighQualityIn.html">sfHighQualityIn</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfHighQualityOut.html">sfHighQualityOut</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfIndexNext.html">sfIndexNext</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfIndexPrevious.html">sfIndexPrevious</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfIndexes.html">sfIndexes</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfInvalid.html">sfInvalid</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfInvoiceID.html">sfInvoiceID</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfIssuer.html">sfIssuer</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLastLedgerSequence.html">sfLastLedgerSequence</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLedgerEntry.html">sfLedgerEntry</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLedgerEntryType.html">sfLedgerEntryType</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLedgerHash.html">sfLedgerHash</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLedgerIndex.html">sfLedgerIndex</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLedgerSequence.html">sfLedgerSequence</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLimitAmount.html">sfLimitAmount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLoadFee.html">sfLoadFee</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLowLimit.html">sfLowLimit</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLowNode.html">sfLowNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLowQualityIn.html">sfLowQualityIn</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfLowQualityOut.html">sfLowQualityOut</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMajorities.html">sfMajorities</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMajority.html">sfMajority</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMasterSignature.html">sfMasterSignature</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMemo.html">sfMemo</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMemoData.html">sfMemoData</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMemoFormat.html">sfMemoFormat</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMemoType.html">sfMemoType</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMemos.html">sfMemos</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMessageKey.html">sfMessageKey</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMetadata.html">sfMetadata</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMethod.html">sfMethod</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfMinimumOffer.html">sfMinimumOffer</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfModifiedNode.html">sfModifiedNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfNecessary.html">sfNecessary</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfNewFields.html">sfNewFields</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfNickname.html">sfNickname</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfOfferSequence.html">sfOfferSequence</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfOperationLimit.html">sfOperationLimit</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfOwner.html">sfOwner</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfOwnerCount.html">sfOwnerCount</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfOwnerNode.html">sfOwnerNode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfParentCloseTime.html">sfParentCloseTime</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfParentHash.html">sfParentHash</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfPaths.html">sfPaths</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfPayChannel.html">sfPayChannel</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfPreviousFields.html">sfPreviousFields</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfPreviousTxnID.html">sfPreviousTxnID</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfPreviousTxnLgrSeq.html">sfPreviousTxnLgrSeq</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfPublicKey.html">sfPublicKey</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfQualityIn.html">sfQualityIn</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfQualityOut.html">sfQualityOut</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfReferenceFeeUnits.html">sfReferenceFeeUnits</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfRegularKey.html">sfRegularKey</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfRemoveCode.html">sfRemoveCode</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfReserveBase.html">sfReserveBase</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfReserveIncrement.html">sfReserveIncrement</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfRippleEscrow.html">sfRippleEscrow</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfRootIndex.html">sfRootIndex</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSendMax.html">sfSendMax</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSequence.html">sfSequence</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSetFlag.html">sfSetFlag</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSettleDelay.html">sfSettleDelay</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSignature.html">sfSignature</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSigner.html">sfSigner</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSignerEntries.html">sfSignerEntries</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSignerEntry.html">sfSignerEntry</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSignerListID.html">sfSignerListID</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSignerQuorum.html">sfSignerQuorum</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSignerWeight.html">sfSignerWeight</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSigners.html">sfSigners</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSigningPubKey.html">sfSigningPubKey</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSigningTime.html">sfSigningTime</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSourceTag.html">sfSourceTag</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfStampEscrow.html">sfStampEscrow</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfSufficient.html">sfSufficient</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTakerGets.html">sfTakerGets</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTakerGetsCurrency.html">sfTakerGetsCurrency</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTakerGetsIssuer.html">sfTakerGetsIssuer</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTakerPays.html">sfTakerPays</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTakerPaysCurrency.html">sfTakerPaysCurrency</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTakerPaysIssuer.html">sfTakerPaysIssuer</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTarget.html">sfTarget</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTemplate.html">sfTemplate</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTemplateEntry.html">sfTemplateEntry</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTickSize.html">sfTickSize</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTicketID.html">sfTicketID</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransaction.html">sfTransaction</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransactionHash.html">sfTransactionHash</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransactionIndex.html">sfTransactionIndex</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransactionMetaData.html">sfTransactionMetaData</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransactionResult.html">sfTransactionResult</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransactionType.html">sfTransactionType</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTransferRate.html">sfTransferRate</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfTxnSignature.html">sfTxnSignature</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfValidation.html">sfValidation</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfWalletLocator.html">sfWalletLocator</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__sfWalletSize.html">sfWalletSize</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__transHuman.html">transHuman</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__transResultInfo.html">transResultInfo</a></span></dt>
+<dt><span class="section"><a href="rippled/ref/ripple__transToken.html">transToken</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="rippled/index.html">Index</a></span></dt>
+</dl></div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"><p><small>Last revised: December 06, 2016 at 01:37:26 GMT</small></p></td>
+<td align="right"><div class="copyright-footer"></div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav"><a accesskey="n" href="rippled/ref.html"><img src="images/next.png" alt="Next"></a></div>
+</body>
+</html>
