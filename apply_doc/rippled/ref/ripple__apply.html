@@ -1,0 +1,226 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>apply</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__Validity.html" title="Validity">
+<link rel="next" href="ripple__applyTransaction.html" title="applyTransaction">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Validity.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__applyTransaction.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__apply"></a><a class="link" href="ripple__apply.html" title="apply">apply</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1555786"></a>
+Apply a transaction to an OpenView.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__apply.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.synopsis"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">TER</span><span class="special">,</span> <span class="keyword">bool</span> <span class="special">&gt;</span>
+<span class="identifier">apply</span><span class="special">(</span>
+    <span class="identifier">Application</span><span class="special">&amp;</span> <span class="identifier">app</span><span class="special">,</span>
+    <span class="identifier">OpenView</span><span class="special">&amp;</span> <span class="identifier">view</span><span class="special">,</span>
+    <span class="identifier">STTx</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">tx</span><span class="special">,</span>
+    <span class="identifier">ApplyFlags</span> <span class="identifier">flags</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">journal</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__apply.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.description"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.description">Description</a>
+      </h5>
+<p>
+        This function is the canonical way to apply a transaction to a ledger. It
+        rolls the validation and application steps into one function. To do the steps
+        manually, the correct calling order is:
+      </p>
+<pre class="programlisting"><span class="identifier">preflight</span> <span class="special">-&gt;</span> <span class="identifier">preclaim</span> <span class="special">-&gt;</span> <span class="identifier">doApply</span>
+</pre>
+<p>
+        And the result of one function must be passed to the next. The <code class="computeroutput"><span class="identifier">preflight</span></code> result can be safely cached and
+        reused asynchronously, but <code class="computeroutput"><span class="identifier">preclaim</span></code>
+        and <code class="computeroutput"><span class="identifier">doApply</span></code> must be called
+        in the same thread and with the same view.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__apply.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.exceptions"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.exceptions">Exceptions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Type
+                </p>
+              </th>
+<th>
+                <p>
+                  Thrown On
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">none</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Does not throw.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<p>
+        For open ledgers, the Transactor will catch exceptions and return tefEXCEPTION.
+        For closed ledgers, the Transactor will attempt to only charge a fee, and
+        return tecFAILED_PROCESSING.
+      </p>
+<p>
+        If the Transactor gets an exception while trying to charge the fee, it will
+        be caught and turned into tefEXCEPTION.
+      </p>
+<p>
+        For network health, a Transactor makes its best effort to at least charge
+        a fee if the ledger is closed.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__apply.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.parameters"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.parameters">Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">app</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The current running <code class="computeroutput"><span class="identifier">Application</span></code>.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">view</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The open ledger that the transaction will attempt to be applied
+                  to.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">tx</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The transaction to be checked.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">flags</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">ApplyFlags</span></code> describing
+                  processing options.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">journal</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  A journal.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__apply.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.see_also"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.see_also">See
+        Also</a>
+      </h5>
+<p>
+        <a class="link" href="ripple__preflight.html" title="preflight"><code class="computeroutput"><span class="identifier">preflight</span></code></a>,
+        <a class="link" href="ripple__preclaim.html" title="preclaim"><code class="computeroutput"><span class="identifier">preclaim</span></code></a>,
+        <a class="link" href="ripple__doApply.html" title="doApply"><code class="computeroutput"><span class="identifier">doApply</span></code></a>
+      </p>
+<h5>
+<a name="rippled.ref.ripple__apply.h5"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.return_value"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.return_value">Return
+        Value</a>
+      </h5>
+<p>
+        A pair with the <code class="computeroutput"><span class="identifier">TER</span></code> and a
+        <code class="computeroutput"><span class="keyword">bool</span></code> indicating whether or not
+        the transaction was applied.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__apply.h6"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.header"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">tx</span><span class="special">/</span><span class="identifier">apply</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Validity.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__applyTransaction.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

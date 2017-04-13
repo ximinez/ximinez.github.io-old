@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ApplyResult</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__AV_STUCK_CONSENSUS_TIME.html" title="AV_STUCK_CONSENSUS_TIME">
+<link rel="next" href="ripple__Consensus.html" title="Consensus">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__AV_STUCK_CONSENSUS_TIME.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__Consensus.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__ApplyResult"></a><a class="link" href="ripple__ApplyResult.html" title="ApplyResult">ApplyResult</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1453794"></a>
+Enum class for return value from <code class="computeroutput"><span class="identifier">applyTransaction</span></code>
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ApplyResult.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ApplyResult.synopsis"></a></span><a class="link" href="ripple__ApplyResult.html#rippled.ref.ripple__ApplyResult.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">ApplyResult</span>
+</pre>
+<p>
+        <a class="indexterm" name="id1453837"></a>
+ <a class="indexterm" name="id1453846"></a>
+ <a class="indexterm" name="id1453854"></a>
+
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ApplyResult.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ApplyResult.values"></a></span><a class="link" href="ripple__ApplyResult.html#rippled.ref.ripple__ApplyResult.values">Values</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  Success
+                </p>
+              </td>
+<td>
+                <p>
+                  Applied to this ledger.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  Fail
+                </p>
+              </td>
+<td>
+                <p>
+                  Should not be retried in this ledger.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  Retry
+                </p>
+              </td>
+<td>
+                <p>
+                  Should be retried in this ledger.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ApplyResult.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ApplyResult.description"></a></span><a class="link" href="ripple__ApplyResult.html#rippled.ref.ripple__ApplyResult.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__ApplyResult.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ApplyResult.header"></a></span><a class="link" href="ripple__ApplyResult.html#rippled.ref.ripple__ApplyResult.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">tx</span><span class="special">/</span><span class="identifier">apply</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__AV_STUCK_CONSENSUS_TIME.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__Consensus.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

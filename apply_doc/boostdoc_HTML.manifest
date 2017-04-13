@@ -9,6 +9,7 @@ rippled/ref/ripple__AV_MID_CONSENSUS_TIME.html
 rippled/ref/ripple__AV_MIN_CONSENSUS_TIME.html
 rippled/ref/ripple__AV_STUCK_CONSENSUS_PCT.html
 rippled/ref/ripple__AV_STUCK_CONSENSUS_TIME.html
+rippled/ref/ripple__ApplyResult.html
 rippled/ref/ripple__Consensus.html
 rippled/ref/ripple__Consensus/Consensus.html
 rippled/ref/ripple__Consensus/Consensus/overload1.html
@@ -441,13 +442,18 @@ rippled/ref/ripple__TxConsequences/potentialSpend.html
 rippled/ref/ripple__VALIDATION_VALID_EARLY.html
 rippled/ref/ripple__VALIDATION_VALID_LOCAL.html
 rippled/ref/ripple__VALIDATION_VALID_WALL.html
+rippled/ref/ripple__Validity.html
+rippled/ref/ripple__apply.html
+rippled/ref/ripple__applyTransaction.html
 rippled/ref/ripple__calculateBaseFee.html
 rippled/ref/ripple__calculateConsequences.html
 rippled/ref/ripple__checkConsensus.html
 rippled/ref/ripple__checkConsensusReached.html
+rippled/ref/ripple__checkValidity.html
 rippled/ref/ripple__decreaseLedgerTimeResolutionEvery.html
 rippled/ref/ripple__doApply.html
 rippled/ref/ripple__effectiveCloseTime.html
+rippled/ref/ripple__forceValidity.html
 rippled/ref/ripple__getNextLedgerTimeResolution.html
 rippled/ref/ripple__increaseLedgerTimeResolutionEvery.html
 rippled/ref/ripple__jss__JSS.html
