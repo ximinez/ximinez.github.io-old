@@ -1,0 +1,371 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__PreflightResult/tx.html" title="PreflightResult::tx">
+<link rel="next" href="ripple__RCLConsensus/LCL.html" title="RCLConsensus::LCL">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__PreflightResult/tx.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__RCLConsensus/LCL.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__RCLConsensus"></a><a class="link" href="ripple__RCLConsensus.html" title="RCLConsensus">RCLConsensus</a>
+</h3></div></div></div>
+<p>
+        Adapts the generic <a class="link" href="ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a> algorithm for use by RCL.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.synopsis"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">class</span> <span class="identifier">RCLConsensus</span> <span class="special">:</span>
+    <span class="keyword">public</span> <span class="identifier">Consensus</span><span class="special">&lt;</span> <span class="identifier">RCLConsensus</span><span class="special">,</span> <span class="identifier">RCLCxTraits</span> <span class="special">&gt;,</span>
+    <span class="keyword">public</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">enable_shared_from_this</span><span class="special">&lt;</span> <span class="identifier">RCLConsensus</span> <span class="special">&gt;,</span>
+    <span class="keyword">public</span> <span class="identifier">CountedObject</span><span class="special">&lt;</span> <span class="identifier">RCLConsensus</span> <span class="special">&gt;</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.types"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.types">Types</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/clock_type.html" title="RCLConsensus::clock_type"><span class="bold"><strong>clock_type</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Clock type for measuring time within the consensus code.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.member_functions"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/LCL.html" title="RCLConsensus::LCL"><span class="bold"><strong>LCL</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the last closed ledger ID.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/RCLConsensus.html" title="RCLConsensus::RCLConsensus"><span class="bold"><strong>RCLConsensus</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Constructor.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/getCountedObjectName.html" title="RCLConsensus::getCountedObjectName"><span class="bold"><strong>getCountedObjectName</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/getJson.html" title="RCLConsensus::getJson"><span class="bold"><strong>getJson</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the Json state of the consensus process.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/getLastCloseProposers.html" title="RCLConsensus::getLastCloseProposers"><span class="bold"><strong>getLastCloseProposers</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the number of proposing peers that participated in the previous
+                  round.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/getLastConvergeDuration.html" title="RCLConsensus::getLastConvergeDuration"><span class="bold"><strong>getLastConvergeDuration</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get duration of the previous round.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/getValidationPublicKey.html" title="RCLConsensus::getValidationPublicKey"><span class="bold"><strong>getValidationPublicKey</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Returns validation public key.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/gotTxSet.html" title="RCLConsensus::gotTxSet"><span class="bold"><strong>gotTxSet</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Process a transaction set, typically acquired from the network.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/haveCorrectLCL.html" title="RCLConsensus::haveCorrectLCL"><span class="bold"><strong>haveCorrectLCL</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether we have the correct last closed ledger.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/operator_eq_.html" title="RCLConsensus::operator="><span class="bold"><strong>operator=</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/peerProposal.html" title="RCLConsensus::peerProposal"><span class="bold"><strong>peerProposal</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  A peer has proposed a new position, adjust our tracking.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/proposing.html" title="RCLConsensus::proposing"><span class="bold"><strong>proposing</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether we are sending proposals during consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/setValidationKeys.html" title="RCLConsensus::setValidationKeys"><span class="bold"><strong>setValidationKeys</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Set validation private and public key pair.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/simulate.html" title="RCLConsensus::simulate"><span class="bold"><strong>simulate</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Simulate the consensus process without any network traffic.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/startRound.html" title="RCLConsensus::startRound"><span class="bold"><strong>startRound</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Kick-off the next round of consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/storeProposal.html" title="RCLConsensus::storeProposal"><span class="bold"><strong>storeProposal</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Save the given consensus proposed by a peer with nodeID for later
+                  use in consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/timerEntry.html" title="RCLConsensus::timerEntry"><span class="bold"><strong>timerEntry</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Call periodically to drive consensus forward.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/validating.html" title="RCLConsensus::validating"><span class="bold"><strong>validating</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether we are validating consensus ledgers.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.protected_member_functions"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.protected_member_functions">Protected
+        Member Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__RCLConsensus/accept.html" title="RCLConsensus::accept"><span class="bold"><strong>accept</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Accept a new last closed ledger.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.description"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h5"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.remarks"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.remarks">Remarks</a>
+      </h5>
+<p>
+        The enabled_shared_from_this base allows the application to properly create
+        a shared instance of <a class="link" href="ripple__RCLConsensus.html" title="RCLConsensus"><code class="computeroutput"><span class="identifier">RCLConsensus</span></code></a> for use in the accept
+        logic..
+      </p>
+<h5>
+<a name="rippled.ref.ripple__RCLConsensus.h6"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.header"></a></span><a class="link" href="ripple__RCLConsensus.html#rippled.ref.ripple__RCLConsensus.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">RCLConsensus</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__PreflightResult/tx.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__RCLConsensus/LCL.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

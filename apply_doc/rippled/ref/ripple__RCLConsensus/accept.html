@@ -1,0 +1,264 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus::accept</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLConsensus.html" title="RCLConsensus">
+<link rel="prev" href="RCLConsensus/overload2.html" title="RCLConsensus::RCLConsensus (2 of 2 overloads)">
+<link rel="next" href="accept0.html" title="RCLConsensus::accept">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="RCLConsensus/overload2.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="accept0.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLConsensus.accept"></a><a class="link" href="accept.html" title="RCLConsensus::accept">RCLConsensus::accept</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1496043"></a>
+Accept a new ledger based on the given transactions.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.accept.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.accept.synopsis"></a></span><a class="link" href="accept.html#rippled.ref.ripple__RCLConsensus.accept.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">bool</span>
+<span class="identifier">accept</span><span class="special">(</span>
+    <span class="identifier">RCLTxSet</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">set</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">consensusCloseTime</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">proposing_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">validating_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">haveCorrectLCL_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">consensusFail_</span><span class="special">,</span>
+    <span class="identifier">LedgerHash</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">prevLedgerHash_</span><span class="special">,</span>
+    <span class="identifier">RCLCxLedger</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">previousLedger_</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">duration</span> <span class="identifier">closeResolution_</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">now</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">roundTime_</span><span class="special">,</span>
+    <span class="identifier">hash_map</span><span class="special">&lt;</span> <span class="identifier">RCLCxTx</span><span class="special">::</span><span class="identifier">ID</span><span class="special">,</span> <span class="identifier">DisputedTx</span><span class="special">&lt;</span> <span class="identifier">RCLCxTx</span><span class="special">,</span> <span class="identifier">NodeID</span> <span class="special">&gt;&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">disputes_</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">map</span><span class="special">&lt;</span> <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span><span class="special">,</span> <span class="keyword">int</span> <span class="special">&gt;</span> <span class="identifier">closeTimes_</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">closeTime</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.accept.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.accept.description"></a></span><a class="link" href="accept.html#rippled.ref.ripple__RCLConsensus.accept.description">Description</a>
+        </h6>
+<p>
+          TODO: Too many arguments, need to group related types.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.accept.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.accept.parameters"></a></span><a class="link" href="accept.html#rippled.ref.ripple__RCLConsensus.accept.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">set</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The set of accepted transactions
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">consensusCloseTime</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="red">|6|Consensus</span> agreed upon close time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">proposing_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether we are proposing
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">validating_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether we are validating
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">haveCorrectLCL_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether we had the correct last closed ledger
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">consensusFail_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether consensus failed
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">prevLedgerHash_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The hash/id of the previous ledger
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">previousLedger_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The previous ledger
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">closeResolution_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The close time resolution used this round
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">now</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Current network adjsuted time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">roundTime_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Duration of this consensus round
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">disputes_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Disputed trarnsactions from this round
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">closeTimes_</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Histogram of peers close times
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">closeTime</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Our close time
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.accept.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.accept.return_value"></a></span><a class="link" href="accept.html#rippled.ref.ripple__RCLConsensus.accept.return_value">Return Value</a>
+        </h6>
+<p>
+          Whether we should continue validating
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="RCLConsensus/overload2.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="accept0.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

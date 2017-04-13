@@ -1,0 +1,272 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLCxTraits::Ledger_t</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLCxTraits.html" title="RCLCxTraits">
+<link rel="prev" href="../ripple__RCLCxTraits.html" title="RCLCxTraits">
+<link rel="next" href="MissingTxException_t.html" title="RCLCxTraits::MissingTxException_t">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="../ripple__RCLCxTraits.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLCxTraits.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="MissingTxException_t.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t"></a><a class="link" href="Ledger_t.html" title="RCLCxTraits::Ledger_t">RCLCxTraits::Ledger_t</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1518664"></a>
+Ledger type presented to <a class="link" href="../ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a>.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.synopsis"></a></span><a class="link" href="Ledger_t.html#rippled.ref.ripple__RCLCxTraits.Ledger_t.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">using</span> <span class="identifier">Ledger_t</span> <span class="special">=</span> <span class="identifier">RCLCxLedger</span><span class="special">;</span>
+</pre>
+<p>
+          RCLCxTraits::Ledger_t
+        </p>
+<p>
+          ripple::RCLCxLedger
+        </p>
+<p>
+          ripple__RCLCxLedger
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.types"></a></span><a class="link" href="Ledger_t.html#rippled.ref.ripple__RCLCxTraits.Ledger_t.types">Types</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/ID.html" title="RCLCxLedger::ID"><span class="bold"><strong>ID</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Unique identifier of a ledger.
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.member_functions"></a></span><a class="link" href="Ledger_t.html#rippled.ref.ripple__RCLCxTraits.Ledger_t.member_functions">Member
+          Functions</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/RCLCxLedger.html" title="RCLCxLedger::RCLCxLedger"><span class="bold"><strong>RCLCxLedger</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Default constructor.
+                  </p>
+                  <p>
+                    Constructor.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/closeAgree.html" title="RCLCxLedger::closeAgree"><span class="bold"><strong>closeAgree</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether consensus process agreed on close time of the ledger.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/closeTime.html" title="RCLCxLedger::closeTime"><span class="bold"><strong>closeTime</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The close time of this ledger.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/closeTimeResolution.html" title="RCLCxLedger::closeTimeResolution"><span class="bold"><strong>closeTimeResolution</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Resolution used when calculating this ledger's close time.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/getJson.html" title="RCLCxLedger::getJson"><span class="bold"><strong>getJson</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    JSON representation of this ledger.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/id.html" title="RCLCxLedger::id"><span class="bold"><strong>id</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Unique identifier (hash) of this ledger.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/parentCloseTime.html" title="RCLCxLedger::parentCloseTime"><span class="bold"><strong>parentCloseTime</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The close time of this ledger's parent.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/parentID.html" title="RCLCxLedger::parentID"><span class="bold"><strong>parentID</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Unique identifier (hash) of this ledger's parent.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/seq.html" title="RCLCxLedger::seq"><span class="bold"><strong>seq</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Sequence number of the ledger.
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.data_members"></a></span><a class="link" href="Ledger_t.html#rippled.ref.ripple__RCLCxTraits.Ledger_t.data_members">Data Members</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <a class="link" href="../ripple__RCLCxLedger/ledger_.html" title="RCLCxLedger::ledger_"><span class="bold"><strong>ledger_</strong></span></a>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The ledger instance.
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<p>
+          <a class="link" href="../ripple__RCLCxLedger.html" title="RCLCxLedger"><code class="computeroutput"><span class="identifier">RCLCxLedger</span></code></a>
+          is a thin wrapper over <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span><span class="identifier">Ledger</span>
+          <span class="keyword">const</span><span class="special">&gt;</span></code>.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.h4"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.description"></a></span><a class="link" href="Ledger_t.html#rippled.ref.ripple__RCLCxTraits.Ledger_t.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.h5"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLCxTraits.Ledger_t.header"></a></span><a class="link" href="Ledger_t.html#rippled.ref.ripple__RCLCxTraits.Ledger_t.header">Header</a>
+        </h6>
+<p>
+          <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">RCLConsensus</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../ripple__RCLCxTraits.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLCxTraits.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="MissingTxException_t.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

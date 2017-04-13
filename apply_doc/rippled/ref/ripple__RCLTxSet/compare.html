@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLTxSet::compare</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLTxSet.html" title="RCLTxSet">
+<link rel="prev" href="Tx.html" title="RCLTxSet::Tx">
+<link rel="next" href="exists.html" title="RCLTxSet::exists">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="Tx.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLTxSet.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="exists.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLTxSet.compare"></a><a class="link" href="compare.html" title="RCLTxSet::compare">RCLTxSet::compare</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1524188"></a>
+Find transactions not in common between this and another
+          transaction set.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLTxSet.compare.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLTxSet.compare.synopsis"></a></span><a class="link" href="compare.html#rippled.ref.ripple__RCLTxSet.compare.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">map</span><span class="special">&lt;</span> <span class="identifier">Tx</span><span class="special">::</span><span class="identifier">ID</span><span class="special">,</span> <span class="keyword">bool</span> <span class="special">&gt;</span>
+<span class="identifier">compare</span><span class="special">(</span>
+    <span class="identifier">RCLTxSet</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">j</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLTxSet.compare.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLTxSet.compare.description"></a></span><a class="link" href="compare.html#rippled.ref.ripple__RCLTxSet.compare.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__RCLTxSet.compare.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLTxSet.compare.parameters"></a></span><a class="link" href="compare.html#rippled.ref.ripple__RCLTxSet.compare.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">j</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The set to compare with
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLTxSet.compare.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLTxSet.compare.return_value"></a></span><a class="link" href="compare.html#rippled.ref.ripple__RCLTxSet.compare.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          Map of transactions in this set and <code class="computeroutput"><span class="identifier">j</span></code>
+          but not both. The key is the transaction ID and the value is a bool of
+          the transaction exists in this set.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="Tx.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLTxSet.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="exists.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>calculateConsequences</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__calculateBaseFee.html" title="calculateBaseFee">
+<link rel="next" href="ripple__checkConsensus.html" title="checkConsensus">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__calculateBaseFee.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__checkConsensus.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__calculateConsequences"></a><a class="link" href="ripple__calculateConsequences.html" title="calculateConsequences">calculateConsequences</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1564352"></a>
+Determine the XRP balance consequences if a transaction
+        consumes the maximum XRP allowed.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__calculateConsequences.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__calculateConsequences.synopsis"></a></span><a class="link" href="ripple__calculateConsequences.html#rippled.ref.ripple__calculateConsequences.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="identifier">TxConsequences</span>
+<span class="identifier">calculateConsequences</span><span class="special">(</span>
+    <span class="identifier">PreflightResult</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">preflightResult</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__calculateConsequences.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__calculateConsequences.description"></a></span><a class="link" href="ripple__calculateConsequences.html#rippled.ref.ripple__calculateConsequences.description">Description</a>
+      </h5>
+<p>
+        The transaction has been checked and validated using <code class="computeroutput"><span class="identifier">preflight</span></code>
+      </p>
+<h5>
+<a name="rippled.ref.ripple__calculateConsequences.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__calculateConsequences.parameters"></a></span><a class="link" href="ripple__calculateConsequences.html#rippled.ref.ripple__calculateConsequences.parameters">Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">preflightResult</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The result of a previous call to <code class="computeroutput"><span class="identifier">preflight</span></code>
+                  for the transaction.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__calculateConsequences.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__calculateConsequences.return_value"></a></span><a class="link" href="ripple__calculateConsequences.html#rippled.ref.ripple__calculateConsequences.return_value">Return Value</a>
+      </h5>
+<p>
+        A <code class="computeroutput"><span class="identifier">TxConsequences</span></code> object containing
+        the "worst case" consequences of applying this transaction to a
+        ledger.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__calculateConsequences.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__calculateConsequences.header"></a></span><a class="link" href="ripple__calculateConsequences.html#rippled.ref.ripple__calculateConsequences.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">tx</span><span class="special">/</span><span class="identifier">applySteps</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__calculateBaseFee.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__checkConsensus.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

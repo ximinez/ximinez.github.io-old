@@ -1,0 +1,191 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus::buildLCL</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLConsensus.html" title="RCLConsensus">
+<link rel="prev" href="app_.html" title="RCLConsensus::app_">
+<link rel="next" href="clock_type.html" title="RCLConsensus::clock_type">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="app_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="clock_type.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLConsensus.buildLCL"></a><a class="link" href="buildLCL.html" title="RCLConsensus::buildLCL">RCLConsensus::buildLCL</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1498907"></a>
+Build the new last closed ledger.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.buildLCL.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.buildLCL.synopsis"></a></span><a class="link" href="buildLCL.html#rippled.ref.ripple__RCLConsensus.buildLCL.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">RCLCxLedger</span>
+<span class="identifier">buildLCL</span><span class="special">(</span>
+    <span class="identifier">RCLCxLedger</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">previousLedger</span><span class="special">,</span>
+    <span class="identifier">RCLTxSet</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">set</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">closeTime</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">closeTimeCorrect</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">duration</span> <span class="identifier">closeResolution</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">now</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="identifier">roundTime</span><span class="special">,</span>
+    <span class="identifier">CanonicalTXSet</span><span class="special">&amp;</span> <span class="identifier">retriableTxs</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.buildLCL.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.buildLCL.description"></a></span><a class="link" href="buildLCL.html#rippled.ref.ripple__RCLConsensus.buildLCL.description">Description</a>
+        </h6>
+<p>
+          Accept the given the provided set of consensus transactions and build the
+          last closed ledger. Since consensus just agrees on which transactions to
+          apply, but not whether they make it into the closed ledger, this function
+          also populates retriableTxs with those that can be retried in the next
+          round.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.buildLCL.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.buildLCL.parameters"></a></span><a class="link" href="buildLCL.html#rippled.ref.ripple__RCLConsensus.buildLCL.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">previousLedger</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Prior ledger building upon
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">set</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The set of transactions to apply to the ledger
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">closeTime</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The the ledger closed
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">closeTimeCorrect</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether consensus agreed on close time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">closeResolution</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Resolution used to determine consensus close time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">now</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Current network adjusted time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">roundTime</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Duration of this consensus rorund
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">retriableTxs</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Populate with transactions to retry in next round
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.buildLCL.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.buildLCL.return_value"></a></span><a class="link" href="buildLCL.html#rippled.ref.ripple__RCLConsensus.buildLCL.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          The newly built ledger
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="app_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="clock_type.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

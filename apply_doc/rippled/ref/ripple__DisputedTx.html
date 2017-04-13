@@ -1,0 +1,249 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>DisputedTx</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__ConsensusState.html" title="ConsensusState">
+<link rel="next" href="ripple__DisputedTx/DisputedTx.html" title="DisputedTx::DisputedTx">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__ConsensusState.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__DisputedTx/DisputedTx.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__DisputedTx"></a><a class="link" href="ripple__DisputedTx.html" title="DisputedTx">DisputedTx</a>
+</h3></div></div></div>
+<p>
+        A transaction discovered to be in dispute during conensus.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__DisputedTx.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DisputedTx.synopsis"></a></span><a class="link" href="ripple__DisputedTx.html#rippled.ref.ripple__DisputedTx.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span>
+    <span class="keyword">class</span> <span class="identifier">Tx_t</span><span class="special">,</span>
+    <span class="keyword">class</span> <span class="identifier">NodeID_t</span><span class="special">&gt;</span>
+<span class="keyword">class</span> <span class="identifier">DisputedTx</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__DisputedTx.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DisputedTx.member_functions"></a></span><a class="link" href="ripple__DisputedTx.html#rippled.ref.ripple__DisputedTx.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/DisputedTx.html" title="DisputedTx::DisputedTx"><span class="bold"><strong>DisputedTx</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Constructor.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/ID.html" title="DisputedTx::ID"><span class="bold"><strong>ID</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  The unique id/hash of the disputed transaction.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/getJson.html" title="DisputedTx::getJson"><span class="bold"><strong>getJson</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  JSON representation of dispute, used for debugging.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/getOurVote.html" title="DisputedTx::getOurVote"><span class="bold"><strong>getOurVote</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Our vote on whether the transaction should be included.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/setOurVote.html" title="DisputedTx::setOurVote"><span class="bold"><strong>setOurVote</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Change our vote.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/setVote.html" title="DisputedTx::setVote"><span class="bold"><strong>setVote</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Change a peer's vote.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/tx.html" title="DisputedTx::tx"><span class="bold"><strong>tx</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  The disputed transaction.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/unVote.html" title="DisputedTx::unVote"><span class="bold"><strong>unVote</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Remove a peer's vote.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DisputedTx/updateVote.html" title="DisputedTx::updateVote"><span class="bold"><strong>updateVote</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Update our vote given progression of consensus.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__DisputedTx.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DisputedTx.description"></a></span><a class="link" href="ripple__DisputedTx.html#rippled.ref.ripple__DisputedTx.description">Description</a>
+      </h5>
+<p>
+        During consensus, a <a class="link" href="ripple__DisputedTx.html" title="DisputedTx"><code class="computeroutput"><span class="identifier">DisputedTx</span></code></a> is created when a transaction
+        is discovered to be disputed. The object persists only as long as the dispute.
+      </p>
+<p>
+        Undisputed transactions have no corresponding <a class="link" href="ripple__DisputedTx.html" title="DisputedTx"><code class="computeroutput"><span class="identifier">DisputedTx</span></code></a> object.
+      </p>
+<p>
+        Refer to <a class="link" href="ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a>
+        for details on the template type requirements.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__DisputedTx.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DisputedTx.template_parameters"></a></span><a class="link" href="ripple__DisputedTx.html#rippled.ref.ripple__DisputedTx.template_parameters">Template
+        Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Type
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">Tx_t</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The type for a transaction
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">NodeID_t</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The type for a node identifier
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__DisputedTx.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DisputedTx.header"></a></span><a class="link" href="ripple__DisputedTx.html#rippled.ref.ripple__DisputedTx.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">DisputedTx</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__ConsensusState.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__DisputedTx/DisputedTx.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Consensus::beginAccept</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__Consensus.html" title="Consensus">
+<link rel="prev" href="adjustCount.html" title="Consensus::adjustCount">
+<link rel="next" href="checkLCL.html" title="Consensus::checkLCL">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="adjustCount.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__Consensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="checkLCL.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__Consensus.beginAccept"></a><a class="link" href="beginAccept.html" title="Consensus::beginAccept">Consensus::beginAccept</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1466535"></a>
+Initiate acceptance of a the next closed ledger.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__Consensus.beginAccept.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.beginAccept.synopsis"></a></span><a class="link" href="beginAccept.html#rippled.ref.ripple__Consensus.beginAccept.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">void</span>
+<span class="identifier">beginAccept</span><span class="special">(</span>
+    <span class="keyword">bool</span> <span class="identifier">synchronous</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__Consensus.beginAccept.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.beginAccept.description"></a></span><a class="link" href="beginAccept.html#rippled.ref.ripple__Consensus.beginAccept.description">Description</a>
+        </h6>
+<p>
+          After consensus is complete, beginAccept is called to start accepting the
+          consensus transaction set. In synchronous mode, this will directly call
+          the accept member function. However, since accepting and generating a new
+          ledger is likely computationally intensive, the asynchronous mode defer
+          to the Derived class dispatchAccept call to schedule the call to accept.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__Consensus.beginAccept.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.beginAccept.parameters"></a></span><a class="link" href="beginAccept.html#rippled.ref.ripple__Consensus.beginAccept.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">synchronous</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Do not dispatch to Derived and instead call accept directly.
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="adjustCount.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__Consensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="checkLCL.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

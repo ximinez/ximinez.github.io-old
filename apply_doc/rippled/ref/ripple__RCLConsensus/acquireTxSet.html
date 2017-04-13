@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus::acquireTxSet</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLConsensus.html" title="RCLConsensus">
+<link rel="prev" href="acquireLedger.html" title="RCLConsensus::acquireLedger">
+<link rel="next" href="acquiringLedger_.html" title="RCLConsensus::acquiringLedger_">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="acquireLedger.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="acquiringLedger_.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLConsensus.acquireTxSet"></a><a class="link" href="acquireTxSet.html" title="RCLConsensus::acquireTxSet">RCLConsensus::acquireTxSet</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1498537"></a>
+Acquire the transaction set associated with a proposal.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.synopsis"></a></span><a class="link" href="acquireTxSet.html#rippled.ref.ripple__RCLConsensus.acquireTxSet.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">RCLTxSet</span> <span class="special">&gt;</span>
+<span class="identifier">acquireTxSet</span><span class="special">(</span>
+    <span class="identifier">RCLTxSet</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">setId</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.description"></a></span><a class="link" href="acquireTxSet.html#rippled.ref.ripple__RCLConsensus.acquireTxSet.description">Description</a>
+        </h6>
+<p>
+          If the transaction set is not available locally, will attempt acquire it
+          from the network.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.parameters"></a></span><a class="link" href="acquireTxSet.html#rippled.ref.ripple__RCLConsensus.acquireTxSet.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">setId</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The transaction set ID associated with the proposal
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.acquireTxSet.return_value"></a></span><a class="link" href="acquireTxSet.html#rippled.ref.ripple__RCLConsensus.acquireTxSet.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          Optional set of transactions, seated if available.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="acquireLedger.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="acquiringLedger_.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

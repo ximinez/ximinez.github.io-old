@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus::proposersFinished</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLConsensus.html" title="RCLConsensus">
+<link rel="prev" href="propose.html" title="RCLConsensus::propose">
+<link rel="next" href="proposersValidated.html" title="RCLConsensus::proposersValidated">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="propose.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="proposersValidated.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLConsensus.proposersFinished"></a><a class="link" href="proposersFinished.html" title="RCLConsensus::proposersFinished">RCLConsensus::proposersFinished</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1505678"></a>
+Number of proposers that have validated a
+          ledger descended from requested ledger.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.proposersFinished.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.proposersFinished.synopsis"></a></span><a class="link" href="proposersFinished.html#rippled.ref.ripple__RCLConsensus.proposersFinished.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span>
+<span class="identifier">proposersFinished</span><span class="special">(</span>
+    <span class="identifier">LedgerHash</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">h</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.proposersFinished.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.proposersFinished.description"></a></span><a class="link" href="proposersFinished.html#rippled.ref.ripple__RCLConsensus.proposersFinished.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.proposersFinished.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.proposersFinished.parameters"></a></span><a class="link" href="proposersFinished.html#rippled.ref.ripple__RCLConsensus.proposersFinished.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">h</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The hash of the ledger of interest.
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.proposersFinished.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.proposersFinished.return_value"></a></span><a class="link" href="proposersFinished.html#rippled.ref.ripple__RCLConsensus.proposersFinished.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          The number of validating peers that have validated a ledger succeeding
+          the one provided.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="propose.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="proposersValidated.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

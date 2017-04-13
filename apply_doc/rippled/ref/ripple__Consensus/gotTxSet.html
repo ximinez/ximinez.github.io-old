@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Consensus::gotTxSet</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__Consensus.html" title="Consensus">
+<link rel="prev" href="getLastConvergeDuration.html" title="Consensus::getLastConvergeDuration">
+<link rel="next" href="gotTxSetInternal.html" title="Consensus::gotTxSetInternal">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="getLastConvergeDuration.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__Consensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="gotTxSetInternal.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__Consensus.gotTxSet"></a><a class="link" href="gotTxSet.html" title="Consensus::gotTxSet">Consensus::gotTxSet</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1469074"></a>
+Process a transaction set, typically acquired from the
+          network.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__Consensus.gotTxSet.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.gotTxSet.synopsis"></a></span><a class="link" href="gotTxSet.html#rippled.ref.ripple__Consensus.gotTxSet.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">void</span>
+<span class="identifier">gotTxSet</span><span class="special">(</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">now</span><span class="special">,</span>
+    <span class="identifier">TxSet_t</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">txSet</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__Consensus.gotTxSet.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.gotTxSet.description"></a></span><a class="link" href="gotTxSet.html#rippled.ref.ripple__Consensus.gotTxSet.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__Consensus.gotTxSet.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.gotTxSet.parameters"></a></span><a class="link" href="gotTxSet.html#rippled.ref.ripple__Consensus.gotTxSet.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">now</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The network adjusted time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">txSet</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    the transaction set
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="getLastConvergeDuration.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__Consensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="gotTxSetInternal.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

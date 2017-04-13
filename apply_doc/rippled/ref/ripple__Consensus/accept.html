@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Consensus::accept</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__Consensus.html" title="Consensus">
+<link rel="prev" href="LCL.html" title="Consensus::LCL">
+<link rel="next" href="acquired_.html" title="Consensus::acquired_">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="LCL.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__Consensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="acquired_.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__Consensus.accept"></a><a class="link" href="accept.html" title="Consensus::accept">Consensus::accept</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1465840"></a>
+Accept a new last closed ledger.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__Consensus.accept.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.accept.synopsis"></a></span><a class="link" href="accept.html#rippled.ref.ripple__Consensus.accept.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">void</span>
+<span class="identifier">accept</span><span class="special">(</span>
+    <span class="identifier">TxSet_t</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">set</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__Consensus.accept.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.accept.description"></a></span><a class="link" href="accept.html#rippled.ref.ripple__Consensus.accept.description">Description</a>
+        </h6>
+<p>
+          We believe the network reached <a class="link" href="../ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a> on a set of transactions.
+          This function accepts those new transactions, creating a new last closed
+          ledger. The bulk of the work is dispatched to the deriving class' accept
+          method.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__Consensus.accept.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.accept.parameters"></a></span><a class="link" href="accept.html#rippled.ref.ripple__Consensus.accept.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">set</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Our consensus transaction set
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__Consensus.accept.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__Consensus.accept.remarks"></a></span><a class="link" href="accept.html#rippled.ref.ripple__Consensus.accept.remarks">Remarks</a>
+        </h6>
+<p>
+          This is protected so the Derived class can call it from dispatchAccept.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="LCL.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__Consensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="acquired_.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

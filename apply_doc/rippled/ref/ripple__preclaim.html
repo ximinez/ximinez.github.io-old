@@ -1,0 +1,156 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>preclaim</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__participantsNeeded.html" title="participantsNeeded">
+<link rel="next" href="ripple__preflight.html" title="preflight">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__participantsNeeded.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__preflight.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__preclaim"></a><a class="link" href="ripple__preclaim.html" title="preclaim">preclaim</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1619271"></a>
+Gate a transaction based on static ledger information.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__preclaim.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__preclaim.synopsis"></a></span><a class="link" href="ripple__preclaim.html#rippled.ref.ripple__preclaim.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="identifier">PreclaimResult</span>
+<span class="identifier">preclaim</span><span class="special">(</span>
+    <span class="identifier">PreflightResult</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">preflightResult</span><span class="special">,</span>
+    <span class="identifier">Application</span><span class="special">&amp;</span> <span class="identifier">app</span><span class="special">,</span>
+    <span class="identifier">OpenView</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">view</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__preclaim.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__preclaim.description"></a></span><a class="link" href="ripple__preclaim.html#rippled.ref.ripple__preclaim.description">Description</a>
+      </h5>
+<p>
+        The transaction is checked against all possible validity constraints that
+        DO require a ledger.
+      </p>
+<p>
+        If preclaim succeeds, then the transaction is very likely to claim a fee.
+        This will determine if the transaction is safe to relay without being applied
+        to the open ledger.
+      </p>
+<p>
+        "Succeeds" in this case is defined as returning a <code class="computeroutput"><span class="identifier">tes</span></code> or <code class="computeroutput"><span class="identifier">tec</span></code>,
+        since both lead to claiming a fee.
+      </p>
+<p>
+        The transaction has been checked and validated using <code class="computeroutput"><span class="identifier">preflight</span></code>
+      </p>
+<h5>
+<a name="rippled.ref.ripple__preclaim.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__preclaim.parameters"></a></span><a class="link" href="ripple__preclaim.html#rippled.ref.ripple__preclaim.parameters">Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">preflightResult</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The result of a previous call to <code class="computeroutput"><span class="identifier">preflight</span></code>
+                  for the transaction.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">app</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The current running <code class="computeroutput"><span class="identifier">Application</span></code>.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">view</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The open ledger that the transaction will attempt to be applied
+                  to.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__preclaim.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__preclaim.see_also"></a></span><a class="link" href="ripple__preclaim.html#rippled.ref.ripple__preclaim.see_also">See
+        Also</a>
+      </h5>
+<p>
+        <a class="link" href="ripple__preflight.html" title="preflight"><code class="computeroutput"><span class="identifier">preflight</span></code></a>,
+        <a class="link" href="ripple__doApply.html" title="doApply"><code class="computeroutput"><span class="identifier">doApply</span></code></a>,
+        apply
+      </p>
+<h5>
+<a name="rippled.ref.ripple__preclaim.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__preclaim.return_value"></a></span><a class="link" href="ripple__preclaim.html#rippled.ref.ripple__preclaim.return_value">Return
+        Value</a>
+      </h5>
+<p>
+        A <a class="link" href="ripple__PreclaimResult.html" title="PreclaimResult"><code class="computeroutput"><span class="identifier">PreclaimResult</span></code></a>
+        object containing, among other things the TER code and the base fee value
+        for this transaction.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__preclaim.h5"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__preclaim.header"></a></span><a class="link" href="ripple__preclaim.html#rippled.ref.ripple__preclaim.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">tx</span><span class="special">/</span><span class="identifier">applySteps</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__participantsNeeded.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__preflight.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

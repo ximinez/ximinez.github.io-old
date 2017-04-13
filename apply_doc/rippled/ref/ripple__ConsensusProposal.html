@@ -1,0 +1,395 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ConsensusProposal</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__Consensus/validating_.html" title="Consensus::validating_">
+<link rel="next" href="ripple__ConsensusProposal/ConsensusProposal.html" title="ConsensusProposal::ConsensusProposal">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Consensus/validating_.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__ConsensusProposal/ConsensusProposal.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__ConsensusProposal"></a><a class="link" href="ripple__ConsensusProposal.html" title="ConsensusProposal">ConsensusProposal</a>
+</h3></div></div></div>
+<p>
+        Represents a proposed position taken during a round of consensus.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.synopsis"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span>
+    <span class="keyword">class</span> <span class="identifier">NodeID_t</span><span class="special">,</span>
+    <span class="keyword">class</span> <span class="identifier">LedgerID_t</span><span class="special">,</span>
+    <span class="keyword">class</span> <span class="identifier">Position_t</span><span class="special">&gt;</span>
+<span class="keyword">class</span> <span class="identifier">ConsensusProposal</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.types"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.types">Types</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/NodeID.html" title="ConsensusProposal::NodeID"><span class="bold"><strong>NodeID</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.member_functions"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.member_functions">Member Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/ConsensusProposal.html" title="ConsensusProposal::ConsensusProposal"><span class="bold"><strong>ConsensusProposal</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Constructor.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/bowOut.html" title="ConsensusProposal::bowOut"><span class="bold"><strong>bowOut</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Leave consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/changePosition.html" title="ConsensusProposal::changePosition"><span class="bold"><strong>changePosition</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Update the position during the consensus process.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/closeTime.html" title="ConsensusProposal::closeTime"><span class="bold"><strong>closeTime</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  The current position on the consensus close time.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/getJson.html" title="ConsensusProposal::getJson"><span class="bold"><strong>getJson</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get JSON representation for debugging.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/isBowOut.html" title="ConsensusProposal::isBowOut"><span class="bold"><strong>isBowOut</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get whether this node left the consensus process.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/isInitial.html" title="ConsensusProposal::isInitial"><span class="bold"><strong>isInitial</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether this is the first position taken during the current consensus
+                  round.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/isStale.html" title="ConsensusProposal::isStale"><span class="bold"><strong>isStale</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get whether this position is stale relative to the provided cutoff.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/nodeID.html" title="ConsensusProposal::nodeID"><span class="bold"><strong>nodeID</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Identifying which peer took this position.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/position.html" title="ConsensusProposal::position"><span class="bold"><strong>position</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the proposed position.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/prevLedger.html" title="ConsensusProposal::prevLedger"><span class="bold"><strong>prevLedger</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the prior accepted ledger this position is based on.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/proposeSeq.html" title="ConsensusProposal::proposeSeq"><span class="bold"><strong>proposeSeq</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the sequence number of this proposal.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/seenTime.html" title="ConsensusProposal::seenTime"><span class="bold"><strong>seenTime</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get when this position was taken.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.data_members"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.data_members">Data
+        Members</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/seqJoin.html" title="ConsensusProposal::seqJoin"><span class="bold"><strong>seqJoin</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ConsensusProposal/seqLeave.html" title="ConsensusProposal::seqLeave"><span class="bold"><strong>seqLeave</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.description"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.description">Description</a>
+      </h5>
+<p>
+        During consensus, peers seek agreement on a set of transactions to apply
+        to the prior ledger to generate the next ledger. Each peer takes a position
+        on whether to include or exclude potential transactions. The position on
+        the set of transactions is proposed to its peers as an instance of the <a class="link" href="ripple__ConsensusProposal.html" title="ConsensusProposal"><code class="computeroutput"><span class="identifier">ConsensusProposal</span></code></a>
+        class.
+      </p>
+<p>
+        An instance of <a class="link" href="ripple__ConsensusProposal.html" title="ConsensusProposal"><code class="computeroutput"><span class="identifier">ConsensusProposal</span></code></a> can be either
+        our own proposal or one of our peer's.
+      </p>
+<p>
+        As consensus proceeds, peers may change their position on the transaction,
+        or choose to abstain. Each successive proposal includes a strictly monotonically
+        increasing number (or, if a peer is choosing to abstain, the special value
+        <code class="computeroutput"><span class="identifier">seqLeave</span></code>).
+      </p>
+<p>
+        Refer to <a class="link" href="ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a>
+        for requirements of the template arguments.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h5"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.template_parameters"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.template_parameters">Template
+        Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Type
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">NodeID_t</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Type used to uniquely identify nodes/peers
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">LedgerID_t</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Type used to uniquely identify ledgers
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">Position_t</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Type used to represent the position taken on transactions under
+                  consideration during this round of consensus
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ConsensusProposal.h6"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusProposal.header"></a></span><a class="link" href="ripple__ConsensusProposal.html#rippled.ref.ripple__ConsensusProposal.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">ConsensusProposal</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Consensus/validating_.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__ConsensusProposal/ConsensusProposal.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

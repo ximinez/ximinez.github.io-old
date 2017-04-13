@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus::notify</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLConsensus.html" title="RCLConsensus">
+<link rel="prev" href="nodeID_.html" title="RCLConsensus::nodeID_">
+<link rel="next" href="onClose.html" title="RCLConsensus::onClose">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="nodeID_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="onClose.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLConsensus.notify"></a><a class="link" href="notify.html" title="RCLConsensus::notify">RCLConsensus::notify</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="id1504195"></a>
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.notify.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.notify.synopsis"></a></span><a class="link" href="notify.html#rippled.ref.ripple__RCLConsensus.notify.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">void</span>
+<span class="identifier">notify</span><span class="special">(</span>
+    <span class="identifier">protocol</span><span class="special">::</span><span class="identifier">NodeEvent</span> <span class="identifier">ne</span><span class="special">,</span>
+    <span class="identifier">RCLCxLedger</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">ledger</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">haveCorrectLCL</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.notify.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.notify.description"></a></span><a class="link" href="notify.html#rippled.ref.ripple__RCLConsensus.notify.description">Description</a>
+        </h6>
+<p>
+          Notify peers of a consensus state change
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.notify.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.notify.parameters"></a></span><a class="link" href="notify.html#rippled.ref.ripple__RCLConsensus.notify.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">ne</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Event type for notification
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">ledger</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The ledger at the time of the state change
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">haveCorrectLCL</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Whether we believ we have the correct LCL.
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="nodeID_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="onClose.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

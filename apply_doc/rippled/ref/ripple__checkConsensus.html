@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>checkConsensus</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__calculateConsequences.html" title="calculateConsequences">
+<link rel="next" href="ripple__checkConsensusReached.html" title="checkConsensusReached">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__calculateConsequences.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__checkConsensusReached.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__checkConsensus"></a><a class="link" href="ripple__checkConsensus.html" title="checkConsensus">checkConsensus</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1564620"></a>
+Determine whether the network reached consensus and whether
+        we joined.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__checkConsensus.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__checkConsensus.synopsis"></a></span><a class="link" href="ripple__checkConsensus.html#rippled.ref.ripple__checkConsensus.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="identifier">ConsensusState</span>
+<span class="identifier">checkConsensus</span><span class="special">(</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">previousProposers</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">currentProposers</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">currentAgree</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">currentFinished</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="identifier">previousAgreeTime</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="identifier">currentAgreeTime</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">proposing</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__checkConsensus.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__checkConsensus.description"></a></span><a class="link" href="ripple__checkConsensus.html#rippled.ref.ripple__checkConsensus.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__checkConsensus.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__checkConsensus.parameters"></a></span><a class="link" href="ripple__checkConsensus.html#rippled.ref.ripple__checkConsensus.parameters">Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">previousProposers</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers in the last closing (not including us)
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">currentProposers</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers in this closing so far (not including us)
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">currentAgree</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers who agree with us
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">currentFinished</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers who have validated a ledger after this one
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">previousAgreeTime</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  how long, in milliseconds, it took to agree on the last ledger
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">currentAgreeTime</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  how long, in milliseconds, we've been trying to agree
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">proposing</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  whether we should count ourselves
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">j</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  journal for logging
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__checkConsensus.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__checkConsensus.header"></a></span><a class="link" href="ripple__checkConsensus.html#rippled.ref.ripple__checkConsensus.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">LedgerTiming</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__calculateConsequences.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__checkConsensusReached.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

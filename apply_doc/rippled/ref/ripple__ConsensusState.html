@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ConsensusState</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__ConsensusProposal/time_.html" title="ConsensusProposal::time_">
+<link rel="next" href="ripple__DisputedTx.html" title="DisputedTx">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__ConsensusProposal/time_.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__DisputedTx.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__ConsensusState"></a><a class="link" href="ripple__ConsensusState.html" title="ConsensusState">ConsensusState</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1480097"></a>
+Whether we have or don't have a consensus.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ConsensusState.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusState.synopsis"></a></span><a class="link" href="ripple__ConsensusState.html#rippled.ref.ripple__ConsensusState.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">ConsensusState</span>
+</pre>
+<p>
+        <a class="indexterm" name="id1480133"></a>
+ <a class="indexterm" name="id1480141"></a>
+ <a class="indexterm" name="id1480150"></a>
+
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ConsensusState.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusState.values"></a></span><a class="link" href="ripple__ConsensusState.html#rippled.ref.ripple__ConsensusState.values">Values</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  No
+                </p>
+              </td>
+<td>
+                <p>
+                  We do not have consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  MovedOn
+                </p>
+              </td>
+<td>
+                <p>
+                  The network has consensus without us.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  Yes
+                </p>
+              </td>
+<td>
+                <p>
+                  We have consensus along with the network.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ConsensusState.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusState.description"></a></span><a class="link" href="ripple__ConsensusState.html#rippled.ref.ripple__ConsensusState.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__ConsensusState.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ConsensusState.header"></a></span><a class="link" href="ripple__ConsensusState.html#rippled.ref.ripple__ConsensusState.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">LedgerTiming</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__ConsensusProposal/time_.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__DisputedTx.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

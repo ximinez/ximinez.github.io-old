@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>proposalUniqueId</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__preflight.html" title="preflight">
+<link rel="next" href="ripple__roundCloseTime.html" title="roundCloseTime">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__preflight.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__roundCloseTime.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__proposalUniqueId"></a><a class="link" href="ripple__proposalUniqueId.html" title="proposalUniqueId">proposalUniqueId</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1620184"></a>
+Calculate a unique identifier for a signed proposal.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__proposalUniqueId.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__proposalUniqueId.synopsis"></a></span><a class="link" href="ripple__proposalUniqueId.html#rippled.ref.ripple__proposalUniqueId.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="identifier">uint256</span>
+<span class="identifier">proposalUniqueId</span><span class="special">(</span>
+    <span class="identifier">uint256</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">proposeHash</span><span class="special">,</span>
+    <span class="identifier">uint256</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">previousLedger</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span> <span class="identifier">proposeSeq</span><span class="special">,</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">closeTime</span><span class="special">,</span>
+    <span class="identifier">Slice</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">publicKey</span><span class="special">,</span>
+    <span class="identifier">Slice</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">signature</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__proposalUniqueId.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__proposalUniqueId.description"></a></span><a class="link" href="ripple__proposalUniqueId.html#rippled.ref.ripple__proposalUniqueId.description">Description</a>
+      </h5>
+<p>
+        The identifier is based on all the fields that contribute to the signature,
+        as well as the signature itself. The "last closed ledger" field
+        may be omitted, but the signer will compute the signature as if this field
+        was present. Recipients of the proposal will inject the last closed ledger
+        in order to validate the signature. If the last closed ledger is left out,
+        then it is considered as all zeroes for the purposes of signing.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__proposalUniqueId.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__proposalUniqueId.parameters"></a></span><a class="link" href="ripple__proposalUniqueId.html#rippled.ref.ripple__proposalUniqueId.parameters">Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">proposeHash</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The hash of the proposed position
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">previousLedger</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The hash of the ledger the proposal is based upon
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">proposeSeq</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Sequence number of the proposal
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">closeTime</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Close time of the proposal
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">publicKey</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Signer's public key
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">signature</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Proposal signature
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__proposalUniqueId.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__proposalUniqueId.header"></a></span><a class="link" href="ripple__proposalUniqueId.html#rippled.ref.ripple__proposalUniqueId.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">RCLCxPeerPos</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__preflight.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__roundCloseTime.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

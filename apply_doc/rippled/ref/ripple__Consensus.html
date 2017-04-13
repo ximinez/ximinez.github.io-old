@@ -1,0 +1,556 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Consensus</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__AV_STUCK_CONSENSUS_TIME.html" title="AV_STUCK_CONSENSUS_TIME">
+<link rel="next" href="ripple__Consensus/Consensus.html" title="Consensus::Consensus">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__AV_STUCK_CONSENSUS_TIME.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__Consensus/Consensus.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__Consensus"></a><a class="link" href="ripple__Consensus.html" title="Consensus">Consensus</a>
+</h3></div></div></div>
+<p>
+        Generic implementation of consensus algorithm.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.synopsis"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span>
+    <span class="keyword">class</span> <span class="identifier">Derived</span><span class="special">,</span>
+    <span class="keyword">class</span> <span class="identifier">Traits</span><span class="special">&gt;</span>
+<span class="keyword">class</span> <span class="identifier">Consensus</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.types"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.types">Types</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/clock_type.html" title="Consensus::clock_type"><span class="bold"><strong>clock_type</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Clock type for measuring time within the consensus code.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.member_functions"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/Consensus.html" title="Consensus::Consensus"><span class="bold"><strong>Consensus</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Constructor.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/LCL.html" title="Consensus::LCL"><span class="bold"><strong>LCL</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the last closed ledger ID.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/getJson.html" title="Consensus::getJson"><span class="bold"><strong>getJson</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the Json state of the consensus process.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/getLastCloseProposers.html" title="Consensus::getLastCloseProposers"><span class="bold"><strong>getLastCloseProposers</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get the number of proposing peers that participated in the previous
+                  round.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/getLastConvergeDuration.html" title="Consensus::getLastConvergeDuration"><span class="bold"><strong>getLastConvergeDuration</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get duration of the previous round.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/gotTxSet.html" title="Consensus::gotTxSet"><span class="bold"><strong>gotTxSet</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Process a transaction set, typically acquired from the network.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/haveCorrectLCL.html" title="Consensus::haveCorrectLCL"><span class="bold"><strong>haveCorrectLCL</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether we have the correct last closed ledger.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/peerProposal.html" title="Consensus::peerProposal"><span class="bold"><strong>peerProposal</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  A peer has proposed a new position, adjust our tracking.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/proposing.html" title="Consensus::proposing"><span class="bold"><strong>proposing</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether we are sending proposals during consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/simulate.html" title="Consensus::simulate"><span class="bold"><strong>simulate</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Simulate the consensus process without any network traffic.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/startRound.html" title="Consensus::startRound"><span class="bold"><strong>startRound</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Kick-off the next round of consensus.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/timerEntry.html" title="Consensus::timerEntry"><span class="bold"><strong>timerEntry</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Call periodically to drive consensus forward.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/validating.html" title="Consensus::validating"><span class="bold"><strong>validating</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Whether we are validating consensus ledgers.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.protected_member_functions"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.protected_member_functions">Protected
+        Member Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Consensus/accept.html" title="Consensus::accept"><span class="bold"><strong>accept</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Accept a new last closed ledger.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.description"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.description">Description</a>
+      </h5>
+<p>
+        Achieves consensus on the next ledger.
+      </p>
+<p>
+        Two things need consensus:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+            The set of transactions included in the ledger.
+          </li>
+<li class="listitem">
+            The close time for the ledger.
+          </li>
+</ul></div>
+<p>
+        The general consensus stages:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+            <a class="link" href="ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a>
+            finishes, we build a new last closed ledger and a new open ledger based
+            on it.
+          </li>
+<li class="listitem">
+            The open ledger interval starts. This gives servers time to finish building
+            the new last closed ledger and fill the new ledger with transactions.
+          </li>
+<li class="listitem">
+            The ledger closes. Servers send their initial proposal.
+          </li>
+<li class="listitem">
+            We do not change our position or declare a consensus for at least LEDGER_MIN_CONSENSUS
+            to ensure servers have a chance to make an initial proposal.
+          </li>
+<li class="listitem">
+            On a frequent timer event, we change our position if needed based on
+            received peer positions.
+          </li>
+<li class="listitem">
+            When we have a consensus, go to step 1.
+          </li>
+</ul></div>
+<p>
+        This class uses CRTP to allow adapting <a class="link" href="ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a> for specific applications.
+      </p>
+<p>
+        The Derived template argument is used to embed consensus within the larger
+        application framework. The Traits template identifies types that play important
+        roles in <a class="link" href="ripple__Consensus.html" title="Consensus"><code class="computeroutput"><span class="identifier">Consensus</span></code></a>
+        (transactions, ledgers, etc.) and which must conform to the generic interface
+        outlined below. The Traits typesmust be copy constructible and assignable.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h5"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.remarks"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.remarks">Remarks</a>
+      </h5>
+<p>
+        The interface below is in flux as this code is refactored.
+      </p>
+<pre class="programlisting"><span class="comment">// A single transaction</span>
+<span class="keyword">struct</span> <span class="identifier">Tx</span>
+<span class="special">{</span>
+  <span class="comment">// Unique identifier of transaction</span>
+  <span class="keyword">using</span> <span class="identifier">ID</span> <span class="special">=</span> <span class="special">...;</span>
+
+  <span class="identifier">ID</span> <span class="identifier">id</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+
+<span class="special">};</span>
+
+<span class="comment">// A set of transactions</span>
+<span class="keyword">struct</span> <span class="identifier">TxSet</span>
+<span class="special">{</span>
+  <span class="comment">// Unique ID of TxSet (not of Tx)</span>
+  <span class="keyword">using</span> <span class="identifier">ID</span> <span class="special">=</span> <span class="special">...;</span>
+  <span class="comment">// Type of individual transaction comprising the TxSet</span>
+  <span class="keyword">using</span> <span class="identifier">Tx</span> <span class="special">=</span> <span class="identifier">Tx</span><span class="special">;</span>
+
+  <span class="keyword">bool</span> <span class="identifier">exists</span><span class="special">(</span><span class="identifier">Tx</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// Return value should have semantics like Tx const *</span>
+  <span class="identifier">Tx</span> <span class="keyword">const</span> <span class="special">*</span> <span class="identifier">find</span><span class="special">(</span><span class="identifier">Tx</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;)</span> <span class="keyword">const</span> <span class="special">;</span>
+  <span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">id</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+
+  <span class="comment">// Return set of transactions that are not common to this set or other</span>
+  <span class="comment">// boolean indicates which set it was in</span>
+  <span class="identifier">std</span><span class="special">::</span><span class="identifier">map</span><span class="special">&lt;</span><span class="identifier">Tx</span><span class="special">::</span><span class="identifier">ID</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">&gt;</span> <span class="identifier">compare</span><span class="special">(</span><span class="identifier">TxSet</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">other</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+
+  <span class="comment">// A mutable view of transactions</span>
+  <span class="keyword">struct</span> <span class="identifier">MutableTxSet</span>
+  <span class="special">{</span>
+      <span class="identifier">MutableTxSet</span><span class="special">(</span><span class="identifier">TxSet</span> <span class="keyword">const</span> <span class="special">&amp;);</span>
+      <span class="keyword">bool</span> <span class="identifier">insert</span><span class="special">(</span><span class="identifier">Tx</span> <span class="keyword">const</span> <span class="special">&amp;);</span>
+      <span class="keyword">bool</span> <span class="identifier">erase</span><span class="special">(</span><span class="identifier">Tx</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;);</span>
+  <span class="special">};</span>
+
+  <span class="comment">// Construct from a mutable view.</span>
+  <span class="identifier">TxSet</span><span class="special">(</span><span class="identifier">MutableTxSet</span> <span class="keyword">const</span> <span class="special">&amp;);</span>
+
+  <span class="comment">// Alternatively, if the TxSet is itself mutable</span>
+  <span class="comment">// just alias MutableTxSet = TxSet</span>
+
+<span class="special">};</span>
+
+<span class="comment">// Agreed upon state that consensus transactions will modify</span>
+<span class="keyword">struct</span> <span class="identifier">Ledger</span>
+<span class="special">{</span>
+  <span class="keyword">using</span> <span class="identifier">ID</span> <span class="special">=</span> <span class="special">...;</span>
+
+  <span class="comment">// Unique identifier of ledgerr</span>
+  <span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">id</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">auto</span> <span class="identifier">seq</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">auto</span> <span class="identifier">closeTimeResolution</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">auto</span> <span class="identifier">closeAgree</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">auto</span> <span class="identifier">closeTime</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">auto</span> <span class="identifier">parentCloseTime</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">auto</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">parentID</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">Json</span><span class="special">::</span><span class="identifier">Value</span> <span class="identifier">getJson</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+<span class="special">};</span>
+
+<span class="keyword">struct</span> <span class="identifier">Traits</span>
+<span class="special">{</span>
+  <span class="keyword">using</span> <span class="identifier">Ledger_t</span> <span class="special">=</span> <span class="identifier">Ledger</span><span class="special">;</span>
+  <span class="keyword">using</span> <span class="identifier">NodeID_t</span> <span class="special">=</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span><span class="special">;</span>
+  <span class="keyword">using</span> <span class="identifier">TxSet_t</span> <span class="special">=</span> <span class="identifier">TxSet</span><span class="special">;</span>
+  <span class="comment">// To be removed; currently needed to handle missing SHAMap node exception</span>
+  <span class="keyword">using</span> <span class="identifier">MissingTxException_t</span> <span class="special">=</span> <span class="identifier">MissingTx</span><span class="special">;</span>
+<span class="special">}</span>
+
+<span class="keyword">class</span> <span class="identifier">ConsensusImp</span> <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">Consensus</span><span class="special">&lt;</span><span class="identifier">ConsensusImp</span><span class="special">,</span> <span class="identifier">Traits</span><span class="special">&gt;</span>
+<span class="special">{</span>
+    <span class="comment">// Whether consensus should (proposing,validating).</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="keyword">bool</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">&gt;</span> <span class="identifier">getMode</span><span class="special">();</span>
+
+    <span class="comment">// Attempt to acquire a specific ledger.</span>
+    <span class="identifier">Ledger</span> <span class="keyword">const</span> <span class="special">*</span> <span class="identifier">acquireLedger</span><span class="special">(</span><span class="identifier">Ledger</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">ledgerID</span><span class="special">);</span>
+
+    <span class="comment">// Get peers' proposed positions. Returns an iterable</span>
+    <span class="comment">// with value_type convertable to ConsensusPosition&lt;...&gt;</span>
+    <span class="keyword">auto</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">proposals</span><span class="special">(</span><span class="identifier">Ledger</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">ledgerID</span><span class="special">);</span>
+
+    <span class="comment">// Acquire the transaction set associated with a proposed position.</span>
+    <span class="identifier">TxSet</span> <span class="keyword">const</span> <span class="special">*</span> <span class="identifier">acquireTxSet</span><span class="special">(</span><span class="identifier">TxSet</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">setID</span><span class="special">);</span>
+
+    <span class="comment">// Whether the open ledger has any transactions</span>
+    <span class="keyword">bool</span> <span class="identifier">hasOpenTransactions</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
+
+    <span class="comment">// Number of proposers that have vallidated the given ledger</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">proposersValidated</span><span class="special">(</span><span class="identifier">Ledger</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">prevLedger</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+
+    <span class="comment">// Number of proposers that have validated a ledger descended from requested ledger.</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">proposersFinished</span><span class="special">(</span><span class="identifier">LedgerHash</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">h</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span><span class="identifier">re</span>
+
+    <span class="comment">// Called when a new round of consensus has started</span>
+    <span class="keyword">void</span> <span class="identifier">onStartRound</span><span class="special">(</span><span class="identifier">Ledger</span> <span class="keyword">const</span> <span class="special">&amp;);</span>
+
+    <span class="comment">// Called when ledger is closes</span>
+    <span class="keyword">void</span> <span class="identifier">onClose</span><span class="special">(</span><span class="identifier">Ledger</span> <span class="keyword">const</span> <span class="special">&amp;,</span> <span class="keyword">bool</span> <span class="identifier">haveCorrectLCL</span><span class="special">);</span>
+
+    <span class="comment">// Setup later call to Consensus::accept which will call Derived::accept</span>
+    <span class="comment">// Can call Consensus::accept immediately if no interest in offloading</span>
+    <span class="keyword">void</span> <span class="identifier">dispatchAccept</span><span class="special">(</span><span class="identifier">TxSet</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="special">);</span>
+
+    <span class="comment">// Share given transaction set with peers</span>
+    <span class="keyword">void</span> <span class="identifier">share</span><span class="special">(</span><span class="identifier">TxSet</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="identifier">s</span><span class="special">);</span>
+
+    <span class="comment">// Return the ID of the last closed (and validated) ledger</span>
+    <span class="identifier">Ledger</span><span class="special">::</span><span class="identifier">ID</span> <span class="identifier">getLCL</span><span class="special">(</span><span class="identifier">Ledger</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">currLedger</span><span class="special">,</span>
+                    <span class="identifier">Ledger</span><span class="special">::</span><span class="identifier">ID</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">priorLedger</span><span class="special">,</span>
+                    <span class="keyword">bool</span> <span class="identifier">haveCorrectLCL</span><span class="special">);</span>
+
+    <span class="comment">// Propose the position to peers.</span>
+    <span class="keyword">void</span> <span class="identifier">propose</span><span class="special">(</span><span class="identifier">ConsensusProposal</span><span class="special">&lt;...&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">pos</span><span class="special">);</span>
+
+    <span class="comment">// Relay a received peer proposal on to other peer's.</span>
+    <span class="comment">// The argument type should be convertible to ConsensusProposal&lt;...&gt;</span>
+    <span class="comment">// but may be a different type.</span>
+    <span class="keyword">void</span> <span class="identifier">relay</span><span class="special">(</span><span class="identifier">implementation_defined</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">pos</span><span class="special">);</span>
+
+    <span class="comment">// Relay disputed transaction to peers</span>
+    <span class="keyword">void</span> <span class="identifier">relay</span><span class="special">(</span><span class="identifier">DisputedTx</span><span class="special">&lt;</span><span class="identifier">Txn</span><span class="special">,</span> <span class="identifier">NodeID</span><span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">dispute</span><span class="special">);</span>
+
+    <span class="comment">// Create initial position for current consensus round</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span> <span class="special">&lt;</span><span class="identifier">TxSet</span><span class="special">,</span> <span class="identifier">Proposal</span><span class="special">&gt;</span>
+    <span class="identifier">makeInitialPosition</span><span class="special">(</span>
+          <span class="identifier">Ledger</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="identifier">prevLedger</span><span class="special">,</span>
+          <span class="keyword">bool</span> <span class="identifier">isProposing</span><span class="special">,</span>
+          <span class="keyword">bool</span> <span class="identifier">isCorrectLCL</span><span class="special">,</span>
+          <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">closeTime</span><span class="special">,</span>
+          <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">now</span><span class="special">)</span>
+
+
+    <span class="comment">// Process the accepted transaction set, generating the newly closed ledger</span>
+    <span class="comment">// and clearing out the openTxs that were included.</span>
+    <span class="keyword">bool</span> <span class="identifier">accept</span><span class="special">(</span><span class="identifier">TxSet</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">set</span><span class="special">,</span> <span class="special">...</span> <span class="special">)</span>
+
+    <span class="comment">// Called when time to end current round of consensus.  Client code</span>
+    <span class="comment">// determines when to call startRound again.</span>
+    <span class="keyword">void</span> <span class="identifier">endConsensus</span><span class="special">(</span><span class="keyword">bool</span> <span class="identifier">correct</span><span class="special">);</span>
+<span class="special">};</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h6"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.template_parameters"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.template_parameters">Template
+        Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Type
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">Derived</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  The deriving class which adapts the <span class="red">|6|Consensus</span>
+                  algorithm.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">Traits</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  Provides definitions of types used in <span class="red">|6|Consensus</span>.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__Consensus.h7"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Consensus.header"></a></span><a class="link" href="ripple__Consensus.html#rippled.ref.ripple__Consensus.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">Consensus</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__AV_STUCK_CONSENSUS_TIME.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__Consensus/Consensus.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

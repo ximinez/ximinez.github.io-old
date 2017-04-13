@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AV_MIN_CONSENSUS_TIME</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__AV_MID_CONSENSUS_TIME.html" title="AV_MID_CONSENSUS_TIME">
+<link rel="next" href="ripple__AV_STUCK_CONSENSUS_PCT.html" title="AV_STUCK_CONSENSUS_PCT">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__AV_MID_CONSENSUS_TIME.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__AV_STUCK_CONSENSUS_PCT.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME"></a><a class="link" href="ripple__AV_MIN_CONSENSUS_TIME.html" title="AV_MIN_CONSENSUS_TIME">AV_MIN_CONSENSUS_TIME</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1462117"></a>
+The minimum amount of time to consider the previous
+        round to have taken.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.synopsis"></a></span><a class="link" href="ripple__AV_MIN_CONSENSUS_TIME.html#rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">auto</span> <span class="keyword">constexpr</span> <span class="identifier">AV_MIN_CONSENSUS_TIME</span> <span class="special">=</span> <span class="number">5</span><span class="identifier">s</span><span class="special">;</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.description"></a></span><a class="link" href="ripple__AV_MIN_CONSENSUS_TIME.html#rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.description">Description</a>
+      </h5>
+<p>
+        The minimum amount of time to consider the previous round to have taken.
+        This ensures that there is an opportunity for a round at each avalanche threshold
+        even if the previous consensus was very fast. This should be at least twice
+        the interval between proposals (0.7s) divided by the interval between mid
+        and late consensus ([85-50]/100).
+      </p>
+<h5>
+<a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.header"></a></span><a class="link" href="ripple__AV_MIN_CONSENSUS_TIME.html#rippled.ref.ripple__AV_MIN_CONSENSUS_TIME.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">LedgerTiming</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__AV_MID_CONSENSUS_TIME.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__AV_STUCK_CONSENSUS_PCT.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

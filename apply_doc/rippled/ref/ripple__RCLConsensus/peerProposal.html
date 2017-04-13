@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RCLConsensus::peerProposal</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__RCLConsensus.html" title="RCLConsensus">
+<link rel="prev" href="peerPositions_.html" title="RCLConsensus::peerPositions_">
+<link rel="next" href="proposals.html" title="RCLConsensus::proposals">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="peerPositions_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="proposals.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__RCLConsensus.peerProposal"></a><a class="link" href="peerProposal.html" title="RCLConsensus::peerProposal">RCLConsensus::peerProposal</a>
+</h4></div></div></div>
+<p>
+          <span class="emphasis"><em>Inherited from Consensus.</em></span> <a class="indexterm" name="id1505065"></a>
+A
+          peer has proposed a new position, adjust our tracking.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.peerProposal.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.peerProposal.synopsis"></a></span><a class="link" href="peerProposal.html#rippled.ref.ripple__RCLConsensus.peerProposal.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">bool</span>
+<span class="identifier">peerProposal</span><span class="special">(</span>
+    <span class="identifier">NetClock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">now</span><span class="special">,</span>
+    <span class="identifier">Proposal_t</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">newProposal</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.peerProposal.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.peerProposal.description"></a></span><a class="link" href="peerProposal.html#rippled.ref.ripple__RCLConsensus.peerProposal.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.peerProposal.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.peerProposal.parameters"></a></span><a class="link" href="peerProposal.html#rippled.ref.ripple__RCLConsensus.peerProposal.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">now</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The network adjusted time
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">newProposal</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    The new proposal from a peer
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__RCLConsensus.peerProposal.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__RCLConsensus.peerProposal.return_value"></a></span><a class="link" href="peerProposal.html#rippled.ref.ripple__RCLConsensus.peerProposal.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          Whether we should do delayed relay of this proposal.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="peerPositions_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__RCLConsensus.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="proposals.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

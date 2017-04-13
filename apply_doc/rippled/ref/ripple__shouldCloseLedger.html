@@ -1,0 +1,201 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>shouldCloseLedger</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__roundCloseTime.html" title="roundCloseTime">
+<link rel="next" href="ripple__template_field_error.html" title="template_field_error">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__roundCloseTime.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__template_field_error.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__shouldCloseLedger"></a><a class="link" href="ripple__shouldCloseLedger.html" title="shouldCloseLedger">shouldCloseLedger</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1622601"></a>
+Determines whether the current ledger should close at this
+        time.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__shouldCloseLedger.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__shouldCloseLedger.synopsis"></a></span><a class="link" href="ripple__shouldCloseLedger.html#rippled.ref.ripple__shouldCloseLedger.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">bool</span>
+<span class="identifier">shouldCloseLedger</span><span class="special">(</span>
+    <span class="keyword">bool</span> <span class="identifier">anyTransactions</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">previousProposers</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">proposersClosed</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">proposersValidated</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="identifier">previousTime</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="identifier">currentTime</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">milliseconds</span> <span class="identifier">openTime</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">seconds</span> <span class="identifier">idleInterval</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__shouldCloseLedger.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__shouldCloseLedger.description"></a></span><a class="link" href="ripple__shouldCloseLedger.html#rippled.ref.ripple__shouldCloseLedger.description">Description</a>
+      </h5>
+<p>
+        This function should be called when a ledger is open and there is no close
+        in progress, or when a transaction is received and no close is in progress.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__shouldCloseLedger.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__shouldCloseLedger.parameters"></a></span><a class="link" href="ripple__shouldCloseLedger.html#rippled.ref.ripple__shouldCloseLedger.parameters">Parameters</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">anyTransactions</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  indicates whether any transactions have been received
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">previousProposers</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers in the last closing
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">proposersClosed</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers who have currently closed this ledger
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">proposersValidated</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  proposers who have validated the last closed ledger
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">previousTime</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  time for the previous ledger to reach consensus
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">currentTime</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  time since the previous ledger's (possibly rounded) close time
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">openTime</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  time waiting to close this ledger
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">idleInterval</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  the network's desired idle interval
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <code class="computeroutput"><span class="identifier">j</span></code>
+                </p>
+              </td>
+<td>
+                <p>
+                  journal for logging
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__shouldCloseLedger.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__shouldCloseLedger.header"></a></span><a class="link" href="ripple__shouldCloseLedger.html#rippled.ref.ripple__shouldCloseLedger.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">consensus</span><span class="special">/</span><span class="identifier">LedgerTiming</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__roundCloseTime.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__template_field_error.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
