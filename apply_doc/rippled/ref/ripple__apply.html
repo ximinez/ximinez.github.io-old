@@ -18,7 +18,7 @@
 <a name="rippled.ref.ripple__apply"></a><a class="link" href="ripple__apply.html" title="apply">apply</a>
 </h3></div></div></div>
 <p>
-        <a class="indexterm" name="id1555786"></a>
+        <a class="indexterm" name="id1545819"></a>
 Apply a transaction to an OpenView.
       </p>
 <h5>
@@ -45,45 +45,18 @@ Apply a transaction to an OpenView.
 <pre class="programlisting"><span class="identifier">preflight</span> <span class="special">-&gt;</span> <span class="identifier">preclaim</span> <span class="special">-&gt;</span> <span class="identifier">doApply</span>
 </pre>
 <p>
-        And the result of one function must be passed to the next. The <code class="computeroutput"><span class="identifier">preflight</span></code> result can be safely cached and
+        The result of one function must be passed to the next. The <code class="computeroutput"><span class="identifier">preflight</span></code> result can be safely cached and
         reused asynchronously, but <code class="computeroutput"><span class="identifier">preclaim</span></code>
         and <code class="computeroutput"><span class="identifier">doApply</span></code> must be called
         in the same thread and with the same view.
       </p>
 <h5>
 <a name="rippled.ref.ripple__apply.h2"></a>
-        <span class="phrase"><a name="rippled.ref.ripple__apply.exceptions"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.exceptions">Exceptions</a>
+        <span class="phrase"><a name="rippled.ref.ripple__apply.remarks"></a></span><a class="link" href="ripple__apply.html#rippled.ref.ripple__apply.remarks">Remarks</a>
       </h5>
-<div class="informaltable"><table class="table">
-<colgroup>
-<col>
-<col>
-</colgroup>
-<thead><tr>
-<th>
-                <p>
-                  Type
-                </p>
-              </th>
-<th>
-                <p>
-                  Thrown On
-                </p>
-              </th>
-</tr></thead>
-<tbody><tr>
-<td>
-                <p>
-                  <code class="computeroutput"><span class="identifier">none</span></code>
-                </p>
-              </td>
-<td>
-                <p>
-                  Does not throw.
-                </p>
-              </td>
-</tr></tbody>
-</table></div>
+<p>
+        Does not throw.
+      </p>
 <p>
         For open ledgers, the Transactor will catch exceptions and return tefEXCEPTION.
         For closed ledgers, the Transactor will attempt to only charge a fee, and
