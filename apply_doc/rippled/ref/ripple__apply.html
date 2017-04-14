@@ -18,8 +18,8 @@
 <a name="rippled.ref.ripple__apply"></a><a class="link" href="ripple__apply.html" title="apply">apply</a>
 </h3></div></div></div>
 <p>
-        <a class="indexterm" name="id1545819"></a>
-Apply a transaction to an OpenView.
+        <a class="indexterm" name="id1559008"></a>
+Apply a transaction to an <code class="computeroutput"><span class="identifier">OpenView</span></code>.
       </p>
 <h5>
 <a name="rippled.ref.ripple__apply.h0"></a>
@@ -58,17 +58,19 @@ Apply a transaction to an OpenView.
         Does not throw.
       </p>
 <p>
-        For open ledgers, the Transactor will catch exceptions and return tefEXCEPTION.
-        For closed ledgers, the Transactor will attempt to only charge a fee, and
-        return tecFAILED_PROCESSING.
+        For open ledgers, the <code class="computeroutput"><span class="identifier">Transactor</span></code>
+        will catch exceptions and return <code class="computeroutput"><span class="identifier">tefEXCEPTION</span></code>.
+        For closed ledgers, the <code class="computeroutput"><span class="identifier">Transactor</span></code>
+        will attempt to only charge a fee, and return <code class="computeroutput"><span class="identifier">tecFAILED_PROCESSING</span></code>.
       </p>
 <p>
-        If the Transactor gets an exception while trying to charge the fee, it will
-        be caught and turned into tefEXCEPTION.
+        If the <code class="computeroutput"><span class="identifier">Transactor</span></code> gets an
+        exception while trying to charge the fee, it will be caught and turned into
+        <code class="computeroutput"><span class="identifier">tefEXCEPTION</span></code>.
       </p>
 <p>
-        For network health, a Transactor makes its best effort to at least charge
-        a fee if the ledger is closed.
+        For network health, a <code class="computeroutput"><span class="identifier">Transactor</span></code>
+        makes its best effort to at least charge a fee if the ledger is closed.
       </p>
 <h5>
 <a name="rippled.ref.ripple__apply.h3"></a>
